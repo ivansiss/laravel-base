@@ -36,10 +36,10 @@
         </div>
        
         <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
-            <btns-component :tipo="3" v-on:traeEmit="ordenAutomatico"></btns-component>
-            <btns-component :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
-            <btns-component :tipo="6" v-on:traeEmit="nuevo"></btns-component>
-            <template v-if="listRolPermisosByUsuario.includes('access.des.img')">
+            <btns-component :tipo="3" class="mr-3" v-on:traeEmit="ordenAutomatico"></btns-component>
+            <btns-component :tipo="5" class="mr-3" v-on:traeEmit="saveOrden"></btns-component>
+            <btns-component :tipo="6" class="mr-3" v-on:traeEmit="nuevo"></btns-component>
+            <template v-if="listRolPermisosByUsuario.includes('access.des.img')" class="mr-3" >
                 <button type="button" class="btn btn-outline-secondary btn-lg" v-bind:style="{ color: ds_admin[11].linea, border: ds_admin[10].border }" width="10%" @click="catalogarAuto()"><i class="fas fa-cart-arrow-down"></i></button>
             </template>
         </div>
