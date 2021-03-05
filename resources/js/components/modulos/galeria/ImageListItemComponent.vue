@@ -60,12 +60,12 @@
             <div class="card-footer mt-3">
                 <div class="text-right">
                     <li class="d-flex justify-content-start mt-4">
-                        <btns-component  v-if="img.orden != 0" :tipo="7" v-on:traeEmit="subir(img)"></btns-component>
-                        <btns-component   v-if="img.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(img)"></btns-component>
+                        <btns-component class="mr-3" v-if="img.orden != 0" :tipo="7" v-on:traeEmit="subir(img)"></btns-component>
+                        <btns-component class="mr-3" v-if="img.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(img)"></btns-component>
                     </li>
                     <div class="d-flex justify-content-end">
-                        <btns-component :tipo="9" v-on:traeEmit="editar(img)"></btns-component>
-                        <btns-component :tipo="10" v-on:traeEmit="eliminar(img)"></btns-component>
+                        <btns-component :tipo="9" v-on:traeEmit="editar(img)" class="mr-3"></btns-component>
+                        <btns-component :tipo="10" v-on:traeEmit="eliminar(img)" class="mr-3"></btns-component>
                     </div>
                 </div>
             </div>
