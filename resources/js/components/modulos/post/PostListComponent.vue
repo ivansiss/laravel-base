@@ -17,7 +17,7 @@
 
         <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
 
-            <btns-component :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
+            <btns-component :tipo="5" class="mr-3" v-on:traeEmit="saveOrden"></btns-component>
             <router-link class="btn btn-lg" :style="{ border: ds_admin[6].border }" :to="{name: 'access.new.posts', params: {ultimoOrden:ultimoOrden}}">
                 <i :class="ds_admin[6].icono" :style="{color: ds_admin[6].color}"></i>
             </router-link>

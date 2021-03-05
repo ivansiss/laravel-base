@@ -38,10 +38,10 @@
 
             </div>
             <div class="d-flex justify-content-end">
-                <btns-component  v-if="post.orden != 0" :tipo="7" v-on:traeEmit="postSubir(post)"></btns-component>
-                <btns-component   v-if="post.orden != ultimoOrden" :tipo="8" v-on:traeEmit="postBajar(post)"></btns-component>
+                <btns-component class="mr-3" v-if="post.orden != 0" :tipo="7" v-on:traeEmit="postSubir(post)"></btns-component>
+                <btns-component class="mr-3" v-if="post.orden != ultimoOrden" :tipo="8" v-on:traeEmit="postBajar(post)"></btns-component>
                 <router-link class="btn btn-outline-primary btn-lg mr-3" :style="{ border: ds_admin[9].border, color: ds_admin[9].color }" :to="{name: 'access.detalle.posts', params: {id: post.id}}"><i :class="ds_admin[9].icono"></i></router-link>
-                <btns-component :tipo="10" v-on:traeEmit="eliminarDato(post)"></btns-component>                        
+                <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminarDato(post)"></btns-component>                        
             </div>
 
         </div>
