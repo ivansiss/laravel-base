@@ -84087,7 +84087,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp\www\proyectos_laravel\paquetes\proyectobase\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp\www\proyectos_laravel\paquetes\sutoldo\laravel-base\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
