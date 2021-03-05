@@ -29,8 +29,8 @@
         </div>
        
         <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
-            <btns-component :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
-            <btns-component :tipo="6" v-on:traeEmit="nuevo"></btns-component>
+            <btns-component class="mr-3" :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
+            <btns-component class="mr-3" :tipo="6" v-on:traeEmit="nuevo"></btns-component>
         </div>
 
         <hr class="mb-5" style="background-color: #343a40;">

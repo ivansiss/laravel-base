@@ -39,8 +39,8 @@
 
             </div>
             <div class="d-flex justify-content-end">
-                <btns-component  v-if="pag.orden != 0" :tipo="7" v-on:traeEmit="pagSubir(pag)"></btns-component>
-                <btns-component   v-if="pag.orden != ultimoOrden" :tipo="8" v-on:traeEmit="pagBajar(pag)"></btns-component>
+                <btns-component class="mr-3" v-if="pag.orden != 0" :tipo="7" v-on:traeEmit="pagSubir(pag)"></btns-component>
+                <btns-component class="mr-3" v-if="pag.orden != ultimoOrden" :tipo="8" v-on:traeEmit="pagBajar(pag)"></btns-component>
                 <router-link 
                 
                             class="btn btn-outline-primary btn-lg mr-3" 
@@ -48,7 +48,7 @@
                             :to="{name: 'access.edit.paginas', params: {id: pag.id}}">
                             <i :class="ds_admin[9].icono"></i>
                 </router-link>
-                <btns-component :tipo="10" v-on:traeEmit="eliminarDato(pag)" v-if="permisos.includes('access.super')"></btns-component>                        
+                <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminarDato(pag)" v-if="permisos.includes('access.super')"></btns-component>                        
             </div>
 
         </div>

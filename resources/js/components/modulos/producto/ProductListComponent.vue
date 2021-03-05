@@ -14,9 +14,9 @@
                 <spinner-component :spinner="spinner"></spinner-component>
             </div>
             <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
-                <btns-component :tipo="3" v-on:traeEmit="ordenAutomatico"></btns-component>
-                <btns-component :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
-                <router-link class="btn btn-lg" :style="{ border: ds_admin[6].border }" :to="{name: 'access.new.products', params: {ultimoOrden:ultimoOrden}}">
+                <btns-component class="mr-3" :tipo="3" v-on:traeEmit="ordenAutomatico"></btns-component>
+                <btns-component class="mr-3" :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
+                <router-link class="btn btn-lg mr-3" :style="{ border: ds_admin[6].border }" :to="{name: 'access.new.products', params: {ultimoOrden:ultimoOrden}}">
                     <i :class="ds_admin[6].icono" :style="{color: ds_admin[6].color}"></i>
                 </router-link>
             </div>

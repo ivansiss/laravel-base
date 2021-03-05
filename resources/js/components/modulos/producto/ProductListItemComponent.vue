@@ -163,10 +163,10 @@
                       
             
             <div class="d-flex justify-content-end mt-4">
-                <btns-component  v-if="item.orden != 0" :tipo="7" v-on:traeEmit="subir(item)"></btns-component>
-                <btns-component   v-if="item.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(item)"></btns-component>
+                <btns-component class="mr-3" v-if="item.orden != 0" :tipo="7" v-on:traeEmit="subir(item)"></btns-component>
+                <btns-component class="mr-3" v-if="item.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(item)"></btns-component>
                 <router-link class="btn btn-outline-primary btn-lg mr-3" :style="{ border: ds_admin[9].border, color: ds_admin[9].color }" :to="{name: 'access.edit.products', params: {id: item.id}}"><i :class="ds_admin[9].icono"></i></router-link>
-                <btns-component :tipo="10" v-on:traeEmit="eliminar(item)"></btns-component>
+                <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminar(item)"></btns-component>
             </div>
 
         </div>
