@@ -4,9 +4,5 @@
 			"path": "."
 		}
 	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "proyectobase",
-		"git.ignoreLimitWarning": true,
-		"liveServer.settings.port": 8000
-	}
+	"settings": {}
 }

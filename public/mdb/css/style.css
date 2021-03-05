@@ -1,0 +1,35 @@
+/*Boton de subcribete al pie de pagina*/
+.btn-outline-success {
+    color: white !important;
+    background-color: transparent !important;
+    border: 2px solid #EB6851 !important;
+  }
+
+  .btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active, .btn-outline-success:active:focus, .btn-outline-success.active {
+    color: white !important;
+    background-color: transparent !important;
+    border-color: #ea6851bd !important;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #ea6851;
+    border-color: #2a459d;
+}
+
+/*Colores*/
+
+
+.color-gris-claro{
+  background-color: #DFE2DE;
+}
+
+.color-gris-oscuro{
+  background-color: #A1A5A3;
+}
+
+/*cartel de categoria en listaPost*/
+.ancho-categoria{
+  width: 125px;
+}
+

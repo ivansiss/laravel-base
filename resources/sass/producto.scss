@@ -1,0 +1,34 @@
+/*PAGINA PRODUCTO  ----------------------------------------------------------------------------------------------------------*/
+/*descripcion*/
+.font-weight-normal {
+    font-weight: 400!important;
+}
+/*caracteristicas*/
+.font-weight-bold {
+    font-family: Roboto,sans-serif;
+    font-weight: 300 !important;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.titulo-producto{
+    font-family: Roboto,sans-serif;
+    font-weight: 300 !important;
+    font-size: 1.5rem;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: end;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}

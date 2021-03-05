@@ -1,0 +1,52 @@
+/*PAGINA CONTACTO ----------------------------------------------------------------------------------------------------------*/
+@import 'mis_variables';
+
+.margen-sup{
+  margin-top: $margen-superior;
+}
+
+.margen-inf{
+  margin-top: $margen-inferior;
+}
+
+/*url: password/reset*/
+.btn-enviar{
+    color: rgb(250, 246, 246);
+    background-color: transparent;
+    border: dotted 1px $c_secundario;
+    border-radius: 10px;
+    padding: .8rem;
+    min-width: 100px;
+    margin-right: 1rem;
+
+}
+
+.altura-menu-sup{
+  margin-top: 3rem;
+}
+
+.fondo-form{
+  background-color: $fondo-serio-t;
+  padding: 2rem;
+}
+
+.subrayar{
+    border-bottom: dotted 2px $c_secundario;
+    color: white;
+}
+
+/*google maps*/
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}

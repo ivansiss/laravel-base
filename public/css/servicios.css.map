@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,4EAAI,CACZ,OAAO,CAAC,+GAAI,CACZ,OAAO,CAAC,sFAAI,CAKZ,AAAA,WAAW,AAAA,CACP,UAAU,CAAE,KAAK,CACpB",
+    "sources": [
+        "../../resources/sass/servicios.scss",
+        "../../resources/sass/mis_variables.scss"
+    ],
+    "names": [],
+    "file": "servicios.css"
+}

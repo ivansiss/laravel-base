@@ -1,0 +1,20 @@
+@import 'mis_variables';
+
+.footer-fondo{
+    position:relative;
+    background-color: #41629a;
+}
+
+.footer-arbolito{
+    position:absolute;
+    top:-55px; 
+    left:0;
+}
+
+.footer-cabecera{
+    background-color: #789bd6;
+}
+
+.footer-linea-bajo-texto{
+    border-bottom: solid 1px #6daa7d;
+}

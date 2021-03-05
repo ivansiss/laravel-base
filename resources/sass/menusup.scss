@@ -1,0 +1,128 @@
+/*MENU SUPERIOR ----------------------------------------------------------------------------------------------------------*/
+
+$fondo-t: #789bd6c2;//fondo translucido: azul clarito translucido
+$fondo: #789bd6;//fondo Azul clarito del menu sup
+$c_primario: #7f8f4c9e;// fondo botones dropdown del menun sup
+$c_secundario: #c648326b;// color lineas debajo texto del menu sup
+
+$familia:"Roboto",sans-serif;
+$color-linea-separador-texto: white;
+$color-linea-debajo-texto: $c_secundario;
+
+$margen-superior: 7rem;
+
+.bt_cerrar_sesion{
+    background-color: transparent !important;
+    color: white !important;
+    border: none !important;
+    margin-top: .6rem;
+}
+
+.menu-sup {
+    color: #fff;
+    background: $fondo;
+    font-family: $familia;
+    font-weight: 100;
+    padding: .5rem 0;
+}
+
+/*separador vertical entre el texto del menu*/
+.separador-horizontal {
+    height: 15px !important;
+    margin-right: .8rem !important;
+    margin-left: .8rem !important;
+    border-left: 1px solid $color-linea-separador-texto !important;
+}
+
+/*color de la linea debajo de los link*/
+.active{
+    border-bottom: 1px solid $color-linea-debajo-texto !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: black;
+    background-color: transparent;
+}
+/* color de los subiten de los dropdowns*/
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover, .dropleft .dropdown-menu .dropdown-item:active, .dropleft .dropdown-menu .dropdown-item:hover, .dropright .dropdown-menu .dropdown-item:active, .dropright .dropdown-menu .dropdown-item:hover, .dropup .dropdown-menu .dropdown-item:active, .dropup .dropdown-menu .dropdown-item:hover {
+    background-color: $c_primario;
+    border-radius: .125rem;
+    -webkit-box-shadow: 0 5px 11px 0 $c_primario, 0 4px 15px 0 $c_primario;
+    box-shadow: 0 5px 11px 0 $c_primario, 0 4px 15px 0 $c_primario;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 0px) and (max-width:575px) {
+
+    /*MENU SUPERIOR ----------------------------------------------------------------------------------------------------------*/
+    /*combertir texto a dropdown*/
+    .nav-sup-texto-right{
+        display: none !important;
+    }
+
+    /*combertir texto a dropdown*/
+    .nav-sup-drowpdown-right{
+        margin: 0 !important;
+    }
+
+
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /*MENU SUPERIOR ----------------------------------------------------------------------------------------------------------*/
+    /*combertir texto a dropdown*/
+    .nav-sup-texto-right{
+        display: none !important;
+    }
+
+    /*combertir texto a dropdown*/
+    .nav-sup-drowpdown-right{
+        margin: 0 !important;
+    }
+
+
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*MENU SUPERIOR ----------------------------------------------------------------------------------------------------------*/
+    /*combertir texto a dropdown*/
+    .nav-sup-texto-right{
+        display: none !important;
+    }
+
+    /*combertir texto a dropdown*/
+    .nav-sup-drowpdown-right{
+        margin: 0 !important;
+    }
+
+ }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*MENU SUPERIOR ----------------------------------------------------------------------------------------------------------*/
+    /*combertir texto a dropdown*/
+    .nav-sup-drowpdown-right{
+        margin: 0 !important;
+        display: none !important;
+    }
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    /*MENU SUPERIOR ----------------------------------------------------------------------------------------------------------*/
+    /*combertir texto a dropdown*/
+    .nav-sup-drowpdown-right{
+        margin: 0 !important;
+        display: none !important;
+    }
+
+
+ }
