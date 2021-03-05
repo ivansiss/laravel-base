@@ -11159,6 +11159,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       document.getElementById('titulo').value = vid.titulo;
       document.getElementById('descripcion').value = vid.descripcion;
       document.getElementById('visible').value = vid.visible;
+      document.getElementById('miniatura').value = vid.miniatura;
       document.getElementById('tipo').value = vid.tipo_id;
     },
     saveOrden: function saveOrden() {
@@ -51509,11 +51510,13 @@ var render = function() {
           { staticClass: "d-flex justify-content-end ml-3 mb-3 mr-3" },
           [
             _c("btns-component", {
+              staticClass: "mr-3",
               attrs: { tipo: 3 },
               on: { traeEmit: _vm.ordenAutomatico }
             }),
             _vm._v(" "),
             _c("btns-component", {
+              staticClass: "mr-3",
               attrs: { tipo: 5 },
               on: { traeEmit: _vm.saveOrden }
             }),
@@ -51779,16 +51782,19 @@ var render = function() {
         { staticClass: "d-flex justify-content-end ml-3 mb-3 mr-3" },
         [
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 3 },
             on: { traeEmit: _vm.ordenAutomatico }
           }),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 5 },
             on: { traeEmit: _vm.saveOrden }
           }),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 6 },
             on: { traeEmit: _vm.nuevo }
           }),
@@ -52033,6 +52039,7 @@ var render = function() {
               [
                 _vm.img.orden != 0
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 7 },
                       on: {
                         traeEmit: function($event) {
@@ -52044,6 +52051,7 @@ var render = function() {
                 _vm._v(" "),
                 _vm.img.orden != _vm.ultimoOrden
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 8 },
                       on: {
                         traeEmit: function($event) {
@@ -52061,6 +52069,7 @@ var render = function() {
               { staticClass: "d-flex justify-content-end" },
               [
                 _c("btns-component", {
+                  staticClass: "mr-3",
                   attrs: { tipo: 9 },
                   on: {
                     traeEmit: function($event) {
@@ -52070,6 +52079,7 @@ var render = function() {
                 }),
                 _vm._v(" "),
                 _c("btns-component", {
+                  staticClass: "mr-3",
                   attrs: { tipo: 10 },
                   on: {
                     traeEmit: function($event) {
@@ -53023,6 +53033,7 @@ var render = function() {
               [
                 _vm.pag.orden != 0
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 7 },
                       on: {
                         traeEmit: function($event) {
@@ -53034,6 +53045,7 @@ var render = function() {
                 _vm._v(" "),
                 _vm.pag.orden != _vm.ultimoOrden
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 8 },
                       on: {
                         traeEmit: function($event) {
@@ -53063,6 +53075,7 @@ var render = function() {
                 _vm._v(" "),
                 _vm.permisos.includes("access.super")
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 10 },
                       on: {
                         traeEmit: function($event) {
@@ -53214,6 +53227,7 @@ var render = function() {
         [
           _vm.pag.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -53225,6 +53239,7 @@ var render = function() {
           _vm._v(" "),
           _vm.pag.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -53251,6 +53266,7 @@ var render = function() {
           _vm._v(" "),
           _vm.permisos.includes("access.super")
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 10 },
                 on: {
                   traeEmit: function($event) {
@@ -53435,6 +53451,7 @@ var render = function() {
         [
           _vm.pag.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -53446,6 +53463,7 @@ var render = function() {
           _vm._v(" "),
           _vm.pag.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -53472,6 +53490,7 @@ var render = function() {
           _vm._v(" "),
           _vm.permisos.includes("access.super")
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 10 },
                 on: {
                   traeEmit: function($event) {
@@ -53719,6 +53738,7 @@ var render = function() {
         [
           _vm.pag.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -53730,6 +53750,7 @@ var render = function() {
           _vm._v(" "),
           _vm.pag.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -53756,6 +53777,7 @@ var render = function() {
           _vm._v(" "),
           _vm.permisos.includes("access.super")
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 10 },
                 on: {
                   traeEmit: function($event) {
@@ -53913,6 +53935,7 @@ var render = function() {
         [
           _vm.pag.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -53924,6 +53947,7 @@ var render = function() {
           _vm._v(" "),
           _vm.pag.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -53950,6 +53974,7 @@ var render = function() {
           _vm._v(" "),
           _vm.permisos.includes("access.super")
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 10 },
                 on: {
                   traeEmit: function($event) {
@@ -55023,11 +55048,13 @@ var render = function() {
       { staticClass: "d-flex justify-content-end ml-3 mb-3 mr-3" },
       [
         _c("btns-component", {
+          staticClass: "mr-3",
           attrs: { tipo: 3 },
           on: { traeEmit: _vm.ordenAutomatico }
         }),
         _vm._v(" "),
         _c("btns-component", {
+          staticClass: "mr-3",
           attrs: { tipo: 5 },
           on: { traeEmit: _vm.saveOrden }
         }),
@@ -55982,6 +56009,7 @@ var render = function() {
               [
                 _vm.post.orden != 0
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 7 },
                       on: {
                         traeEmit: function($event) {
@@ -55993,6 +56021,7 @@ var render = function() {
                 _vm._v(" "),
                 _vm.post.orden != _vm.ultimoOrden
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 8 },
                       on: {
                         traeEmit: function($event) {
@@ -56021,6 +56050,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c("btns-component", {
+                  staticClass: "mr-3",
                   attrs: { tipo: 10 },
                   on: {
                     traeEmit: function($event) {
@@ -56519,6 +56549,7 @@ var render = function() {
         [
           _vm.post.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -56530,6 +56561,7 @@ var render = function() {
           _vm._v(" "),
           _vm.post.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -56558,6 +56590,7 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 10 },
             on: {
               traeEmit: function($event) {
@@ -56632,6 +56665,7 @@ var render = function() {
         { staticClass: "d-flex justify-content-end ml-3 mb-3 mr-3" },
         [
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 5 },
             on: { traeEmit: _vm.saveOrden }
           }),
@@ -57351,6 +57385,7 @@ var render = function() {
         [
           _vm.post.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -57362,6 +57397,7 @@ var render = function() {
           _vm._v(" "),
           _vm.post.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -57390,6 +57426,7 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 10 },
             on: {
               traeEmit: function($event) {
@@ -57637,6 +57674,7 @@ var render = function() {
         [
           _vm.post.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -57648,6 +57686,7 @@ var render = function() {
           _vm._v(" "),
           _vm.post.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -57676,6 +57715,7 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 10 },
             on: {
               traeEmit: function($event) {
@@ -57833,6 +57873,7 @@ var render = function() {
         [
           _vm.post.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -57844,6 +57885,7 @@ var render = function() {
           _vm._v(" "),
           _vm.post.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -57872,6 +57914,7 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 10 },
             on: {
               traeEmit: function($event) {
@@ -58177,11 +58220,13 @@ var render = function() {
       { staticClass: "d-flex justify-content-end ml-3 mb-3 mr-3" },
       [
         _c("btns-component", {
+          staticClass: "mr-3",
           attrs: { tipo: 3 },
           on: { traeEmit: _vm.ordenAutomatico }
         }),
         _vm._v(" "),
         _c("btns-component", {
+          staticClass: "mr-3",
           attrs: { tipo: 5 },
           on: { traeEmit: _vm.saveOrden }
         }),
@@ -58189,7 +58234,7 @@ var render = function() {
         _c(
           "router-link",
           {
-            staticClass: "btn btn-lg",
+            staticClass: "btn btn-lg mr-3",
             style: { border: _vm.ds_admin[6].border },
             attrs: {
               to: {
@@ -58769,6 +58814,7 @@ var render = function() {
         [
           _vm.item.orden != 0
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 7 },
                 on: {
                   traeEmit: function($event) {
@@ -58780,6 +58826,7 @@ var render = function() {
           _vm._v(" "),
           _vm.item.orden != _vm.ultimoOrden
             ? _c("btns-component", {
+                staticClass: "mr-3",
                 attrs: { tipo: 8 },
                 on: {
                   traeEmit: function($event) {
@@ -58808,6 +58855,7 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 10 },
             on: {
               traeEmit: function($event) {
@@ -60647,11 +60695,13 @@ var render = function() {
         { staticClass: "d-flex justify-content-end ml-3 mb-3 mr-3" },
         [
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 5 },
             on: { traeEmit: _vm.saveOrden }
           }),
           _vm._v(" "),
           _c("btns-component", {
+            staticClass: "mr-3",
             attrs: { tipo: 6 },
             on: { traeEmit: _vm.nuevo }
           })
@@ -60810,7 +60860,7 @@ var render = function() {
             _vm._v(" "),
             _c("li", { staticClass: "nav-item mt-2 text-lg color-texto" }, [
               _vm._v(
-                "\n\n               - Miniatura: " +
+                "\n\n               - Url-limpia: " +
                   _vm._s(_vm.video.miniatura) +
                   "\n                "
               ),
@@ -60894,6 +60944,7 @@ var render = function() {
               [
                 _vm.video.orden != 0
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 7 },
                       on: {
                         traeEmit: function($event) {
@@ -60905,6 +60956,7 @@ var render = function() {
                 _vm._v(" "),
                 _vm.video.orden != _vm.ultimoOrden
                   ? _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 8 },
                       on: {
                         traeEmit: function($event) {
@@ -60922,6 +60974,7 @@ var render = function() {
               { staticClass: "d-flex justify-content-end" },
               [
                 _c("btns-component", {
+                  staticClass: "mr-3",
                   attrs: { tipo: 9 },
                   on: {
                     traeEmit: function($event) {
@@ -60931,6 +60984,7 @@ var render = function() {
                 }),
                 _vm._v(" "),
                 _c("btns-component", {
+                  staticClass: "mr-3",
                   attrs: { tipo: 10 },
                   on: {
                     traeEmit: function($event) {
