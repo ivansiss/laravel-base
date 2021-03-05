@@ -32,7 +32,7 @@
                 </li>
                 <li class="nav-item mt-2 text-lg color-texto">
 
-                   - Miniatura: {{ video.miniatura }}
+                   - Url-limpia: {{ video.miniatura }}
                     <span        class="float-right badge color-texto mb-2 linea-debajo-texto"
                                 v-if="!video.miniatura">
                                         Sin Miniatura
@@ -65,12 +65,12 @@
             <div class="card-footer mt-3">
                 <div class="text-right">
                     <li class="d-flex justify-content-start mt-4">
-                        <btns-component  v-if="video.orden != 0" :tipo="7" v-on:traeEmit="subir(video)"></btns-component>
-                        <btns-component   v-if="video.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(video)"></btns-component>
+                        <btns-component class="mr-3" v-if="video.orden != 0" :tipo="7" v-on:traeEmit="subir(video)"></btns-component>
+                        <btns-component class="mr-3" v-if="video.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(video)"></btns-component>
                     </li>
                     <div class="d-flex justify-content-end">
-                        <btns-component :tipo="9" v-on:traeEmit="editar(video)"></btns-component>
-                        <btns-component :tipo="10" v-on:traeEmit="eliminar(video)"></btns-component>
+                        <btns-component class="mr-3" :tipo="9" v-on:traeEmit="editar(video)"></btns-component>
+                        <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminar(video)"></btns-component>
                     </div>
                 </div>
             </div>

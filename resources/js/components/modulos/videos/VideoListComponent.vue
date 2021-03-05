@@ -366,6 +366,7 @@ export default {
                     document.getElementById('titulo').value  = vid.titulo;
                     document.getElementById('descripcion').value  = vid.descripcion;
                     document.getElementById('visible').value  = vid.visible;
+                    document.getElementById('miniatura').value  = vid.miniatura;
                     document.getElementById('tipo').value  = vid.tipo_id;
 
             },
