@@ -42,12 +42,12 @@
                     <div class="card-footer">
                         <div class="text-right">
                             <li class="d-flex justify-content-end mt-4">
-                                <btns-component  v-if="perm.orden != 0" :tipo="7" v-on:traeEmit="subir(perm)"></btns-component>
-                                <btns-component   v-if="perm.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(perm)"></btns-component>
+                                <btns-component class="mr-3" v-if="perm.orden != 0" :tipo="7" v-on:traeEmit="subir(perm)"></btns-component>
+                                <btns-component class="mr-3" v-if="perm.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(perm)"></btns-component>
                             </li>
                             <div class="d-flex justify-content-left">
-                                <btns-component :tipo="9" v-on:traeEmit="editarDato(perm)"></btns-component>
-                                <btns-component :tipo="10" v-on:traeEmit="eliminarDato(perm)"></btns-component>
+                                <btns-component class="mr-3" :tipo="9" v-on:traeEmit="editarDato(perm)"></btns-component>
+                                <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminarDato(perm)"></btns-component>
                             </div>
                         </div>
                     </div>

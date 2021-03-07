@@ -39,8 +39,8 @@
                         <div class="card-footer">
                             <div class="text-right">
                                 <div class="d-flex justify-content-center">
-                                    <btns-component :tipo="9" v-on:traeEmit="editarDato(card_rol)"></btns-component>
-                                    <btns-component :tipo="10" v-on:traeEmit="eliminarDato(card_rol)"></btns-component>
+                                    <btns-component class="mr-3" :tipo="9" v-on:traeEmit="editarDato(card_rol)"></btns-component>
+                                    <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminarDato(card_rol)"></btns-component>
                                 </div>
                             </div>
                         </div>
