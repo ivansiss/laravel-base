@@ -53,9 +53,9 @@
                         <btns-component   v-if="user.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(user)"></btns-component>
                     </li>
                      <div class="d-flex justify-content-left">
-                        <btns-component :tipo="9" v-on:traeEmit="editarDato(user)"></btns-component>
-                        <btns-component :tipo="10" v-on:traeEmit="eliminarDato(user)"></btns-component>
-                        <btns-component :tipo="20" v-on:traeEmit="restablecer_pass(user)"></btns-component>
+                        <btns-component class="mr-3" :tipo="9" v-on:traeEmit="editarDato(user)"></btns-component>
+                        <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminarDato(user)"></btns-component>
+                        <btns-component class="mr-3" :tipo="20" v-on:traeEmit="restablecer_pass(user)"></btns-component>
 
                     </div>
                   </div>
