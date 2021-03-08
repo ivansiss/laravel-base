@@ -56,5 +56,9 @@ export default {
       background-color: transparent !important;
       border: dotted 1px #9ccc65;
   }
+
+  .myicono{
+      color:#9ccc65;
+  }
   
 </style>  
