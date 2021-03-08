@@ -139,7 +139,4 @@
 
 </footer>
 <!-- Footer -->
-{{-- <?php $config = DB::table('configuraciones')->first(); ?> --}
-{{-- FOOTER --}}
-
-{{-- /footer --}}
+{{-- /FOOTER --}}
