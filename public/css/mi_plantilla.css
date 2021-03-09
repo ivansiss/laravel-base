@@ -1,2 +1,256 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300&display=swap");.altura-menu-sup{margin-top:8rem}.navbar-fondo{background-color:#789bd6}.sidebar-fondo{background-color:#778a46;color:#fff}.cerrar-sesion{border-bottom:dotted 1px black;border-top:dotted 1px black}.color-icono-sidebar{color:#fff}.sidebar-titulos{color:#fff;border-bottom:dotted 1px #fff}.sidebar-subtitulos{color:#fff;border-bottom:dotted 1px #789bd6}.badge-info{color:#fff;background-color:transparent !important;border:dotted 1px #fff !important}.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active,.sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{background-color:transparent !important;color:#fff}[class*=sidebar-dark-] .nav-header{background-color:inherit !important;color:#1ac6ff !important}.swal2-styled.swal2-confirm{border:dotted 1px #1ac5fe !important;background:transparent !important;color:#fff !important}.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active,.sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{background-color:#778a46;color:#fff}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{background-color:#1e2738f5 !important}.swal2-styled.swal2-confirm{background-color:transparent !important;border:dotted 1px #1ac5fe !important}.swal2-styled.swal2-cancel{background-color:transparent !important;border:dotted 1px #f72206 !important}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#1ac5fe !important}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step{background:#595959 !important;color:#fff !important}.swal2-progress-steps .swal2-progress-step{background:#1ac5fe !important}.swal2-progress-steps .swal2-progress-step-line{background:#1ac5fe !important}.swal2-validation-message{background:#293751 !important;color:#efe8e8 !important}.swal2-validation-message::before{background-color:#f10707 !important}.swal2-file,.swal2-input,.swal2-textarea{color:white !important;font-size:1.125em !important}.swal2-select{background:#343a40 !important}.swal2-content{color:#1ac5fe !important;text-align:left !important}.btn-mydanger{color:#fff !important;background-color:transparent !important;border-color:#bb1919 !important;-webkit-box-shadow:none !important;box-shadow:none !important;margin-right:2rem}.btn-danger{color:#fff !important;margin-right:2rem !important;border:dotted 1px #1ac5fe !important;background-color:transparent !important}.btn-success{color:#fff !important;border:dotted 1px red !important;background-color:transparent !important}.btn-mysuccess{color:#fff !important;background-color:transparent !important;border-color:#27c5fe !important}.swal2-icon.swal2-warning{border-color:#27c5fe !important;color:#f31707 !important}.swal2-icon.swal2-info{border-color:#27c5fe !important;color:#f31707 !important}.swal2-title{color:#faf8f8 !important}.swal2-popup{background:#293751a8 !important}.color-letra{color:#1ac5fe}.linea-punto{line-height:0.5;text-align:center;margin-bottom:20px}.linea-punto span{display:inline-block;position:relative;background:#1ac6ff;width:8px;height:8px;border-radius:50px}.linea-punto span:before,.linea-punto span:after{content:'';position:absolute;height:5px;border-bottom:2px dotted #cccaca;top:0;width:110px}.linea-punto span:before{right:100%;margin-right:15px}.linea-punto span:after{left:100%;margin-left:15px}.altura-linea{font-size:33px;font-weight:700;font-family:lato;line-height:2;margin-bottom:0}.linea{border-top:1px dotted black;height:2px;padding:0;margin:0px;background:#1ac6ff;margin-bottom:2rem;max-width:200px}.widget-user-2 .widget-user-desc,.widget-user-2 .widget-user-username{margin-left:0px}.mderecha-6{margin-right:3rem}.ancho-icono-producto{max-width:54px}
-/*# sourceMappingURL=mi_plantilla.css.map */
+
+/*Administración*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300&display=swap'); /* panel swal fondo */
+
+$color-principal: #297772;
+$color-secundario: #778a46;
+$color-titulos-sidebar: white;
+$color-subtitulos-sidebar: white;
+$color-badge-sidebar: white;
+$color-icono-sidebar: white;
+
+.altura-menu-sup{
+    margin-top: 8rem;
+}
+
+/*CLIENTES*/
+
+/*fondo de las tarjetas*/
+.fondo-card{
+    background-color: #13558a !important;
+}
+
+/*NAV-BAR*/
+/*Barra de navegación*/
+    .navbar-fondo{
+        background-color: $color-principal;
+    }
+/*/NAV-BAR ----------------------------------------- */
+
+/* SIDEBAR */
+/*sidebar badge de informacion */
+.sidebar-fondo{
+    background-color: #13558a;
+    color: #fff;
+}
+
+/*Paneles formulario info*/
+.alert-info {
+    color: #fff;
+    background-color: #13558a;
+    border: dotted 1px white;
+}
+
+//cerrar sesion linea
+.cerrar-sesion{
+ border-bottom: dotted 1px black;
+ border-top: dotted 1px black;
+
+}
+
+.color-icono-sidebar{
+    color: $color-icono-sidebar;
+}
+.sidebar-titulos{
+    color: $color-titulos-sidebar;
+    border-bottom: dotted 1px $color-titulos-sidebar;
+}
+.sidebar-subtitulos{
+    color: $color-subtitulos-sidebar;
+    border-bottom: dotted 1px $color_principal;
+}
+
+.badge-info {
+    color: #fff;
+    background-color: transparent !important;
+    border: dotted 1px $color-badge-sidebar !important;
+}
+
+/* panel popup fondo operacion cancelada */
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+/* sidebar titulos del menu color del texto */
+[class*=sidebar-dark-] .nav-header {
+    background-color: inherit !important;
+    color: #1ac6ff !important;
+}
+
+/* swal btn guardar editar usuario */
+.swal2-styled.swal2-confirm {
+    border: dotted 1px #1ac5fe !important;
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #778a46;
+    color: #fff;
+}
+
+/* /SIDEBAR ----------------------------------------------- */
+
+.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal {
+    background-color: #1e2738f5 !important;
+}
+
+/* boton swal siguiente */
+.swal2-styled.swal2-confirm {
+    background-color: transparent !important;
+    border: dotted 1px #1ac5fe !important;
+}
+
+/* boton swal cancelar */
+.swal2-styled.swal2-cancel {
+    background-color: transparent !important;
+    border: dotted 1px #f72206 !important;
+}
+
+/* color circulo pasos activo swal */
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+    background: #1ac5fe !important;
+}
+
+/* color circulo pasos resto swal*/
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
+    background: #595959 !important;
+    color: #fff !important;
+}
+
+/* color circulo pasos resto atras swal*/
+.swal2-progress-steps .swal2-progress-step {
+    background: #1ac5fe !important;
+}
+
+ /* color barra entre circulos swal*/
+.swal2-progress-steps .swal2-progress-step-line {
+    background: #1ac5fe !important;
+}
+
+ /* fondo y color panel error swal*/
+.swal2-validation-message {
+    background: #293751 !important;
+    color: #efe8e8 !important;
+}
+
+/* color icono panel error swal */
+.swal2-validation-message::before {
+ 
+    background-color: #f10707 !important;
+}
+
+/* color del texto del input swal */
+.swal2-file, .swal2-input, .swal2-textarea {
+    color: white !important;
+    font-size: 1.125em !important;
+}
+
+/* color del texto del select swal */
+.swal2-select {
+    background: #343a40 !important;
+}
+
+/* color del texto del label swal */
+/* swal nombres a la izquierda editar usuario */
+.swal2-content {
+    color: #1ac5fe !important;
+    text-align: left !important;
+}
+
+/* boton cancelar peligro */
+.btn-mydanger {
+    color: #fff !important;
+    background-color: transparent !important;
+    border-color: #bb1919 !important;
+    box-shadow: none !important;
+    margin-right: 2rem;
+}
+
+/* boton cancelar delete de imagenes swal */
+.btn-danger {
+    color: #fff !important;
+    margin-right: 2rem !important;
+    border: dotted 1px #1ac5fe !important;
+    background-color: transparent !important;
+}
+
+/* boton eliminar delete de imagenes swal */
+.btn-success {
+    color: #fff !important;
+    border: dotted 1px red !important;
+    background-color: transparent !important;
+}
+
+/* boton aceptar */
+.btn-mysuccess {
+    color: #fff !important;
+    background-color: transparent !important;
+    border-color: #27c5fe !important;
+}
+
+/* icono warning */
+.swal2-icon.swal2-warning {
+    border-color: #27c5fe !important;
+    color: #f31707 !important;
+}
+
+/* icono operacion cancelada */
+.swal2-icon.swal2-info {
+    border-color: #27c5fe !important;
+    color: #f31707 !important;
+}
+
+/* color texto operacion cancelada */
+.swal2-title {
+    color: #faf8f8 !important;
+}
+
+/* panel popup fondo operacion cancelada */
+.swal2-popup {
+    background: #293751a8 !important;
+} 
+  .color-letra{
+      color:#1ac5fe;
+  }
+
+
+  /* <div class="linea-punto"><span></span></div> */
+  .linea-punto {line-height: 0.5;text-align: center;margin-bottom: 20px;}
+  .linea-punto span {display: inline-block;position: relative;background: #1ac6ff;width: 8px;height: 8px;-webkit-border-radius: 50px;border-radius: 50px;}
+  .linea-punto span:before,
+  .linea-punto span:after { content: ''; position: absolute; height: 5px; border-bottom: 2px dotted #cccaca; top: 0; width: 110px; }
+  .linea-punto span:before { right: 100%; margin-right: 15px; }
+  .linea-punto span:after { left: 100%; margin-left: 15px; }
+
+  .altura-linea{
+      font-size:33px;
+      font-weight: 700;
+      font-family: lato;
+      line-height: 2;
+      margin-bottom: 0;
+  }
+  
+  .linea {
+    border-top: 1px dotted black;
+    height: 2px;
+    padding: 0;
+    margin: 0px;/*20px auto 0 auto*/
+    background: #1ac6ff;
+    margin-bottom: 2rem;
+    max-width: 200px;
+  }
+
+/*imagenes - para que el id y el titulo esten a la izquierda*/
+  .widget-user-2 .widget-user-desc, .widget-user-2 .widget-user-username {
+    margin-left: 0px;
+    }
+
+.mderecha-6{
+    margin-right: 3rem;
+}
+
+.ancho-icono-producto{
+    max-width: 54px;
+}

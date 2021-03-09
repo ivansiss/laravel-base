@@ -27,7 +27,7 @@ export default{
                         //2
                         nombre: 'TituloPagina',
                         color: 'black',
-                        linea: '#1ac6ff',
+                        linea: '#13558a',
                         border: 'dotted 1px #1ac6ff',
                         backgroundColor: '',
                         texto: 'Clientes',

@@ -169,13 +169,23 @@
                     </router-link>
                 </template> 
               </li>
+              <li class="nav-item">
+                <template v-if="listPermisos.includes('access.seo')">
+                    <router-link class="nav-link" :to="'/administracion/seo'">
+                     <i class="far fa-circle nav-icon color-icono-sidebar"></i>
+                      <p class="sidebar-subtitulos">
+                        Seo web
+                      </p>
+                    </router-link>
+                </template> 
+              </li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="fas fa-book-open mr-2 color-icono-sidebar"></i>
               <p class="sidebar-subtitulos">
-                Generales
+                Administración
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>

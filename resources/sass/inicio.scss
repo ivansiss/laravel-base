@@ -11,7 +11,7 @@
 }
 
 .subrayar{
-    border-bottom: dotted 1px #7f8f4c94;
+    border-bottom: dotted 1px white;
 }
 
 .caja{
@@ -55,7 +55,7 @@
     font-family: 'Lato', serif;
     font-weight: 100;
     font-size: 2rem;
-    color: #77854873;
+    color: black;
 }
 
 .st-azul-contenedor{
@@ -79,10 +79,12 @@
 }
 
 .card-inicio{
-    font-family: lato;
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: $margen-superior;
+    font-family:'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #c648326b;
+    margin-top: 3rem;
+    border-bottom: dotted 1px red;
 }
 
 .card-fecha{

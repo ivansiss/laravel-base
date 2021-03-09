@@ -2,7 +2,7 @@
 /*Administración*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300&display=swap'); /* panel swal fondo */
 
-$color-principal: #789bd6;
+$color-principal: #297772;
 $color-secundario: #778a46;
 $color-titulos-sidebar: white;
 $color-subtitulos-sidebar: white;
@@ -11,6 +11,13 @@ $color-icono-sidebar: white;
 
 .altura-menu-sup{
     margin-top: 8rem;
+}
+
+/*CLIENTES*/
+
+/*fondo de las tarjetas*/
+.fondo-card{
+    background-color: #13558a !important;
 }
 
 /*NAV-BAR*/
@@ -23,8 +30,15 @@ $color-icono-sidebar: white;
 /* SIDEBAR */
 /*sidebar badge de informacion */
 .sidebar-fondo{
-    background-color: #778a46;
+    background-color: #13558a;
     color: #fff;
+}
+
+/*Paneles formulario info*/
+.alert-info {
+    color: #fff;
+    background-color: #13558a;
+    border: dotted 1px white;
 }
 
 //cerrar sesion linea
