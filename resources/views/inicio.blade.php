@@ -1,6 +1,5 @@
 @extends('plantilla.web')
 
-
     @section('css_pagina')
         <link rel="stylesheet" href="{{ asset('css/menusup.css') }}">
         <link rel="stylesheet" href="{{ asset('css/menu_lateral.css') }}">
@@ -8,7 +7,15 @@
         <link rel="stylesheet" href="{{ asset('css/pie.css') }}">
     @endsection
     
-    @section('title', 'home')
+    @section('title')
+        {!! $seo->title !!}
+    @endsection
+    @section('description')
+        {{ $seo->description }}
+    @endsection
+    @section('canonical')
+        {{ $seo->extra }}
+    @endsection
 
 
     @section('content')
@@ -20,8 +27,8 @@
         <div class="portada margen-superior">
 
             <div class="container wow animate__backInRight" data-wow-duration="3s" data-wow-delay="1s">
-                <h2 class="display-5 d-flex justify-content-end align-items-center portada-texto-sup pr-2">SUTOLDO</h2>
-                <h1 class="display-4 d-flex justify-content-end align-items-center portada-texto-inf pr-2">PÉRGOLAS &amp; TOLDOS</h1>
+                <h2 class="display-5 d-flex justify-content-end align-items-center portada-texto-sup pr-2">{{ $seo->h2 }}</h2>
+                <h1 class="display-4 d-flex justify-content-end align-items-center portada-texto-inf pr-2">{{ $seo->h1 }}</h1>
             </div>
 
         </div>

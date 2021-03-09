@@ -28,6 +28,8 @@
         @yield('css_pagina')
 
         <title>@yield('title')</title>
+        <meta name="description" content="@yield('description')">
+        <link rel="canonical" href="@yield('canonical')"/>
 
     </head>
 

@@ -498,6 +498,75 @@ export default new VueRouter({
               }   
           },
           { 
+               path: '/administracion/seo', 
+               name:'access.seo', 
+          component: require('./components/modulos/seo/BaseSeoComponent').default, 
+              props: false,
+              beforeEnter: (to, from, next) =>{
+                                                 
+                   let usuarioAutenticado = JSON.parse(sessionStorage.getItem('UserAutenticado'));
+                   if(usuarioAutenticado){
+                        console.log('El usuario esta autenticado');
+                        let listRolPermisosByUsuario = JSON.parse(sessionStorage.getItem('listRolPermisosByUsuario'));
+                        if(listRolPermisosByUsuario.includes(to.name)){
+                             next();
+                        }else{
+                            next('/administracion/login');           
+                        }
+
+                   }else{
+                        next('/administracion/login');                          
+                   }
+                   
+              }   
+          },
+          { 
+               path: '/administracion/seo/nuevo', 
+               name:'access.new.seo', 
+          component: require('./components/modulos/seo/SeoNuevoComponent').default, 
+              props: false,
+              beforeEnter: (to, from, next) =>{
+                                                 
+                   let usuarioAutenticado = JSON.parse(sessionStorage.getItem('UserAutenticado'));
+                   if(usuarioAutenticado){
+                        console.log('El usuario esta autenticado');
+                        let listRolPermisosByUsuario = JSON.parse(sessionStorage.getItem('listRolPermisosByUsuario'));
+                        if(listRolPermisosByUsuario.includes(to.name)){
+                             next();
+                        }else{
+                            next('/administracion/login');           
+                        }
+
+                   }else{
+                        next('/administracion/login');                          
+                   }
+                   
+              }   
+          },
+          { 
+               path: '/administracion/seo/editar/:id', 
+               name:'access.edit.seo', 
+          component: require('./components/modulos/seo/SeoEditComponent').default, 
+              props: false,
+              beforeEnter: (to, from, next) =>{
+                                                 
+                   let usuarioAutenticado = JSON.parse(sessionStorage.getItem('UserAutenticado'));
+                   if(usuarioAutenticado){
+                        console.log('El usuario esta autenticado');
+                        let listRolPermisosByUsuario = JSON.parse(sessionStorage.getItem('listRolPermisosByUsuario'));
+                        if(listRolPermisosByUsuario.includes(to.name)){
+                             next();
+                        }else{
+                            next('/administracion/login');           
+                        }
+
+                   }else{
+                        next('/administracion/login');                          
+                   }
+                   
+              }   
+          },
+          { 
                           path: '*', 
                      component: require('./components/modulos/Error404Component').default, 
                          props: false },

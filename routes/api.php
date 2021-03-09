@@ -16,6 +16,7 @@ use App\Http\Controllers\Api\PieController;
 use App\Http\Controllers\Api\PaginasController;
 use App\Http\Controllers\Api\MenuSupController;
 use App\Http\Controllers\Api\VideosController;
+use App\Http\Controllers\Api\SeoController;
 
 
 /*
@@ -83,8 +84,6 @@ Route::post('/videos/search', [VideosController::class, 'search']);
 Route::post('/videos/order', [VideosController::class, 'order']);
 
 
-
-
 Route::resource('/productos', ProductosController::class);
 Route::post('/productos/order', [ProductosController::class, 'order']);
 Route::post('/productos/order-auto', [ProductosController::class, 'ordenAutomatico']);
@@ -101,6 +100,10 @@ Route::resource('/pie', PieController::class);
 
 Route::post('/config/tema', [TemaController::class, 'index']);
 Route::post('/general', [GeneralController::class, 'ultimoOrden']);
+
+Route::resource('/seo', SeoController::class);
+Route::post('/seo/search', [SeoController::class, 'searchTexto']);
+
 
 
 

@@ -320,9 +320,33 @@ class RoleSeeders extends Seeder
             'orden' => '24',
          ]);
 
+         $permission = Permission::create([
+            'id' => 26,
+            'name' => 'Acceso Seo',
+            'slug' => 'access.seo',
+            'description' => 'Acceso seo',
+            'orden' => '25',
+         ]);
 
-         $rolesuper->permissions()->sync( [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25] );
-         $roleadmin->permissions()->sync( [2,4,5,7,8,9,10,11,12,13,14,15,16,17,18,20,21,24,25] );
+         $permission = Permission::create([
+            'id' => 27,
+            'name' => 'Acceso Nuevo Seo',
+            'slug' => 'access.new.seo',
+            'description' => 'Acceso bt nuevo seo',
+            'orden' => '26',
+         ]);
+
+         $permission = Permission::create([
+            'id' => 28,
+            'name' => 'Acceso Editar Seo',
+            'slug' => 'access.edit.seo',
+            'description' => 'Acceso bt edit seo',
+            'orden' => '27',
+         ]);
+
+
+         $rolesuper->permissions()->sync( [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28] );
+         $roleadmin->permissions()->sync( [2,4,5,7,8,9,10,11,12,13,14,15,16,17,18,20,21,24,25,26,27,28] );
          $roleuser->permissions()->sync( [] );
 
          

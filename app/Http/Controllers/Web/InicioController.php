@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Web;
 
-use App\Http\Controllers\Controller;
-use App\Models\Menusuperior;
-use App\Models\Product;
-use App\Models\Post;
 use App\Models\Pie;
+use App\Models\Seo;
+use App\Models\Post;
+use App\Models\Product;
+use App\Models\Menusuperior;
+use App\Http\Controllers\Controller;
 
 class InicioController extends Controller
 {
@@ -25,10 +26,19 @@ class InicioController extends Controller
         $menu_sup = Menusuperior::menuSup('web');
         $productos = Product::menuLateral();
         $pie = Pie::where( 'id', '1')->first();
+        $seo = Seo::where( 'pagina', '=', 'inicio')->first();
+        $seo->description = $this->quitarParrafo($seo->description);
         
         $posts = Post::orderBy('orden', 'Asc')->get();
 
-        return view('inicio', compact('menu_sup', 'productos', 'pie', 'posts'));
+        return view('inicio', compact('menu_sup', 'productos', 'pie', 'posts', 'seo'));
+    }
+
+    private function quitarParrafo($cadena){
+
+        $resultado = str_replace("<p>", " ", $cadena);
+        $resultado = str_replace("</p>", " ", $resultado);
+        return trim($resultado);
     }
 
     public function seo(){

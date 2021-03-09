@@ -72,6 +72,11 @@ Vue.component('select-producto-component', require('./components/modulos/product
 
 Vue.component('pie-component', require('./components/modulos/pie/PieComponent').default);
 
+Vue.component('seo-component', require('./components/modulos/seo/SeoComponent').default);
+Vue.component('seo-new-component', require('./components/modulos/seo/SeoNuevoComponent').default);
+Vue.component('seo-edit-component', require('./components/modulos/seo/SeoEditComponent').default);
+
+
 Vue.component('error404Component', require('./components/modulos/Error404Component').default);
 
 /**
