@@ -595,9 +595,6 @@ export default {
 
 <style lang="scss">  
   
-    .fondo-card{
-        background-color: #343a40 !important;
-    }
     .color-texto{
         color:white;
     }

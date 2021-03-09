@@ -386,7 +386,7 @@
         font-size: 1.2em;
     }
     .subrayar{
-        border-bottom: dotted 1px green !important;
+        border-bottom: dotted 1px white !important;
         margin-bottom: 3rem;
     }
 
