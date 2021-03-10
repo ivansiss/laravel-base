@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Api;
 
+
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Image;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\App;
 
 class ProductosController extends Controller
 {
@@ -294,6 +296,22 @@ class ProductosController extends Controller
         }
 
         return response()->json('orden guardado!', 200);
+    }
+
+    public function generarPdf(){
+
+        $data = [
+            'title' => 'Welcome to ItSolutionStuff.com',
+            'date' => date('m/d/Y')
+        ];
+
+        $dompdf = App::make("dompdf.wrapper");
+        $dompdf->loadView("ejemplo", [
+            "nombre" => "Luis Cabrera Benito",
+        ]);
+
+        return $dompdf->stream();
+        $dompdf->download('prueba.pdf');
     }
 
 }

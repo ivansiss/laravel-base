@@ -245,6 +245,21 @@
             },
             generarPdf(){
                 
+                let url = '/productos/pdf';
+
+                axios.get(url).then(response => {    
+
+                    const answers = JSON.stringify(response.data)
+                        Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Pdf generado!!',
+                        showConfirmButton: false,
+                        timer: 2000
+                    })
+
+                    this.parar();
+                });
             },
         },
         computed: {

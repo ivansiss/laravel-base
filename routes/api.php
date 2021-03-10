@@ -17,6 +17,7 @@ use App\Http\Controllers\Api\PaginasController;
 use App\Http\Controllers\Api\MenuSupController;
 use App\Http\Controllers\Api\VideosController;
 use App\Http\Controllers\Api\SeoController;
+use Illuminate\Support\Facades\App;
 
 
 /*
@@ -90,6 +91,8 @@ Route::post('/productos/order-auto', [ProductosController::class, 'ordenAutomati
 Route::post('/productos/search/text', [ProductosController::class, 'searchTexto']);
 Route::post('/productos/search', [ProductosController::class, 'search']);
 Route::post('/productos/eliminar/pdf', [ProductosController::class, 'eliminarPdf']);
+
+Route::post('/productos/pdf', [ProductosController::class, 'generarPdf']);
 
 
 Route::resource('/menu-sup', MenuSupController::class);

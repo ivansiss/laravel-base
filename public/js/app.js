@@ -8570,16 +8570,32 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this4.$router.push(url1)["catch"](function (err) {});
       });
     },
-    generarPdf: function generarPdf() {}
+    generarPdf: function generarPdf() {
+      var _this5 = this;
+
+      var url = '/productos/pdf';
+      axios.get(url).then(function (response) {
+        var answers = JSON.stringify(response.data);
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Pdf generado!!',
+          showConfirmButton: false,
+          timer: 2000
+        });
+
+        _this5.parar();
+      });
+    }
   }),
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])('dsAdmin', ['ds_admin', 'spinner'])), Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])('mdGeneral', ['ultimoOrden'])),
   created: function created() {
-    var _this5 = this;
+    var _this6 = this;
 
     console.log('items');
     this.loadUltimoOrden('imagenes');
     setTimeout(function () {
-      _this5.pararSpinner();
+      _this6.pararSpinner();
     }, 4000);
   },
   mounted: function mounted() {

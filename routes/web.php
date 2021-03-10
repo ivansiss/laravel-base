@@ -57,7 +57,7 @@ Route::post('/estas/formacion/{search?}', [PaginasController::class, 'search'])-
 
 Route::get('/fabricante/{nombre}', [ProductoController::class, 'getProducto'])->name('paginas');
 
-
+Route::get('/productos/pdf', [ProductoController::class, 'generarPdf'])->name('pdf');
 
 //PRUEBAS
 

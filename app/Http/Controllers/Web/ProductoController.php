@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Models\Tarjeta;
 use App\Models\Menusuperior;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\App;
 
 class ProductoController extends Controller
 {
@@ -30,5 +31,14 @@ class ProductoController extends Controller
         return view('producto', compact('menu_sup', 'productos', 'pie', 'post'));
     }
 
-   
+    public function generarPdf(){
+
+        $dompdf = App::make("dompdf.wrapper");
+        $dompdf->loadView("ejemplo", [
+            "nombre" => "Luis Cabrera Benito",
+        ]);
+
+        return $dompdf->stream();
+    }
+
 }
