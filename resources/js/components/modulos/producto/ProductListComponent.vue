@@ -2,27 +2,20 @@
     <div class="container mt-5">
 
             <div class="d-flex justify-content-start">
-                <div class="ml-3 mb-5" v-bind:style="{ 
-                                        fontSize: ds_admin[2].size,
-                                        fontWeight: 700,
-                                        fontFamily: ds_admin[2].family,
-                                        color: ds_admin[2].color,
-                                        borderBottom: ds_admin[2].border,
-                                        width: ds_admin[2].width,
-
-                                    }"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>roductos</div>
+                <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>roductos</div>
                 <spinner-component :spinner="spinner"></spinner-component>
             </div>
             <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
                 <btns-component class="mr-3" :tipo="3" v-on:traeEmit="ordenAutomatico"></btns-component>
                 <btns-component class="mr-3" :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
-                <router-link class="btn btn-lg mr-3" :style="{ border: ds_admin[6].border }" :to="{name: 'access.new.products', params: {ultimoOrden:ultimoOrden}}">
-                    <i :class="ds_admin[6].icono" :style="{color: ds_admin[6].color}"></i>
+                <btns-component class="mr-3" :tipo="21" v-on:traeEmit="generarPdf()"></btns-component>
+                <router-link class="btn btn-lg myboton" :to="{name: 'access.new.products', params: {ultimoOrden:ultimoOrden}}">
+                    <i :class="ds_admin[6].icono" class="myicono"></i>
                 </router-link>
             </div>
 
             <ul class="list-unstyled" v-if="items">
-                <li class="media shadow-lg mb-5" v-for="item in items" :key="item.titulo">
+                <li class="media shadow-lg mb-5 mt-5" v-for="item in items" :key="item.titulo">
                     <product-list-item-component :ultimoOrden="ultimoOrden" :item="item" v-on:editarEmit="editar(item)" v-on:eliminarEmit="eliminar(item)" v-on:SubirEmit="subir"  v-on:BajarEmit="bajar"></product-list-item-component>
                 </li>
             </ul>
@@ -249,7 +242,10 @@
                             
   
                 });
-            }
+            },
+            generarPdf(){
+                
+            },
         },
         computed: {
             ...mapState('dsAdmin', ['ds_admin', 'spinner']),

@@ -1,10 +1,10 @@
 <template>
 
          <!--Panel-->
-        <div class="card card-body mb-3 mt-5 z-depth-4 bg-puente" :style="{ backgroundColor: ds_admin[12].backgroundColor, color:ds_admin[12].color }">
+        <div class="card-body mb-3 mt-5 z-depth-4 fondo-principal">
 
-            <div class="" style="position:relative;">
-                <span class="badge ancho-categoria z-depth-4 p-3  text-md" :style="{position: 'absolute', top: '-55px', left:'0', backgroundColor: ds_admin[13].backgroundColor, border: ds_admin[13].border }">
+            <div class="text-white" style="position:relative;">
+                <span class="badge ancho-categoria z-depth-4 p-3  text-md" :style="{position: 'absolute', top: '-55px', left:'0', border: ds_admin[13].border }">
                     <i class="far fa-eye mr-3" :class="pag['posted'] == 'yes' ? 'color-encendido' : 'color-apagado'" ></i>
                     <span class="badge badge-pill bg-primario mr-2">{{pag.orden}}</span>
                     Tipo Imagen
@@ -39,8 +39,7 @@
                 <btns-component class="mr-3" v-if="pag.orden != 0" :tipo="7" v-on:traeEmit="pagSubir(pag)"></btns-component>
                 <btns-component class="mr-3" v-if="pag.orden != ultimoOrden" :tipo="8" v-on:traeEmit="pagBajar(pag)"></btns-component>
                 <router-link 
-                                class="btn btn-outline-primary btn-lg mr-3" 
-                                :style="{ border: ds_admin[9].border, color: ds_admin[9].color }" 
+                                class="btn btn-lg myboton" 
                                 :to="{name: 'access.edit.paginas', params: {id: pag.id}}">
                                 <i :class="ds_admin[9].icono"></i>
                 </router-link>

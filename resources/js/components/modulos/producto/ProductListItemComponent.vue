@@ -1,18 +1,16 @@
 <template>
 
      <!--Panel-->
-        <div class="card card-body" :style="{ 
-                                                backgroundColor: ds_admin[14].backgroundColor,
-                                                color:ds_admin[14].color,
-                                            }">
+        <div class="card-body fondo-card">
             <div class="mb-3" style="position:relative;">
-                <span class="badge ancho-categoria p-3  text-md" :style="{position: 'absolute', top: '-55px', left:'0', backgroundColor: ds_admin[14].backgroundColor, border: ds_admin[14].border }">
+                <span class="badge ancho-categoria p-3 text-md tipo-post" :style="{position: 'absolute', top: '-55px', left:'0' }">
                     <span class="badge badge-pill bg-primario mr-2">{{item.orden}}</span>
                    {{ item.id }}
                 </span>
-                <div class="mt-0 d-flex justify-content-end mr-4" :style="{ color:ds_admin[4].texto }" v-html="item.fecha_formateada">
+                <div class="mt-0 d-flex justify-content-end mr-4 fecha-formateada" :style="{ color:ds_admin[4].texto }" v-html="item.fecha_formateada">
                 </div>
             </div>
+
             
                     <div class="row">
                         <div class="col-12">
@@ -50,31 +48,26 @@
                     <!-- Carousel -->
                     <div class="row mt-3">
                         <div class="col-12">
-                        <p v-html="item.titulo" :style="{ 
-                                                backgroundColor: ds_admin[14].backgroundColor,
-                                                color:ds_admin[14].linea,
-                                                fontSize:ds_admin[14].size,
-                                                fontFamily:ds_admin[14].family,
-                                            }"></p>
+                            <p v-html="item.titulo" class="titulo-tarjeta subrayar"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                        <p class="text-muted text-sm" v-html="item.resena"></p>
+                        <p class="text-md texto-tarjeta" v-html="item.resena"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                        <h2 class="lead" v-html="item.subtitulo"></h2>
+                        <h2 class="lead subrayar" v-html="item.subtitulo"></h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                        <p class="text-muted text-sm" v-html="item.contenido"></p>
+                        <p class="texto-tarjeta" v-html="item.contenido"></p>
                         </div>
                     </div>
                     
-                    <div class="card card-primary"> 
+                    <div class="card-primary"> 
                                    
                         <div class="card-body">
 
@@ -82,16 +75,16 @@
                             <div class="row">
                                 <div class="col-sm-12 text-dark">
                                     <div class="mb-3" style="position:relative;">
-                                        <span class="badge ancho-categoria z-depth-4 p-3  text-md" :style="{position: 'absolute', top: '-10px', left:'0', backgroundColor: ds_admin[14].backgroundColor, border: ds_admin[14].border, color:  ds_admin[14].color}">
+                                        <span class="badge ancho-categoria z-depth-4 p-3 text-md" :style="{position: 'absolute', top: '-10px', left:'0', backgroundColor: ds_admin[14].backgroundColor, border: ds_admin[14].border, color:  ds_admin[14].color}">
                                             Iconos
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" :style="{border: ds_admin[15].border}">
+                            <div class="row pb-3" :style="{border: ds_admin[15].border}">
                                 <div class="col-sm-2 text-center pt-4" v-for="ico in prod_icono" :key="ico.id">
                                         <img class="img-fluid mb-2" @click="toast(ico['alt'])" v-bind:src=" '/storage/imagenes/icono.png'" alt="" v-if="ico['visible'] == 0">
-                                        <p class="text-dark">{{ ico['image'] }}</p>
+                                        <p>{{ ico['image'] }}</p>
                                         <img class="img-fluid mb-2" @click="toast(ico['alt'])" v-bind:src=" '/storage/imagenes/' + ico.image" alt="" v-if="ico['visible'] == 1">
                                 </div>
                             </div>
@@ -104,13 +97,11 @@
                                         <span class="badge ancho-categoria p-3 text-md" :style="{position: 'absolute', top: '10px', left:'0', backgroundColor: ds_admin[14].backgroundColor, border: ds_admin[14].border, color:  ds_admin[14].color}">
                                             Colores
                                         </span>
-                                        <div class="mt-0 d-flex justify-content-end mr-4" :style="{ color:ds_admin[4].texto }" v-html="item.fecha_formateada">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" :style="{border: ds_admin[15].border}">
-                                <div class="col-sm-2 text-center pt-4" v-for="lacado in prod_lacado" :key="lacado.id">     
+                            <div class="row pb-3" :style="{border: ds_admin[15].border}">
+                                <div class="col-sm-2 text-center pt-5 pb-3" v-for="lacado in prod_lacado" :key="lacado.id">     
                                     <img class="img-fluid mb-2" @click="toast(lacado['alt'])" v-bind:src=" '/storage/imagenes/color.png'" alt="" v-if="lacado['visible'] == 0">
                   
                                     <img class="img-fluid mb-2" @click="toast(lacado['alt'])" v-bind:src=" '/storage/imagenes/' + lacado.image" alt="" v-if="lacado['visible'] == 1">
@@ -128,8 +119,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" :style="{border: ds_admin[15].border}">
-                                <div class="col-sm-12 pt-4 text-center">     
+                            <div class="row pb-3" :style="{border: ds_admin[15].border}">
+                                <div class="col-sm-12 text-center mt-5 mb-3">     
                                     <img class="img-fluid mb-2" @click="toast(prod_tarifa.image)" v-bind:src=" '/storage/imagenes/color.png'" :alt="prod_tarifa.alt" v-if="prod_tarifa.visible == 0">
                   
                                     <img class="img-fluid mb-2" @click="toast(prod_tarifa.image)" v-bind:src=" '/storage/imagenes/' + prod_tarifa.image" :alt="prod_tarifa.alt" v-if="prod_tarifa.visible == 1">
@@ -138,20 +129,18 @@
                             <!-- /tarifa -->  
                             
                             <!-- sellos -->  
-                            <div class="row mt-1">
+                            <div class="row">
                                 <div class="col-sm-12">
                                     <div class="mb-3" style="position:relative;">
                                         <span class="badge ancho-categoria p-3 text-md" :style="{position: 'absolute', top: '20px', left:'0', backgroundColor: ds_admin[14].backgroundColor, border: ds_admin[14].border, color:  ds_admin[14].color}">
                                             Sellos
                                         </span>
-                                        <div class="mt-0 d-flex justify-content-end mr-4" :style="{ color:ds_admin[4].texto }" v-html="item.fecha_formateada">
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mb-5" :style="{border: ds_admin[15].border}">
-                                <div class="col-sm-2 mt-5" v-for="sello in prod_sello" :key="sello.id">
-                                    <img class="img-fluid mb-2" @click="toast(sello['alt'])" v-bind:src=" '/storage/imagenes/sello.jpg'" alt="" v-if="sello['visible'] == 0">
+                                <div class="col-sm-2 mt-5 mb-4 ml-3" v-for="sello in prod_sello" :key="sello.id">
+                                    <img class="img-fluid" @click="toast(sello['alt'])" v-bind:src=" '/storage/imagenes/sello.jpg'" alt="" v-if="sello['visible'] == 0">
   
                                     <img class="img-fluid mb-2" @click="toast(sello['alt'])" v-bind:src=" '/storage/imagenes/' + sello.image" alt="" v-if="sello['visible'] == 1">
                                 </div>
@@ -159,13 +148,12 @@
                             <!-- /sellos -->
                         </div>
 
-                    </div>
-                      
+                    </div>                     
             
             <div class="d-flex justify-content-end mt-4">
                 <btns-component class="mr-3" v-if="item.orden != 0" :tipo="7" v-on:traeEmit="subir(item)"></btns-component>
                 <btns-component class="mr-3" v-if="item.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(item)"></btns-component>
-                <router-link class="btn btn-outline-primary btn-lg mr-3" :style="{ border: ds_admin[9].border, color: ds_admin[9].color }" :to="{name: 'access.edit.products', params: {id: item.id}}"><i :class="ds_admin[9].icono"></i></router-link>
+                <router-link class="btn btn-lg myboton mr-3" :to="{name: 'access.edit.products', params: {id: item.id}}"><i :class="ds_admin[9].icono" class="myicono"></i></router-link>
                 <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminar(item)"></btns-component>
             </div>
 

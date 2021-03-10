@@ -2,24 +2,15 @@
     <div class="container mt-5">
 
         <div class="d-flex justify-content-start">
-            <div class="ml-3 mb-5" v-bind:style="{ 
-                                    fontSize: ds_admin[2].size,
-                                    fontWeight: 700,
-                                    fontFamily: ds_admin[2].family,
-                                    color: ds_admin[2].color,
-                                    borderBottom: ds_admin[2].border,
-                                    width: ds_admin[2].width,
-
-                                }"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>osts</div>
+            <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>osts</div>
             <spinner-component :spinner="spinner"></spinner-component>
         </div>
-
 
         <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
 
             <btns-component :tipo="5" class="mr-3" v-on:traeEmit="saveOrden"></btns-component>
-            <router-link class="btn btn-lg" :style="{ border: ds_admin[6].border }" :to="{name: 'access.new.posts', params: {ultimoOrden:ultimoOrden}}">
-                <i :class="ds_admin[6].icono" :style="{color: ds_admin[6].color}"></i>
+            <router-link class="btn btn-lg myboton" :to="{name: 'access.new.posts', params: {ultimoOrden:ultimoOrden}}">
+                <i :class="ds_admin[6].icono" class="myicono"></i>
             </router-link>
         </div>
 

@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-end">
-                        <h6 class="widget-user-desc-m color-texto">Última modificación: {{ video.fecha_formateada }}</h6>
+                        <h6 class="widget-user-desc-m texto-blanco">Última modificación: {{ video.fecha_formateada }}</h6>
                     </div>
                 </div>
                 <div class="row">
@@ -14,15 +14,15 @@
                             <iframe class="embed-responsive-item" v-bind:src=" '/storage/videos/' + video.link" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 color-texto">
+                    <div class="col-12 col-md-12 texto-blanco">
                         <h5 class="widget-user-desc mr-2 my-3">id: {{video.id}}</h5>
-                        <h4 class="widget-user-desc color-texto-expecial linea-debajo-texto">{{ video.orden }}.- {{ video.titulo }}</h4>
+                        <h4 class="widget-user-desc titulo-listas linea-debajo-texto">{{ video.orden }}.- {{ video.titulo }}</h4>
                     </div>
                 </div>
             </div>
             <div class="card-footer p-0">
             <ul class="nav flex-column">
-                <li class="nav-item mt-5 text-lg color-texto">
+                <li class="nav-item mt-5 text-lg texto-blanco">
 
                     - Descripción: {{ video.descripcion }}
                     <span class="float-right badge color-texto mb-2 linea-debajo-texto" v-if="!video.descripcion">
@@ -30,7 +30,7 @@
                     </span>
 
                 </li>
-                <li class="nav-item mt-2 text-lg color-texto">
+                <li class="nav-item mt-2 text-lg texto-blanco">
 
                    - Url-limpia: {{ video.miniatura }}
                     <span        class="float-right badge color-texto mb-2 linea-debajo-texto"
@@ -39,7 +39,7 @@
                     </span>
             
                 </li>
-                <li class="nav-item mt-2 text-lg color-texto">
+                <li class="nav-item mt-2 text-lg texto-blanco">
 
                     - Link: {{ video.link }}
                     <span        class="float-right badge color-texto mb-2 linea-debajo-texto"
@@ -48,7 +48,7 @@
                     </span>
             
                 </li>
-                <li class="nav-item mt-2 text-lg color-texto">
+                <li class="nav-item mt-2 text-lg texto-blanco">
 
                     - Size: {{ video.size }}
                     <span        class="float-right badge color-texto mb-2 linea-debajo-texto"

@@ -1,6 +1,6 @@
 <template>
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-fondo">
+    <nav class="main-header navbar navbar-expand fondo-navbar">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
             <li class="nav-item">

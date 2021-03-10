@@ -1,37 +1,36 @@
 <template>
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-fondo elevation-4" v-if="listPermisos.includes('access.sidebar')">
+  <aside class="main-sidebar sidebar-fondo elevation-4 text-dark" v-if="listPermisos.includes('access.sidebar')">
     
-   
     <!-- Sidebar -->
     <div class="sidebar">
+
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <router-link class="d-block text-white" :to="{name:'access.users'}">{{ usuario['name'] }}</router-link>
-          <!-- , params:{id:usuario['id']} -->
+          {{ usuario['name'] }}
         </div>
       </div>
+      <!-- /.Sidebar user (optional) -->
 
-       <!-- Sidebar user (optional) -->
+      <!-- Cerrar sesión -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex cerrar-sesion">
         <div class="info">
-          <a href="#" class="d-block text-white" @click.prevent="logout">
-            <i class="fas fa-sign-out-alt text-white"></i> Cerrar Sesión
+          <a href="#" class="d-block text-dark" @click.prevent="logout">
+            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
           </a>
         </div>
       </div>
+      <!-- /.Cerrar sesión -->
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
           <li class="nav-header sidebar-titulos">
-            <router-link class="nav-link active" :to="'/administracion/'" v-bind:style="{backgroundColor: 'transparent'}">
+            <router-link class="nav-link active" :to="'/administracion/'">
                 ADMINISTRACIÓN
             </router-link>
           </li>
@@ -185,7 +184,7 @@
             <a href="#" class="nav-link">
               <i class="fas fa-book-open mr-2 color-icono-sidebar"></i>
               <p class="sidebar-subtitulos">
-                Administración
+                Redes sociales
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -193,19 +192,19 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p class="sidebar-subtitulos">Logo</p>
+                  <p class="sidebar-subtitulos">Configuración redes</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p class="sidebar-subtitulos">Datos generales</p>
+                  <p class="sidebar-subtitulos">Community manager</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p class="sidebar-subtitulos">Clases en video</p>
+                  <p class="sidebar-subtitulos">gráficas</p>
                 </a>
               </li>
             </ul>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container" v-bind:style="{ backgroundColor: ds_admin[14].backgroundColor }">
+    <div class="container fondo-principal">
         <!-- Productos -->
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -20,13 +20,11 @@
                         </span>
                     </form>
                     <!-- /Search form -->
-                    
+                    <!-- Añade imagenes al carousel -->
                     <ul class="list-group mt-2" v-if="imagenes.length">
                         <li class="list-group-item d-flex justify-content-between" v-for="img in imagenes" :key="img.id">
-                            <div class="d-flex">
-                                <btns-component :tipo="16" v-on:traeEmit="addProducto(img)"></btns-component>  
-                                <img class="mb-3 rounded img-fluid m-l-2"  id="foto1" v-bind:src=" '/storage/imagenes/' + img.image" alt="Generic placeholder image" width="50px">
-                            </div>
+                            <btns-component :tipo="16" v-on:traeEmit="addProducto(img)"></btns-component>  
+                            <img class="mb-3 rounded img-fluid m-l-2"  id="foto1" v-bind:src=" '/storage/imagenes/' + img.image" alt="Generic placeholder image" width="50px">
                             {{img.image}}
                         </li>
                     </ul>
@@ -56,10 +54,8 @@
                     <div id="section1" class="p-2 ml-3" :style="{ borderBottom:ds_admin[16].border }">Añade iconos</div>
                     <ul class="list-group mt-2" v-if="imagenesIconos.length">
                         <li class="list-group-item d-flex justify-content-between" v-for="imgI in imagenesIconos" :key="imgI.id">
-                            <div class="d-flex">
-                                <btns-component :tipo="16" v-on:traeEmit="addIcono(imgI)"></btns-component>  
-                                <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgI.image" alt="Generic placeholder image" width="50px">
-                            </div>
+                            <btns-component :tipo="16" v-on:traeEmit="addIcono(imgI)"></btns-component>  
+                            <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgI.image" alt="Generic placeholder image" width="50px">
                             {{imgI.image}}
                         </li>
                     </ul>
@@ -88,10 +84,8 @@
                     <div id="section1" class="p-2 ml-3" :style="{ borderBottom:ds_admin[16].border }">Añade colores</div>                          
                     <ul class="list-group mt-2" v-if="imagenesColores.length">
                         <li class="list-group-item d-flex justify-content-between" v-for="imgC in imagenesColores" :key="imgC.id">
-                            <div class="d-flex"> 
-                                <btns-component :tipo="16" v-on:traeEmit="addColor(imgC)"></btns-component>  
-                                <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgC.image" alt="Generic placeholder image" width="50px">
-                            </div>
+                            <btns-component :tipo="16" v-on:traeEmit="addColor(imgC)"></btns-component>  
+                            <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgC.image" alt="Generic placeholder image" width="50px">
                             {{imgC.image}}
                         </li>
                     </ul>
@@ -104,10 +98,8 @@
                     </div>
                     <ul class="list-group mt-3" v-if="listaColores.length">
                         <li class="list-group-item d-flex justify-content-between" v-for="(color, index) in listaColores" :key="color.image">
-                            <div class="d-flex"> 
-                                <btns-component :tipo="17" v-on:traeEmit="delColor(index)"></btns-component>
-                                <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + color.image" alt="Generic placeholder image" width="50px">
-                            </div>
+                            <btns-component :tipo="17" v-on:traeEmit="delColor(index)"></btns-component>
+                            <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + color.image" alt="Generic placeholder image" width="50px">
                             {{color.image}}
                         </li>
                     </ul>
@@ -123,10 +115,8 @@
                     <div id="section1" class="p-2 ml-3" :style="{ borderBottom:ds_admin[16].border }">Añade Sellos</div>                                
                     <ul class="list-group mt-2" v-if="imagenesSellos.length">
                         <li class="list-group-item d-flex justify-content-between" v-for="imgS in imagenesSellos" :key="imgS.id">
-                            <div class="d-flex"> 
-                                <btns-component :tipo="16" v-on:traeEmit="addSello(imgS)"></btns-component>  
-                                <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgS.image" alt="Generic placeholder image" width="50px">
-                            </div>  
+                            <btns-component :tipo="16" v-on:traeEmit="addSello(imgS)"></btns-component>  
+                            <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgS.image" alt="Generic placeholder image" width="50px">
                             {{imgS.image}}
                         </li>
                     </ul>
@@ -155,10 +145,8 @@
                     <div id="section1" class="p-2 ml-3" :style="{ borderBottom:ds_admin[16].border }">Añade Tarifas</div>                                
                     <ul class="list-group mt-2" v-if="imagenesTarifas.length">
                         <li class="list-group-item d-flex justify-content-between" v-for="imgT in imagenesTarifas" :key="imgT.id">
-                            <div class="d-flex"> 
-                                <btns-component :tipo="16" v-on:traeEmit="addTarifa(imgT)"></btns-component>  
-                                <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgT.image" alt="Generic placeholder image" width="50px">
-                            </div>  
+                            <btns-component :tipo="16" v-on:traeEmit="addTarifa(imgT)"></btns-component>  
+                            <img class="mb-3 mr-3 rounded img-fluid z-depth-3"  id="foto1" v-bind:src=" '/storage/imagenes/' + imgT.image" alt="Generic placeholder image" width="50px">
                             {{imgT.image}}
                         </li>
                     </ul>

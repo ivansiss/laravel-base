@@ -2,16 +2,8 @@
     <div class="container mt-5">
 
         <div class="d-flex justify-content-start">
-            <div class="ml-3 mb-5" v-bind:style="{ 
-                                    fontSize: ds_admin[2].size,
-                                    fontWeight: 700,
-                                    fontFamily: ds_admin[2].family,
-                                    color: ds_admin[2].color,
-                                    borderBottom: ds_admin[2].border,
-                                    width: ds_admin[2].width,
-
-                                }"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>áginas web</div>
-            <spinner-component :spinner="spinner"></spinner-component>
+                <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>áginas web</div>
+                <spinner-component :spinner="spinner"></spinner-component>
         </div>
 
 
@@ -19,12 +11,11 @@
 
             <btns-component :tipo="5" v-on:traeEmit="saveOrden"></btns-component>
             <router-link 
-                            class="btn btn-lg ml-3" 
-                           :style="{ border: ds_admin[6].border }" 
+                            class="btn btn-lg myboton ml-3" 
                               :to="{name: 'access.new.pagina', params: {ultimoOrden:ultimoOrden}}"
                             v-if="permisos.includes('access.super')">
 
-                            <i :class="ds_admin[6].icono" :style="{color: ds_admin[6].color}"></i>
+                            <i :class="ds_admin[6].icono" class="myicono"></i>
             </router-link>
         </div>
 

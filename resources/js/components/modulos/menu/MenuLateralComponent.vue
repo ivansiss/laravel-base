@@ -385,10 +385,6 @@
     .swal2-title{
         font-size: 1.2em;
     }
-    .subrayar{
-        border-bottom: dotted 1px green !important;
-        margin-bottom: 3rem;
-    }
 
 </style>    
 

@@ -3,44 +3,34 @@
 
     <div class="container mt-5" v-if="permisos.includes('access.users')"> 
  
-
         <div class="d-flex justify-content-start">
-            <div class="ml-3 mb-5" v-bind:style="{ 
-                                    fontSize: ds_admin[2].size,
-                                    fontWeight: 700,
-                                    fontFamily: ds_admin[2].family,
-                                    color: ds_admin[2].color,
-                                    borderBottom: ds_admin[2].border,
-                                    width: ds_admin[2].width,
-
-                                }"><span v-bind:style="{ color: ds_admin[2].linea }">C</span>lientes</div>
+            <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">C</span>lientes</div>
             <spinner-component :spinner="spinner"></spinner-component>
         </div>
        
-        <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
+        <div class="d-flex justify-content-end ml-3 mb-3 mr-3 subrayar-verde">    
             
-            <btns-component :tipo="3" class="mr-3" v-on:traeEmit="ordenAutomatico"></btns-component>
-            <btns-component :tipo="5" class="mr-3" v-on:traeEmit="saveOrden"></btns-component>
-            <btns-component :tipo="6" v-on:traeEmit="nuevoDato"></btns-component>
+            <btns-component :tipo="3" class="mr-3 mb-3" v-on:traeEmit="ordenAutomatico"></btns-component>
+            <btns-component :tipo="5" class="mr-3 mb-3" v-on:traeEmit="saveOrden"></btns-component>
+            <btns-component :tipo="6" class="mb-3 mr-3" v-on:traeEmit="nuevoDato"></btns-component>
+            <btns-component :tipo="22" class="mb-3" v-on:traeEmit="usuarioEmail"></btns-component>
 
         </div>
-        <hr class="mb-5" style="background-color: #343a40;">
 
-         
-        <div class="row">
+        <div class="row texto-listas">
             <div class="col-12 col-sm-12 col-md-12 d-flex align-items-stretch" v-for="user in items" :key="user.name">
               <div class="card fondo-card">
                 <div class="card-header border-bottom-0 d-flex justify-content-end">
-                  <span class="color-texto">Última modificación: {{ user.fecha_formateada }}</span>
+                  <span class="fecha-formateada subrayar">Última modificación:  {{ user.fecha_formateada }}</span>
                 </div>
-                <div class="card-body pt-0 color-texto">
+                <div class="card-body pt-0">
                   <div class="row">
                     <div class="col-12">
-                      <h2 class="lead linea-debajo-texto"><b class="color-texto-expecial">{{ user.orden }}.- {{ user.name}}</b></h2>
-                      <p class="text-md">{{ user.email }}</p>
-                      <ul class="ml-4 mb-0 fa-ul">
-                        <li class="text-md"><span class="fa-li"><i class="fas fa-user-tag"></i></span> Rol: {{ user.rol[0]['name'] }}</li>
-                        <li class="text-md mt-2"><span class="fa-li"><i class="far fa-clock"></i></span> V-Email: {{ user.verif_email }}</li>
+                      <h2 class="lead subrayar"><b class="titulo-tarjeta">{{ user.orden }}. Empresa: {{ user.name}}</b></h2>
+                      <p class="mt-3 texto-tarjeta">{{ user.email }}</p>
+                      <ul class="ml-4 mb-0 fa-ul texto-tarjeta">
+                        <li class="texto-tarjeta"><span class="fa-li"></span> Rol: {{ user.rol[0]['name'] }}</li>
+                        <li class="texto-tarjeta"><span class="fa-li"></span> V-Email: {{ user.verif_email }}</li>
                       </ul>
                     </div>
                    
@@ -48,7 +38,7 @@
                 </div>
                 <div class="card-footer">
                   <div class="text-right">
-                    <li class="d-flex justify-content-end mt-4">
+                    <li class="d-flex justify-content-end">
                         <btns-component  v-if="user.orden != 0" :tipo="7" v-on:traeEmit="subir(user)"></btns-component>
                         <btns-component   v-if="user.orden != ultimoOrden" :tipo="8" v-on:traeEmit="bajar(user)"></btns-component>
                     </li>
@@ -56,6 +46,7 @@
                         <btns-component class="mr-3" :tipo="9" v-on:traeEmit="editarDato(user)"></btns-component>
                         <btns-component class="mr-3" :tipo="10" v-on:traeEmit="eliminarDato(user)"></btns-component>
                         <btns-component class="mr-3" :tipo="20" v-on:traeEmit="restablecer_pass(user)"></btns-component>
+                        <btns-component class="" :tipo="23" v-on:traeEmit="usuarioMuchosEmail"></btns-component>
 
                     </div>
                   </div>
@@ -528,7 +519,13 @@
                         //this.$router.push(url1).catch(err => {});
                             
                 });
-            }
+            },
+            usuarioEmail(){
+
+            },
+            usuarioMuchosEmail(){
+
+            },
         },
         computed: {
             ...mapState('dsAdmin', ['ds_admin', 'spinner']),
@@ -569,14 +566,6 @@
     }
 </script>
 <style lang="scss">    
-  
-   .color-texto{
-       color:white;
-   }
-
-   .color-texto-expecial{
-       color: #789bd6;
-   }
 
    .linea-debajo-texto{
         border-bottom: dotted 1px #778a46;

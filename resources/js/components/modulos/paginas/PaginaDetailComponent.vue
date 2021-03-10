@@ -6,22 +6,15 @@
     <div class="card">
 
         <div class="d-flex justify-content-start">
-            <div class="ml-3 mb-5" v-bind:style="{ 
-                                    fontSize: ds_admin[2].size,
-                                    fontWeight: 700,
-                                    fontFamily: ds_admin[2].family,
-                                    color: ds_admin[2].color,
-                                    borderBottom: ds_admin[2].border,
-                                    width: ds_admin[2].width,
-
-                                }"><span v-bind:style="{ color: ds_admin[2].linea }">E</span>ditar Página</div>
+            <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>ágina editar</div>
             <spinner-component :spinner="spinner"></spinner-component>
         </div>
+
         <!--Card content-->
-        <div class="card-body px-lg-5 pt-5" :style="{ backgroundColor: ds_admin[12].backgroundColor, color:ds_admin[12].color }">
+        <div class="card-body px-lg-5 pt-5 fondo-principal">
 
             <!-- Form -->
-            <form class="text-left" style="color: #757575;" @submit.prevent="submit">
+            <form class="text-left text-white" @submit.prevent="submit">
                 
                 <!-- Categoria -->
                 <div class="d-flex justify-content-start ">

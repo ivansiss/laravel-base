@@ -3,19 +3,11 @@
     <div class="mt-5">
 
          <div class="d-flex justify-content-start">
-            <div class="ml-3 mb-5" v-bind:style="{ 
-                                    fontSize: ds_admin[2].size,
-                                    fontWeight: 700,
-                                    fontFamily: ds_admin[2].family,
-                                    color: ds_admin[2].color,
-                                    borderBottom: ds_admin[2].border,
-                                    width: ds_admin[2].width,
-
-                                }"><span v-bind:style="{ color: ds_admin[2].linea }">I</span>mágenes</div>
+            <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">I</span>mágenes</div>
             <spinner-component :spinner="spinner"></spinner-component>
         </div>
 
-        <div class="alert alert-dismissible mb-5 tablero mt-5" v-bind:style="{ backgroundColor: ds_admin[11].backgroundColor, color: ds_admin[11].color }">
+        <div class="alert alert-dismissible mb-5 tablero mt-5 fondo-card texto-blanco">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
             <h5 :style="{ borderBottom:  ds_admin[11].border }"><i class="icon fas fa-info"></i> <span v-bind:style="{ color:  ds_admin[11].linea }">I</span>nformación</h5>
             
@@ -94,7 +86,7 @@ export default {
                     
                 Swal.mixin({
                 input: 'text',
-                confirmButtonText: 'Next &rarr;',
+                confirmButtonText: 'Siguiente &rarr;',
                 showCancelButton: true,
                 progressSteps: ['1', '2', '3', '4', '5', '6', '7']
                     }).queue([
@@ -595,14 +587,6 @@ export default {
 
 <style lang="scss">  
   
-    .color-texto{
-        color:white;
-    }
-
-    .color-texto-expecial{
-        color: #789bd6;
-    }
-
     .tablero{
         width: 95%;
         margin-left: 1%;

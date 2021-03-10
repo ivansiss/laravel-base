@@ -4,15 +4,7 @@
         <div class="card">
 
             <div class="d-flex justify-content-start">
-                <div class="ml-3 mb-5" v-bind:style="{ 
-                                        fontSize: ds_admin[2].size,
-                                        fontWeight: 700,
-                                        fontFamily: ds_admin[2].family,
-                                        color: ds_admin[2].color,
-                                        borderBottom: ds_admin[2].border,
-                                        width: ds_admin[2].width,
-
-                                    }"><span v-bind:style="{ color: ds_admin[2].linea }">N</span>uevo Producto</div>
+                <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>roducto Nuevo</div>
                 <spinner-component :spinner="spinner"></spinner-component>
             </div>
 
@@ -31,10 +23,7 @@
                 </select-producto-component>
 
                 <!-- Form -->
-                <form class="text-left mt-5 p-5" @submit.prevent="submit" v-bind:style="{ 
-                                        color: ds_admin[14].color,
-                                        backgroundColor: ds_admin[14].backgroundColor
-                                    }">  
+                <form class="text-left mt-5 p-5 fondo-principal text-white" @submit.prevent="submit">  
 
                     <!-- Title -->
                     <div class="md-form mt-3">

@@ -2,16 +2,10 @@
 
     <div class="container mt-5">
 
-        <h2 class="altura-linea"></h2>
-        <div class="ml-3" v-bind:style="{ 
-                                fontSize: ds_admin[2].size,
-                                fontWeight: 700,
-                                fontFamily: ds_admin[2].family,
-                                color: ds_admin[2].color,
-                                borderBottom: ds_admin[2].border,
-                                width: ds_admin[2].width,
-
-                            }"><span v-bind:style="{ color: ds_admin[2].linea }">R</span>oles</div>
+        <div class="d-flex justify-content-start">
+            <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">R</span>oles</div>
+            <spinner-component :spinner="spinner"></spinner-component>
+        </div>
        
         <div class="d-flex justify-content-end ml-3 mb-3 mr-3">    
             <btns-component :tipo="6" v-on:traeEmit="nuevoDato"></btns-component>
@@ -22,16 +16,15 @@
                 <div class="col-12 col-sm-12 col-md-6 d-flex align-items-stretch" v-for="card_rol in items" :key="card_rol.name">
                     <div class="card fondo-card">
                         <div class="card-header border-bottom-0 d-flex justify-content-end">
-                            <span class="color-texto">Última modificación: {{ card_rol.fecha_formateada }}</span>
+                            <span class="fecha-formateada">Última modificación: {{ card_rol.fecha_formateada }}</span>
                         </div>
-                        <div class="card-body pt-0 color-texto">
+                        <div class="card-body pt-0 texto-blanco">
                             <div class="row">
                                 <div class="col-12">
-                                    <h2 class="lead linea-debajo-texto"><b class="color-texto-expecial">{{ card_rol.orden }}.- {{ card_rol.name}}</b></h2>
-                                    <p class="text-md">Rol: {{ card_rol.slug }}</p>
+                                    <h2 class="lead titulo-tarjeta subrayar">{{ card_rol.orden }}.- Rol: {{ card_rol.name}}</h2>
                                     <ul class="ml-4 mb-0 fa-ul">
-                                        <li class="text-md"><span class="fa-li"><i class="fas fa-user-tag"></i></span> Descripción: {{ card_rol.description }}</li>
-                                        <li class="text-md mt-2"><span class="fa-li"><i class="far fa-clock"></i></span>Acceso total: {{ card_rol.full_access }}</li>
+                                        <li class="texto-tarjeta"> Descripción: {{ card_rol.description }}</li>
+                                        <li class="texto-tarjeta mt-2"><span class="fa-li"></span>Acceso total: {{ card_rol.full_access }}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -83,7 +76,7 @@
 
                     Swal.mixin({
                     input: 'text',
-                    confirmButtonText: 'Next &rarr;',
+                    confirmButtonText: 'Siguiente &rarr;',
                     showCancelButton: true,
                     progressSteps: ['1', '2', '3', '4']
                     }).queue([
@@ -445,14 +438,6 @@
     }
 </script>
 <style lang="scss">    
-  
-   .color-texto{
-       color:white;
-   }
-
-   .color-texto-expecial{
-       color: #789bd6;
-   }
 
    .linea-debajo-texto{
         border-bottom: dotted 1px #778a46;

@@ -6,26 +6,19 @@
     <div class="card">
 
         <div class="d-flex justify-content-start">
-            <div class="ml-3 mb-5" v-bind:style="{ 
-                                    fontSize: ds_admin[2].size,
-                                    fontWeight: 700,
-                                    fontFamily: ds_admin[2].family,
-                                    color: ds_admin[2].color,
-                                    borderBottom: ds_admin[2].border,
-                                    width: ds_admin[2].width,
-
-                                }"><span v-bind:style="{ color: ds_admin[2].linea }">N</span>uevo Post</div>
+            <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>ost Nuevo</div>
             <spinner-component :spinner="spinner"></spinner-component>
         </div>
+
         <!--Card content-->
-        <div class="card-body px-lg-5 pt-5" :style="{ backgroundColor: ds_admin[12].backgroundColor, color:ds_admin[12].color }">
+        <div class="card-body px-lg-5 pt-5 fondo-card">
 
             <!-- Form -->
-            <form class="text-left" style="color: #757575;" @submit.prevent="submit">
+            <form class="text-left text-dark" @submit.prevent="submit">
 
                 <!-- Categoria -->
                 <div class="d-flex flex-column mt-5">
-                    <label class="text-left">Categoria</label>
+                    <label class="text-left texto-tarjeta">Categoria</label>
                     <select class="browser-default custom-select mb-4 w-25" id="idcontent"  v-model="category_id" @change="maxImagenes()">
                         <option v-for="cat in categorias" :key="cat.title" :value="cat.id" >{{ cat.title }}</option>
                     </select>
@@ -35,29 +28,29 @@
 
                 <!-- Title -->
                 <div class="md-form mt-3">
-                    <label for="ftitle" class="active font-weight-bold text-white">Título</label>
+                    <label for="ftitle" class="active texto-tarjeta">Título</label>
                     <input type="text" id="idtitle" class="form-control" v-model="title">
                 </div>
 
                 <!-- subtitulo -->
                 <div class="md-form mt-5">
-                    <label for="fsubtitulo" class="active font-weight-bold text-white">Subtítulo</label>
+                    <label for="fsubtitulo" class="active texto-tarjeta">Subtítulo</label>
                     <input type="text" id="idsubtitulo" class="form-control" v-model="subtitulo">
                 </div>
 
                 <!-- Url_clean -->
                 <div class="md-form mt-5 mb-5">
-                    <label for="furl_clean" class="active font-weight-bold text-white">Url limpia</label>
+                    <label for="furl_clean" class="active texto-tarjeta">Url limpia</label>
                     <input type="text" id="idurlclean" class="form-control" v-model="url_clean">
                 </div>
 
                 <!--Content-->
-                <label class="font-weight-bold text-white mt-4">Descripción</label>
+                <label class="font-weight-bold text-dark mt-4">Descripción</label>
                 <ckeditor :editor="editor" v-model="content" :config="editorConfig" tag-name="textarea" class="mt-5"></ckeditor>
                 
                 <!-- Visible -->
                 <div class="d-flex justify-content-start mt-3">
-                    <label class="font-weight-bold text-white d-flex align-items-center mr-3">Visible</label>
+                    <label class="font-weight-bold text-dark d-flex align-items-center mr-3">Visible</label>
                 <select class="browser-default custom-select w-25 d-flex align-items-center" id="idposted"  v-model="posted">
                     <option value="not"> No </option>
                     <option value="yes" > Si </option>

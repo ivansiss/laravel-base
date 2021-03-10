@@ -236,13 +236,7 @@
 </script>
 <style lang="scss">    
   
-   .color-texto{
-       color:white;
-   }
 
-   .color-texto-expecial{
-       color: #789bd6;
-   }
 
    .linea-debajo-texto{
         border-bottom: dotted 1px #778a46;

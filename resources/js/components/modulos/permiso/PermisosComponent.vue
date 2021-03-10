@@ -2,16 +2,10 @@
 
 <div class="container mt-5">
 
-        <h2 class="altura-linea"></h2>
-        <div class="ml-3" v-bind:style="{ 
-                                fontSize: ds_admin[2].size,
-                                fontWeight: 700,
-                                fontFamily: ds_admin[2].family,
-                                color: ds_admin[2].color,
-                                borderBottom: ds_admin[2].border,
-                                width: ds_admin[2].width,
-
-                            }"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>ermisos</div>
+        <div class="d-flex justify-content-start">
+            <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>ermisos</div>
+            <spinner-component :spinner="spinner"></spinner-component>
+        </div>
        
         <div class="d-flex justify-content-end ml-3 mb-3 mr-3">   
             <btns-component :tipo="3" class="mr-3" v-on:traeEmit="ordenAutomatico"></btns-component>
@@ -25,19 +19,18 @@
             <div class="col-12 col-sm-12 col-md-12 d-flex align-items-stretch" v-for="perm in items" :key="perm.name">
                 <div class="card fondo-card">
                     <div class="card-header border-bottom-0 d-flex justify-content-end">
-                    <span class="color-texto">Última modificación: {{ perm.fecha_formateada }}</span>
+                    <span class="fecha-formateada">Última modificación: {{ perm.fecha_formateada }}</span>
                     </div>
-                    <div class="card-body pt-0 color-texto">
+                    <div class="card-body pt-0">
                         <div class="row">
                             <div class="col-12">
-                        <h2 class="lead linea-debajo-texto"><b class="color-texto-expecial">{{ perm.orden}}.- {{ perm.name}}</b></h2>
-                        <p class="text-md mt-3">Tipo acceso: {{ perm.slug }}</p>
-                        <ul class="ml-4 mb-0 fa-ul">
-                            <li class="text-md mt-2"><span class="fa-li"><i class="far fa-clock"></i></span> Descripción: {{ perm.description }}</li>
-                        </ul>
+                                <h2 class="lead titulo-tarjeta">{{ perm.orden}}.- Permiso: {{ perm.name}}</h2>
+                                <ul class="ml-4 mb-0 fa-ul">
+                                        <li class="texto-tarjeta"> Descripción: {{ perm.description }}</li>
+                                        <li class="texto-tarjeta mt-2"><span class="fa-li"></span>Acceso total: {{ perm.tipo }}</li>
+                                    </ul>
+                            </div>
                         </div>
-                    </div>
-
                     </div>
                     <div class="card-footer">
                         <div class="text-right">
@@ -75,7 +68,7 @@
 
                 Swal.mixin({
                 input: 'text',
-                confirmButtonText: 'Next &rarr;',
+                confirmButtonText: 'Siguiente &rarr;',
                 showCancelButton: true,
                 progressSteps: ['1', '2', '3', '4']
                     }).queue([
@@ -443,14 +436,6 @@
 </script>
 <style lang="scss">    
   
-   .color-texto{
-       color:white;
-   }
-
-   .color-texto-expecial{
-       color: #789bd6;
-   }
-
     .linea-debajo-texto{
         border-bottom: dotted 1px #778a46;
     }

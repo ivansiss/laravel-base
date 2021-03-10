@@ -3,15 +3,7 @@
         <div class="card">
 
             <div class="d-flex justify-content-start">
-                <div class="ml-3 mb-5" v-bind:style="{ 
-                                        fontSize: ds_admin[2].size,
-                                        fontWeight: 700,
-                                        fontFamily: ds_admin[2].family,
-                                        color: ds_admin[2].color,
-                                        borderBottom: ds_admin[2].border,
-                                        width: ds_admin[2].width,
-
-                                    }"><span v-bind:style="{ color: ds_admin[2].linea }">E</span>ditar Producto</div>
+                <div class="ml-3 mb-5 titulo-listas subrayar-verde"><span v-bind:style="{ color: ds_admin[2].linea }">P</span>roductos Edición</div>
                 <spinner-component :spinner="spinner"></spinner-component>
             </div>
 
@@ -29,10 +21,7 @@
                 </select-producto-component>
 
                 <!-- Form -->
-                <form class="text-left p-3" style="color: #757575;" @submit.prevent="submit" v-bind:style="{ 
-                                        color: ds_admin[14].color,
-                                        backgroundColor: ds_admin[14].backgroundColor
-                                    }">  
+                <form class="text-left p-3 fondo-principal text-white" @submit.prevent="submit">  
 
                     <!-- Title -->
                     <div class="md-form mt-3">
@@ -76,8 +65,8 @@
 
                     <!-- Subir pdf -->
                     <div class="md-form pt-3">
-                        <div class="d-flex justify-content-start flex-wrap align-content-center">
-                            <btns-component :tipo="10" v-on:traeEmit="delPdf(pdf)"></btns-component>
+                        <div class="d-flex justify-content-start flex-wrap align-items-center">
+                            <btns-component :tipo="10" v-on:traeEmit="delPdf(pdf)" class="mr-3"></btns-component>
                             {{ nombrePdf }}    
                         </div>
                         <label for="furl_clean" class="active pt-3 myfile">Subir pdf</label>

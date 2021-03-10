@@ -497,14 +497,6 @@ export default {
 </script>
 
 <style lang="scss">  
-  
-    .color-texto{
-        color:white;
-    }
-
-    .color-texto-expecial{
-        color: #789bd6;
-    }
 
     .tablero{
         width: 95%;

@@ -1,13 +1,13 @@
 
 <template>
 
-    <div class="login-box cajon">
+    <div>
         
-        <!-- /.login-logo -->
-        <div class="card" :style="{ backgroundColor: ds_admin[1].backgroundColor + '!important'}">
+        <!-- .login -->
+        <div class="card login">
             <div class="card-body">
 
-                <p class="login-box-msg"><router-link :to="{name:'start.login'}" class="ml-3" :style="{ color: ds_admin[1].linea, fontSize:'28px' }"><b class="ancho-letra linea-punteada">Iniciar sesión</b></router-link></p>
+                <p class="login-box-msg"><b class="subrayar">Iniciar sesión</b></p>
 
                 <form method="post">
 
@@ -33,7 +33,7 @@
                     <div class="col-7">
                     </div>
                     <!-- /.col -->
-                    <div class="col-5 pr-2">
+                    <div class="col-5 text-right">
                         <btns-component class="mybtn_login" :tipo="0" v-on:traeEmit="login"></btns-component>
                     </div>
                     <!-- /.col -->
@@ -217,13 +217,6 @@
 
     .cajon{
         position:absolute;
-    }
-
-    .mybtn_login{
-        width: 125px;
-        position: relative;
-        left: 40px;
-        bottom: 0px;
     }
 
     .linea-punteada{
