@@ -2708,15 +2708,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['items'],
@@ -3197,7 +3188,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this6.parar(); //this.$router.push(url1).catch(err => {});
 
       });
-    }
+    },
+    usuarioEmail: function usuarioEmail() {},
+    usuarioMuchosEmail: function usuarioMuchosEmail() {}
   }),
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])('dsAdmin', ['ds_admin', 'spinner'])), Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])('mdGeneral', ['ultimoOrden', 'userAuth', 'permisos'])),
   created: function created() {
@@ -3299,14 +3292,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['items'],
@@ -3345,7 +3330,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       Swal.mixin({
         input: 'text',
-        confirmButtonText: 'Next &rarr;',
+        confirmButtonText: 'Siguiente &rarr;',
         showCancelButton: true,
         progressSteps: ['1', '2', '3', '4', '5', '6', '7']
       }).queue([{
@@ -5007,7 +4992,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['pag', 'ultimoOrden', 'permisos'],
@@ -5045,13 +5029,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5405,13 +5382,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -5647,15 +5617,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -6019,13 +5980,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['items'],
@@ -6041,7 +5995,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       Swal.mixin({
         input: 'text',
-        confirmButtonText: 'Next &rarr;',
+        confirmButtonText: 'Siguiente &rarr;',
         showCancelButton: true,
         progressSteps: ['1', '2', '3', '4']
       }).queue([{
@@ -7011,13 +6965,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -7292,15 +7239,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -7629,13 +7567,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -8130,7 +8061,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['post', 'ultimoOrden'],
@@ -8415,13 +8345,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['items'],
@@ -8646,7 +8569,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
         _this4.$router.push(url1)["catch"](function (err) {});
       });
-    }
+    },
+    generarPdf: function generarPdf() {}
   }),
   computed: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])('dsAdmin', ['ds_admin', 'spinner'])), Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])('mdGeneral', ['ultimoOrden'])),
   created: function created() {
@@ -8681,18 +8605,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -9066,17 +8978,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -9555,17 +9456,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -9749,18 +9639,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -10317,13 +10195,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['items'],
@@ -10349,7 +10220,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       });
       Swal.mixin({
         input: 'text',
-        confirmButtonText: 'Next &rarr;',
+        confirmButtonText: 'Siguiente &rarr;',
         showCancelButton: true,
         progressSteps: ['1', '2', '3', '4']
       }).queue([{
@@ -12775,7 +12646,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -17600,7 +17470,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".card-error {\n  margin-left: 0rem !important;\n  margin-top: 2rem;\n}\n.ancho-letra {\n  font-weight: 100;\n}\n.cajon {\n  position: absolute;\n}\n.mybtn_login {\n  width: 125px;\n  position: relative;\n  left: 40px;\n  bottom: 0px;\n}\n.linea-punteada {\n  border-bottom: dotted 1px white;\n}", ""]);
+exports.push([module.i, ".card-error {\n  margin-left: 0rem !important;\n  margin-top: 2rem;\n}\n.ancho-letra {\n  font-weight: 100;\n}\n.cajon {\n  position: absolute;\n}\n.linea-punteada {\n  border-bottom: dotted 1px white;\n}", ""]);
 
 // exports
 
@@ -17619,7 +17489,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".color-texto {\n  color: white;\n}\n.color-texto-expecial {\n  color: #789bd6;\n}\n.linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
+exports.push([module.i, ".linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
 
 // exports
 
@@ -17638,7 +17508,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n.color-texto {\n  color: white;\n}\n.color-texto-expecial {\n  color: #789bd6;\n}\n.tablero {\n  width: 95%;\n  margin-left: 1%;\n}\n.card {\n  background-color: #f6f9fc;\n  width: 260px;\n  margin-bottom: 1rem;\n}\n.ancho-pantalla {\n  width: 100%;\n}\n.panel-principal {\n  position: relative;\n}\n.panel-posicion {\n  position: absolute !important;\n  top: -20px !important;\n  left: 40px !important;\n}\n.swal2-content {\n  font-size: 1em;\n}\n.swal2-progress-steps {\n  font-size: 0.9rem;\n}\n.winter-neva-gradient {\n  background-image: linear-gradient(120deg, #268ca2 0%, #c2e9fb 100%);\n}\n.mdb-color.lighten-3 {\n  background-color: #1e90ff !important;\n}\n.tamaño-letra {\n  font-size: 33px;\n  font-weight: 700;\n}\n.h5 {\n  font-size: 33px;\n  font-weight: 700;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n.tablero {\n  width: 95%;\n  margin-left: 1%;\n}\n.card {\n  background-color: #f6f9fc;\n  width: 260px;\n  margin-bottom: 1rem;\n}\n.ancho-pantalla {\n  width: 100%;\n}\n.panel-principal {\n  position: relative;\n}\n.panel-posicion {\n  position: absolute !important;\n  top: -20px !important;\n  left: 40px !important;\n}\n.swal2-content {\n  font-size: 1em;\n}\n.swal2-progress-steps {\n  font-size: 0.9rem;\n}\n.winter-neva-gradient {\n  background-image: linear-gradient(120deg, #268ca2 0%, #c2e9fb 100%);\n}\n.mdb-color.lighten-3 {\n  background-color: #1e90ff !important;\n}\n.tamaño-letra {\n  font-size: 33px;\n  font-weight: 700;\n}\n.h5 {\n  font-size: 33px;\n  font-weight: 700;\n}", ""]);
 
 // exports
 
@@ -17676,7 +17546,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".swal2-title {\n  font-size: 1.2em;\n}\n.subrayar {\n  border-bottom: dotted 1px white !important;\n  margin-bottom: 3rem;\n}", ""]);
+exports.push([module.i, ".swal2-title {\n  font-size: 1.2em;\n}", ""]);
 
 // exports
 
@@ -17752,7 +17622,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".color-texto {\n  color: white;\n}\n.color-texto-expecial {\n  color: #789bd6;\n}\n.linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
+exports.push([module.i, ".linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
 
 // exports
 
@@ -17885,7 +17755,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".color-texto {\n  color: white;\n}\n.color-texto-expecial {\n  color: #789bd6;\n}\n.linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
+exports.push([module.i, ".linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
 
 // exports
 
@@ -17904,7 +17774,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".color-texto {\n  color: white;\n}\n.color-texto-expecial {\n  color: #789bd6;\n}\n.linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
+exports.push([module.i, ".linea-debajo-texto {\n  border-bottom: dotted 1px #778a46;\n}", ""]);
 
 // exports
 
@@ -17961,7 +17831,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n.color-texto {\n  color: white;\n}\n.color-texto-expecial {\n  color: #789bd6;\n}\n.tablero {\n  width: 95%;\n  margin-left: 1%;\n}\n.card {\n  background-color: #f6f9fc;\n  width: 260px;\n  margin-bottom: 1rem;\n}\n.ancho-pantalla {\n  width: 100%;\n}\n.panel-principal {\n  position: relative;\n}\n.panel-posicion {\n  position: absolute !important;\n  top: -20px !important;\n  left: 40px !important;\n}\n.swal2-content {\n  font-size: 1em;\n}\n.swal2-progress-steps {\n  font-size: 0.9rem;\n}\n.winter-neva-gradient {\n  background-image: linear-gradient(120deg, #268ca2 0%, #c2e9fb 100%);\n}\n.mdb-color.lighten-3 {\n  background-color: #1e90ff !important;\n}\n.tamaño-letra {\n  font-size: 33px;\n  font-weight: 700;\n}\n.h5 {\n  font-size: 33px;\n  font-weight: 700;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n.tablero {\n  width: 95%;\n  margin-left: 1%;\n}\n.card {\n  background-color: #f6f9fc;\n  width: 260px;\n  margin-bottom: 1rem;\n}\n.ancho-pantalla {\n  width: 100%;\n}\n.panel-principal {\n  position: relative;\n}\n.panel-posicion {\n  position: absolute !important;\n  top: -20px !important;\n  left: 40px !important;\n}\n.swal2-content {\n  font-size: 1em;\n}\n.swal2-progress-steps {\n  font-size: 0.9rem;\n}\n.winter-neva-gradient {\n  background-image: linear-gradient(120deg, #268ca2 0%, #c2e9fb 100%);\n}\n.mdb-color.lighten-3 {\n  background-color: #1e90ff !important;\n}\n.tamaño-letra {\n  font-size: 33px;\n  font-weight: 700;\n}\n.h5 {\n  font-size: 33px;\n  font-weight: 700;\n}", ""]);
 
 // exports
 
@@ -17999,7 +17869,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".bt-basico {\n  width: 125% !important;\n  margin-right: 2rem;\n}\n.myboton {\n  color: #9ccc65;\n  background-color: transparent !important;\n  border: dotted 1px #9ccc65;\n}\n.myicono {\n  color: #9ccc65;\n}", ""]);
+exports.push([module.i, ".bt-basico {\n  width: 125% !important;\n  margin-right: 2rem;\n}\n.myboton {\n  color: #bdbdbd;\n  background-color: transparent !important;\n  border: dotted 1px #bdbdbd;\n}\n.myicono {\n  color: #bdbdbd;\n}", ""]);
 
 // exports
 
@@ -52461,114 +52331,94 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "login-box cajon" }, [
-    _c(
-      "div",
-      {
-        staticClass: "card",
-        style: {
-          backgroundColor: _vm.ds_admin[1].backgroundColor + "!important"
-        }
-      },
-      [
-        _c("div", { staticClass: "card-body" }, [
-          _c(
-            "p",
-            { staticClass: "login-box-msg" },
-            [
-              _c(
-                "router-link",
+  return _c("div", [
+    _c("div", { staticClass: "card login" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("form", { attrs: { method: "post" } }, [
+          _c("div", { staticClass: "input-group mb-3" }, [
+            _c("input", {
+              directives: [
                 {
-                  staticClass: "ml-3",
-                  style: { color: _vm.ds_admin[1].linea, fontSize: "28px" },
-                  attrs: { to: { name: "start.login" } }
-                },
-                [
-                  _c("b", { staticClass: "ancho-letra linea-punteada" }, [
-                    _vm._v("Iniciar sesión")
-                  ])
-                ]
-              )
-            ],
-            1
-          ),
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.fillLogin.cEmail,
+                  expression: "fillLogin.cEmail"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "email", placeholder: "Email" },
+              domProps: { value: _vm.fillLogin.cEmail },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.fillLogin, "cEmail", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _vm._m(1)
+          ]),
           _vm._v(" "),
-          _c("form", { attrs: { method: "post" } }, [
-            _c("div", { staticClass: "input-group mb-3" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.fillLogin.cEmail,
-                    expression: "fillLogin.cEmail"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "email", placeholder: "Email" },
-                domProps: { value: _vm.fillLogin.cEmail },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.fillLogin, "cEmail", $event.target.value)
-                  }
+          _c("div", { staticClass: "input-group mb-3" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.fillLogin.cContrasena,
+                  expression: "fillLogin.cContrasena"
                 }
-              }),
-              _vm._v(" "),
-              _vm._m(0)
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group mb-3" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.fillLogin.cContrasena,
-                    expression: "fillLogin.cContrasena"
+              ],
+              staticClass: "form-control",
+              attrs: { type: "password", placeholder: "Clave" },
+              domProps: { value: _vm.fillLogin.cContrasena },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
                   }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "password", placeholder: "Clave" },
-                domProps: { value: _vm.fillLogin.cContrasena },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.fillLogin, "cContrasena", $event.target.value)
-                  }
+                  _vm.$set(_vm.fillLogin, "cContrasena", $event.target.value)
                 }
-              }),
-              _vm._v(" "),
-              _vm._m(1)
-            ]),
+              }
+            }),
             _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-7" }),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-5 pr-2" },
-                [
-                  _c("btns-component", {
-                    staticClass: "mybtn_login",
-                    attrs: { tipo: 0 },
-                    on: { traeEmit: _vm.login }
-                  })
-                ],
-                1
-              )
-            ])
+            _vm._m(2)
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-7" }),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-5 text-right" },
+              [
+                _c("btns-component", {
+                  staticClass: "mybtn_login",
+                  attrs: { tipo: 0 },
+                  on: { traeEmit: _vm.login }
+                })
+              ],
+              1
+            )
           ])
         ])
-      ]
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "login-box-msg" }, [
+      _c("b", { staticClass: "subrayar" }, [_vm._v("Iniciar sesión")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -52740,17 +52590,7 @@ var render = function() {
           [
             _c(
               "div",
-              {
-                staticClass: "ml-3 mb-5",
-                style: {
-                  fontSize: _vm.ds_admin[2].size,
-                  fontWeight: 700,
-                  fontFamily: _vm.ds_admin[2].family,
-                  color: _vm.ds_admin[2].color,
-                  borderBottom: _vm.ds_admin[2].border,
-                  width: _vm.ds_admin[2].width
-                }
-              },
+              { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" },
               [
                 _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
                   _vm._v("C")
@@ -52766,36 +52606,41 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "d-flex justify-content-end ml-3 mb-3 mr-3" },
+          {
+            staticClass:
+              "d-flex justify-content-end ml-3 mb-3 mr-3 subrayar-verde"
+          },
           [
             _c("btns-component", {
-              staticClass: "mr-3",
+              staticClass: "mr-3 mb-3",
               attrs: { tipo: 3 },
               on: { traeEmit: _vm.ordenAutomatico }
             }),
             _vm._v(" "),
             _c("btns-component", {
-              staticClass: "mr-3",
+              staticClass: "mr-3 mb-3",
               attrs: { tipo: 5 },
               on: { traeEmit: _vm.saveOrden }
             }),
             _vm._v(" "),
             _c("btns-component", {
+              staticClass: "mb-3 mr-3",
               attrs: { tipo: 6 },
               on: { traeEmit: _vm.nuevoDato }
+            }),
+            _vm._v(" "),
+            _c("btns-component", {
+              staticClass: "mb-3",
+              attrs: { tipo: 22 },
+              on: { traeEmit: _vm.usuarioEmail }
             })
           ],
           1
         ),
         _vm._v(" "),
-        _c("hr", {
-          staticClass: "mb-5",
-          staticStyle: { "background-color": "#343a40" }
-        }),
-        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "row" },
+          { staticClass: "row texto-listas" },
           _vm._l(_vm.items, function(user) {
             return _c(
               "div",
@@ -52813,41 +52658,47 @@ var render = function() {
                         "card-header border-bottom-0 d-flex justify-content-end"
                     },
                     [
-                      _c("span", { staticClass: "color-texto" }, [
+                      _c("span", { staticClass: "fecha-formateada subrayar" }, [
                         _vm._v(
-                          "Última modificación: " +
+                          "Última modificación:  " +
                             _vm._s(user.fecha_formateada)
                         )
                       ])
                     ]
                   ),
                   _vm._v(" "),
-                  _c("div", { staticClass: "card-body pt-0 color-texto" }, [
+                  _c("div", { staticClass: "card-body pt-0" }, [
                     _c("div", { staticClass: "row" }, [
                       _c("div", { staticClass: "col-12" }, [
-                        _c("h2", { staticClass: "lead linea-debajo-texto" }, [
-                          _c("b", { staticClass: "color-texto-expecial" }, [
+                        _c("h2", { staticClass: "lead subrayar" }, [
+                          _c("b", { staticClass: "titulo-tarjeta" }, [
                             _vm._v(
-                              _vm._s(user.orden) + ".- " + _vm._s(user.name)
+                              _vm._s(user.orden) +
+                                ". Empresa: " +
+                                _vm._s(user.name)
                             )
                           ])
                         ]),
                         _vm._v(" "),
-                        _c("p", { staticClass: "text-md" }, [
+                        _c("p", { staticClass: "mt-3 texto-tarjeta" }, [
                           _vm._v(_vm._s(user.email))
                         ]),
                         _vm._v(" "),
-                        _c("ul", { staticClass: "ml-4 mb-0 fa-ul" }, [
-                          _c("li", { staticClass: "text-md" }, [
-                            _vm._m(0, true),
-                            _vm._v(" Rol: " + _vm._s(user.rol[0]["name"]))
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "text-md mt-2" }, [
-                            _vm._m(1, true),
-                            _vm._v(" V-Email: " + _vm._s(user.verif_email))
-                          ])
-                        ])
+                        _c(
+                          "ul",
+                          { staticClass: "ml-4 mb-0 fa-ul texto-tarjeta" },
+                          [
+                            _c("li", { staticClass: "texto-tarjeta" }, [
+                              _c("span", { staticClass: "fa-li" }),
+                              _vm._v(" Rol: " + _vm._s(user.rol[0]["name"]))
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "texto-tarjeta" }, [
+                              _c("span", { staticClass: "fa-li" }),
+                              _vm._v(" V-Email: " + _vm._s(user.verif_email))
+                            ])
+                          ]
+                        )
                       ])
                     ])
                   ]),
@@ -52856,7 +52707,7 @@ var render = function() {
                     _c("div", { staticClass: "text-right" }, [
                       _c(
                         "li",
-                        { staticClass: "d-flex justify-content-end mt-4" },
+                        { staticClass: "d-flex justify-content-end" },
                         [
                           user.orden != 0
                             ? _c("btns-component", {
@@ -52915,6 +52766,11 @@ var render = function() {
                                 return _vm.restablecer_pass(user)
                               }
                             }
+                          }),
+                          _vm._v(" "),
+                          _c("btns-component", {
+                            attrs: { tipo: 23 },
+                            on: { traeEmit: _vm.usuarioMuchosEmail }
                           })
                         ],
                         1
@@ -52930,24 +52786,7 @@ var render = function() {
       ])
     : _vm._e()
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "fa-li" }, [
-      _c("i", { staticClass: "fas fa-user-tag" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "fa-li" }, [
-      _c("i", { staticClass: "far fa-clock" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -52977,26 +52816,12 @@ var render = function() {
         "div",
         { staticClass: "d-flex justify-content-start" },
         [
-          _c(
-            "div",
-            {
-              staticClass: "ml-3 mb-5",
-              style: {
-                fontSize: _vm.ds_admin[2].size,
-                fontWeight: 700,
-                fontFamily: _vm.ds_admin[2].family,
-                color: _vm.ds_admin[2].color,
-                borderBottom: _vm.ds_admin[2].border,
-                width: _vm.ds_admin[2].width
-              }
-            },
-            [
-              _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                _vm._v("I")
-              ]),
-              _vm._v("mágenes")
-            ]
-          ),
+          _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+            _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+              _vm._v("I")
+            ]),
+            _vm._v("mágenes")
+          ]),
           _vm._v(" "),
           _c("spinner-component", { attrs: { spinner: _vm.spinner } })
         ],
@@ -53006,11 +52831,8 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "alert alert-dismissible mb-5 tablero mt-5",
-          style: {
-            backgroundColor: _vm.ds_admin[11].backgroundColor,
-            color: _vm.ds_admin[11].color
-          }
+          staticClass:
+            "alert alert-dismissible mb-5 tablero mt-5 fondo-card texto-blanco"
         },
         [
           _c(
@@ -53176,7 +52998,7 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12 d-flex justify-content-end" }, [
-              _c("h6", { staticClass: "widget-user-desc-m color-texto" }, [
+              _c("h6", { staticClass: "widget-user-desc-m fecha-formateada" }, [
                 _vm._v(
                   "Última modificación: " + _vm._s(_vm.img.fecha_formateada)
                 )
@@ -53199,94 +53021,87 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-12 col-md-8 color-texto" }, [
+            _c("div", { staticClass: "col-12 col-md-8 texto-blanco" }, [
               _c("h5", { staticClass: "widget-user-desc mr-2 my-3" }, [
                 _vm._v("id: " + _vm._s(_vm.img.id))
               ]),
               _vm._v(" "),
-              _c(
-                "h4",
-                {
-                  staticClass:
-                    "widget-user-desc color-texto-expecial linea-debajo-texto"
-                },
-                [_vm._v(_vm._s(_vm.img.orden) + ".- " + _vm._s(_vm.img.image))]
-              )
+              _c("h4", { staticClass: "widget-user-desc titulo-tarjeta" }, [
+                _vm._v(
+                  _vm._s(_vm.img.orden) + ".- Imágen: " + _vm._s(_vm.img.image)
+                )
+              ])
             ])
           ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "card-footer p-0" }, [
           _c("ul", { staticClass: "nav flex-column" }, [
-            _c("li", { staticClass: "nav-item mt-5 text-lg color-texto" }, [
+            _c("li", { staticClass: "nav-item mt-5 texto-tarjeta" }, [
               _vm._v(
-                "\n\n                Descripción: " +
+                "\n\n                    Descripción: " +
                   _vm._s(_vm.img.description) +
-                  "\n                "
+                  "\n                    "
               ),
               _c(
                 "span",
-                {
-                  staticClass:
-                    "float-right badge color-texto mb-2 linea-debajo-texto"
-                },
+                { staticClass: "float-right badge mr-3 subrayar-rojo" },
                 [
                   _vm._v(
-                    "\n                        Sin descripción\n                "
+                    "\n                            Sin descripción\n                    "
                   )
                 ]
               )
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "nav-item text-lg color-texto mb-2" }, [
+            _c("li", { staticClass: "nav-item mb-2 texto-tarjeta" }, [
               _vm._v(
-                "\n\n                Alt: " +
+                "\n\n                    Alt: " +
                   _vm._s(_vm.img.alt) +
-                  "\n                "
+                  "\n                    "
               ),
               (_vm.img.alt == " "
               ? (_vm.color_alt = "red")
               : "")
                 ? _c(
                     "span",
-                    { staticClass: "float-right badge bg-success color-texto" },
+                    {
+                      staticClass: "float-right badge bg-success texto-blanco"
+                    },
                     [
                       _vm._v(
-                        "\n                                    Sin Alt\n                "
+                        "\n                                        Sin Alt\n                    "
                       )
                     ]
                   )
                 : _vm._e()
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "nav-item text-lg color-texto mb-2" }, [
+            _c("li", { staticClass: "nav-item  texto-tarjeta" }, [
               _c("i", { staticClass: "fas fa-link pr-1" }),
               _vm._v(
-                "\n                Link: " +
+                "\n                    Link: " +
                   _vm._s(_vm.img.link) +
-                  "\n        \n            "
+                  "\n            \n                "
               )
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "nav-item text-lg color-texto mb-2" }, [
-              _c("i", {
-                staticClass: "fas fa-weight-hanging pr-1",
-                style: { color: "green" }
-              }),
+            _c("li", { staticClass: "nav-item  texto-tarjeta" }, [
+              _c("i", { staticClass: "fas fa-weight-hanging pr-1" }),
               _vm._v(
-                "\n                Size: " +
+                "\n                    Size: " +
                   _vm._s(_vm.img.size) +
-                  "\n        \n            "
+                  "\n            \n                "
               )
             ]),
             _vm._v(" "),
             _vm.img.tipo_imagen != null
-              ? _c("li", { staticClass: "text-lg color-texto mb-2" }, [
+              ? _c("li", { staticClass: " texto-tarjeta" }, [
                   _c("i", { staticClass: "far fa-images pr-1" }),
                   _vm._v(
-                    "\n                Tipo: " +
+                    "\n                    Tipo: " +
                       _vm._s(_vm.img.tipo_imagen.title) +
-                      "\n            "
+                      "\n                "
                   )
                 ])
               : _vm._e()
@@ -53294,65 +53109,67 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "card-footer mt-3" }, [
-          _c("div", { staticClass: "text-right" }, [
-            _c(
-              "li",
-              { staticClass: "d-flex justify-content-start mt-4" },
-              [
-                _vm.img.orden != 0
-                  ? _c("btns-component", {
-                      staticClass: "mr-3",
-                      attrs: { tipo: 7 },
-                      on: {
-                        traeEmit: function($event) {
-                          return _vm.subir(_vm.img)
+          _c(
+            "div",
+            { staticClass: "text-right d-flex justify-content-between" },
+            [
+              _c(
+                "div",
+                [
+                  _vm.img.orden != 0
+                    ? _c("btns-component", {
+                        staticClass: "mr-3",
+                        attrs: { tipo: 7 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.subir(_vm.img)
+                          }
                         }
-                      }
-                    })
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.img.orden != _vm.ultimoOrden
-                  ? _c("btns-component", {
-                      staticClass: "mr-3",
-                      attrs: { tipo: 8 },
-                      on: {
-                        traeEmit: function($event) {
-                          return _vm.bajar(_vm.img)
+                      })
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.img.orden != _vm.ultimoOrden
+                    ? _c("btns-component", {
+                        staticClass: "mr-3",
+                        attrs: { tipo: 8 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.bajar(_vm.img)
+                          }
                         }
+                      })
+                    : _vm._e()
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                [
+                  _c("btns-component", {
+                    staticClass: "mr-3",
+                    attrs: { tipo: 9 },
+                    on: {
+                      traeEmit: function($event) {
+                        return _vm.editar(_vm.img)
                       }
-                    })
-                  : _vm._e()
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "d-flex justify-content-end" },
-              [
-                _c("btns-component", {
-                  staticClass: "mr-3",
-                  attrs: { tipo: 9 },
-                  on: {
-                    traeEmit: function($event) {
-                      return _vm.editar(_vm.img)
                     }
-                  }
-                }),
-                _vm._v(" "),
-                _c("btns-component", {
-                  staticClass: "mr-3",
-                  attrs: { tipo: 10 },
-                  on: {
-                    traeEmit: function($event) {
-                      return _vm.eliminar(_vm.img)
+                  }),
+                  _vm._v(" "),
+                  _c("btns-component", {
+                    staticClass: "mr-3",
+                    attrs: { tipo: 10 },
+                    on: {
+                      traeEmit: function($event) {
+                        return _vm.eliminar(_vm.img)
+                      }
                     }
-                  }
-                })
-              ],
-              1
-            )
-          ])
+                  })
+                ],
+                1
+              )
+            ]
+          )
         ])
       ])
     ]
@@ -55078,42 +54895,41 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "card card-body mb-3 mt-5 z-depth-4 bg-puente",
-      style: {
-        backgroundColor: _vm.ds_admin[12].backgroundColor,
-        color: _vm.ds_admin[12].color
-      }
-    },
+    { staticClass: "card-body mb-3 mt-5 z-depth-4 fondo-principal" },
     [
-      _c("div", { staticStyle: { position: "relative" } }, [
-        _c(
-          "span",
-          {
-            staticClass: "badge ancho-categoria z-depth-4 p-3  text-md",
-            style: {
-              position: "absolute",
-              top: "-55px",
-              left: "0",
-              backgroundColor: _vm.ds_admin[13].backgroundColor,
-              border: _vm.ds_admin[13].border
-            }
-          },
-          [
-            _c("i", {
-              staticClass: "far fa-eye mr-3",
-              class:
-                _vm.pag["posted"] == "yes" ? "color-encendido" : "color-apagado"
-            }),
-            _vm._v(" "),
-            _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
-              _vm._v(_vm._s(_vm.pag.orden))
-            ]),
-            _vm._v("\n            Tipo Imagen\n        ")
-          ]
-        ),
-        _vm._v("\n        " + _vm._s(_vm.pag.pagina) + "\n    ")
-      ]),
+      _c(
+        "div",
+        { staticClass: "text-white", staticStyle: { position: "relative" } },
+        [
+          _c(
+            "span",
+            {
+              staticClass: "badge ancho-categoria z-depth-4 p-3  text-md",
+              style: {
+                position: "absolute",
+                top: "-55px",
+                left: "0",
+                border: _vm.ds_admin[13].border
+              }
+            },
+            [
+              _c("i", {
+                staticClass: "far fa-eye mr-3",
+                class:
+                  _vm.pag["posted"] == "yes"
+                    ? "color-encendido"
+                    : "color-apagado"
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
+                _vm._v(_vm._s(_vm.pag.orden))
+              ]),
+              _vm._v("\n            Tipo Imagen\n        ")
+            ]
+          ),
+          _vm._v("\n        " + _vm._s(_vm.pag.pagina) + "\n    ")
+        ]
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "media d-block d-md-flex mb-5" }, [
         _c(
@@ -55222,11 +55038,7 @@ var render = function() {
           _c(
             "router-link",
             {
-              staticClass: "btn btn-outline-primary btn-lg mr-3",
-              style: {
-                border: _vm.ds_admin[9].border,
-                color: _vm.ds_admin[9].color
-              },
+              staticClass: "btn btn-lg myboton",
               attrs: {
                 to: { name: "access.edit.paginas", params: { id: _vm.pag.id } }
               }
@@ -55283,22 +55095,12 @@ var render = function() {
               [
                 _c(
                   "div",
-                  {
-                    staticClass: "ml-3 mb-5",
-                    style: {
-                      fontSize: _vm.ds_admin[2].size,
-                      fontWeight: 700,
-                      fontFamily: _vm.ds_admin[2].family,
-                      color: _vm.ds_admin[2].color,
-                      borderBottom: _vm.ds_admin[2].border,
-                      width: _vm.ds_admin[2].width
-                    }
-                  },
+                  { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" },
                   [
                     _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                      _vm._v("E")
+                      _vm._v("P")
                     ]),
-                    _vm._v("ditar Página")
+                    _vm._v("ágina editar")
                   ]
                 ),
                 _vm._v(" "),
@@ -55309,19 +55111,12 @@ var render = function() {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass: "card-body px-lg-5 pt-5",
-                style: {
-                  backgroundColor: _vm.ds_admin[12].backgroundColor,
-                  color: _vm.ds_admin[12].color
-                }
-              },
+              { staticClass: "card-body px-lg-5 pt-5 fondo-principal" },
               [
                 _c(
                   "form",
                   {
-                    staticClass: "text-left",
-                    staticStyle: { color: "#757575" },
+                    staticClass: "text-left text-white",
                     on: {
                       submit: function($event) {
                         $event.preventDefault()
@@ -55662,22 +55457,12 @@ var render = function() {
           [
             _c(
               "div",
-              {
-                staticClass: "ml-3 mb-5",
-                style: {
-                  fontSize: _vm.ds_admin[2].size,
-                  fontWeight: 700,
-                  fontFamily: _vm.ds_admin[2].family,
-                  color: _vm.ds_admin[2].color,
-                  borderBottom: _vm.ds_admin[2].border,
-                  width: _vm.ds_admin[2].width
-                }
-              },
+              { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" },
               [
                 _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                  _vm._v("N")
+                  _vm._v("P")
                 ]),
-                _vm._v("ueva Página")
+                _vm._v("ágina Nueva")
               ]
             ),
             _vm._v(" "),
@@ -55688,19 +55473,12 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          {
-            staticClass: "card-body px-lg-5 pt-5",
-            style: {
-              backgroundColor: _vm.ds_admin[12].backgroundColor,
-              color: _vm.ds_admin[12].color
-            }
-          },
+          { staticClass: "card-body px-lg-5 pt-5 fondo-principal text-white" },
           [
             _c(
               "form",
               {
                 staticClass: "text-left",
-                staticStyle: { color: "#757575" },
                 on: {
                   submit: function($event) {
                     $event.preventDefault()
@@ -56063,26 +55841,12 @@ var render = function() {
       "div",
       { staticClass: "d-flex justify-content-start" },
       [
-        _c(
-          "div",
-          {
-            staticClass: "ml-3 mb-5",
-            style: {
-              fontSize: _vm.ds_admin[2].size,
-              fontWeight: 700,
-              fontFamily: _vm.ds_admin[2].family,
-              color: _vm.ds_admin[2].color,
-              borderBottom: _vm.ds_admin[2].border,
-              width: _vm.ds_admin[2].width
-            }
-          },
-          [
-            _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-              _vm._v("P")
-            ]),
-            _vm._v("áginas web")
-          ]
-        ),
+        _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+          _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+            _vm._v("P")
+          ]),
+          _vm._v("áginas web")
+        ]),
         _vm._v(" "),
         _c("spinner-component", { attrs: { spinner: _vm.spinner } })
       ],
@@ -56102,8 +55866,7 @@ var render = function() {
           ? _c(
               "router-link",
               {
-                staticClass: "btn btn-lg ml-3",
-                style: { border: _vm.ds_admin[6].border },
+                staticClass: "btn btn-lg myboton ml-3",
                 attrs: {
                   to: {
                     name: "access.new.pagina",
@@ -56113,8 +55876,8 @@ var render = function() {
               },
               [
                 _c("i", {
-                  class: _vm.ds_admin[6].icono,
-                  style: { color: _vm.ds_admin[6].color }
+                  staticClass: "myicono",
+                  class: _vm.ds_admin[6].icono
                 })
               ]
             )
@@ -56284,25 +56047,20 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container mt-5" }, [
-    _c("h2", { staticClass: "altura-linea" }),
-    _vm._v(" "),
     _c(
       "div",
-      {
-        staticClass: "ml-3",
-        style: {
-          fontSize: _vm.ds_admin[2].size,
-          fontWeight: 700,
-          fontFamily: _vm.ds_admin[2].family,
-          color: _vm.ds_admin[2].color,
-          borderBottom: _vm.ds_admin[2].border,
-          width: _vm.ds_admin[2].width
-        }
-      },
+      { staticClass: "d-flex justify-content-start" },
       [
-        _c("span", { style: { color: _vm.ds_admin[2].linea } }, [_vm._v("P")]),
-        _vm._v("ermisos")
-      ]
+        _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+          _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+            _vm._v("P")
+          ]),
+          _vm._v("ermisos")
+        ]),
+        _vm._v(" "),
+        _c("spinner-component", { attrs: { spinner: _vm.spinner } })
+      ],
+      1
     ),
     _vm._v(" "),
     _c(
@@ -56353,7 +56111,7 @@ var render = function() {
                     "card-header border-bottom-0 d-flex justify-content-end"
                 },
                 [
-                  _c("span", { staticClass: "color-texto" }, [
+                  _c("span", { staticClass: "fecha-formateada" }, [
                     _vm._v(
                       "Última modificación: " + _vm._s(perm.fecha_formateada)
                     )
@@ -56361,23 +56119,23 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "card-body pt-0 color-texto" }, [
+              _c("div", { staticClass: "card-body pt-0" }, [
                 _c("div", { staticClass: "row" }, [
                   _c("div", { staticClass: "col-12" }, [
-                    _c("h2", { staticClass: "lead linea-debajo-texto" }, [
-                      _c("b", { staticClass: "color-texto-expecial" }, [
-                        _vm._v(_vm._s(perm.orden) + ".- " + _vm._s(perm.name))
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-md mt-3" }, [
-                      _vm._v("Tipo acceso: " + _vm._s(perm.slug))
+                    _c("h2", { staticClass: "lead titulo-tarjeta" }, [
+                      _vm._v(
+                        _vm._s(perm.orden) + ".- Permiso: " + _vm._s(perm.name)
+                      )
                     ]),
                     _vm._v(" "),
                     _c("ul", { staticClass: "ml-4 mb-0 fa-ul" }, [
-                      _c("li", { staticClass: "text-md mt-2" }, [
-                        _vm._m(0, true),
+                      _c("li", { staticClass: "texto-tarjeta" }, [
                         _vm._v(" Descripción: " + _vm._s(perm.description))
+                      ]),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "texto-tarjeta mt-2" }, [
+                        _c("span", { staticClass: "fa-li" }),
+                        _vm._v("Acceso total: " + _vm._s(perm.tipo))
                       ])
                     ])
                   ])
@@ -56453,16 +56211,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "fa-li" }, [
-      _c("i", { staticClass: "far fa-clock" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -57169,13 +56918,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "card card-body mb-3 mt-5 z-depth-4",
-      style: {
-        backgroundColor: _vm.ds_admin[4].backgroundColor,
-        color: _vm.ds_admin[4].color
-      }
-    },
+    { staticClass: "card card-body mb-3 mt-5 z-depth-4 fondo-card" },
     [
       _c(
         "div",
@@ -57184,15 +56927,9 @@ var render = function() {
           _c(
             "span",
             {
-              staticClass: "badge ancho-categoria z-depth-4 p-3  text-md",
-              style: {
-                position: "absolute",
-                top: "-55px",
-                left: "0",
-                backgroundColor: _vm.ds_admin[13].backgroundColor,
-                border: _vm.ds_admin[13].border,
-                color: _vm.ds_admin[13].texto
-              }
+              staticClass:
+                "badge ancho-categoria z-depth-4 p-3 text-md tipo-post",
+              style: { position: "absolute", top: "-55px", left: "0" }
             },
             [
               _c("i", {
@@ -57203,7 +56940,7 @@ var render = function() {
                     : "color-apagado"
               }),
               _vm._v(" "),
-              _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
+              _c("span", { staticClass: "badge badge-pill mr-2" }, [
                 _vm._v(_vm._s(_vm.post.orden))
               ]),
               _vm._v("\n          Tipo Post\n      ")
@@ -57230,8 +56967,8 @@ var render = function() {
           { staticClass: "media-body text-center text-md-left ml-md-3 ml-0" },
           [
             _c("div", {
-              staticClass: "mt-0 d-flex justify-content-end mr-4",
-              style: { color: _vm.ds_admin[4].texto },
+              staticClass:
+                "mt-0 d-flex justify-content-end mr-4 fecha-formateada",
               domProps: {
                 innerHTML: _vm._s("Actualizado: " + _vm.post.fecha_formateada)
               }
@@ -57248,17 +56985,13 @@ var render = function() {
             }),
             _vm._v(" "),
             _c("h3", {
-              staticClass: "mt-0 font-weight-bold shadow",
-              style: {
-                color: _vm.ds_admin[4].linea,
-                borderBottom: _vm.ds_admin[4].border
-              },
+              staticClass: "mt-0 titulo-tarjeta",
               domProps: { innerHTML: _vm._s(_vm.post.title) }
             }),
             _vm._v(" "),
             _c("h5", {
               staticClass: "mt-0",
-              style: { color: _vm.ds_admin[4].texto },
+              style: { color: _vm.ds_admin[12].texto },
               domProps: { innerHTML: _vm._s(_vm.post.subtitulo) }
             }),
             _vm._v(" "),
@@ -57300,11 +57033,7 @@ var render = function() {
                 _c(
                   "router-link",
                   {
-                    staticClass: "btn btn-outline-primary btn-lg mr-3",
-                    style: {
-                      border: _vm.ds_admin[9].border,
-                      color: _vm.ds_admin[9].color
-                    },
+                    staticClass: "btn btn-lg myboton myicono mr-3",
                     attrs: {
                       to: {
                         name: "access.detalle.posts",
@@ -57359,322 +57088,296 @@ var render = function() {
     _vm.post
       ? _c("div", { staticClass: "container mt-5" }, [
           _c("div", { staticClass: "card" }, [
-            _c(
-              "div",
-              { staticClass: "d-flex justify-content-start" },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "ml-3 mb-5",
-                    style: {
-                      fontSize: _vm.ds_admin[2].size,
-                      fontWeight: 700,
-                      fontFamily: _vm.ds_admin[2].family,
-                      color: _vm.ds_admin[2].color,
-                      borderBottom: _vm.ds_admin[2].border,
-                      width: _vm.ds_admin[2].width
-                    }
-                  },
-                  [
-                    _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                      _vm._v("E")
-                    ]),
-                    _vm._v("ditar Post")
-                  ]
-                ),
-                _vm._v(" "),
-                _c("spinner-component", { attrs: { spinner: _vm.spinner } })
-              ],
-              1
-            ),
+            _c("div", { staticClass: "d-flex justify-content-start" }, [
+              _c(
+                "div",
+                { staticClass: "d-flex justify-content-start" },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" },
+                    [
+                      _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+                        _vm._v("P")
+                      ]),
+                      _vm._v("ost Editar")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("spinner-component", { attrs: { spinner: _vm.spinner } })
+                ],
+                1
+              )
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "card-body px-lg-5 pt-5",
-                style: {
-                  backgroundColor: _vm.ds_admin[12].backgroundColor,
-                  color: _vm.ds_admin[12].color
-                }
-              },
-              [
-                _c(
-                  "form",
-                  {
-                    staticClass: "text-left",
-                    staticStyle: { color: "#757575" },
-                    on: {
-                      submit: function($event) {
-                        $event.preventDefault()
-                        return _vm.submit($event)
-                      }
+            _c("div", { staticClass: "card-body px-lg-5 pt-5 fondo-card" }, [
+              _c(
+                "form",
+                {
+                  staticClass: "text-left text-dark",
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.submit($event)
                     }
-                  },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "d-flex justify-content-start " },
-                      [
-                        _c(
-                          "label",
-                          {
-                            staticClass:
-                              "font-weight-bold d-flex align-items-center mr-3 text-white"
-                          },
-                          [_vm._v("Categoria")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.category_id,
-                                expression: "category_id"
-                              }
-                            ],
-                            staticClass:
-                              "browser-default custom-select d-flex align-items-center",
-                            attrs: { id: "idcontent" },
-                            on: {
-                              change: [
-                                function($event) {
-                                  var $$selectedVal = Array.prototype.filter
-                                    .call($event.target.options, function(o) {
-                                      return o.selected
-                                    })
-                                    .map(function(o) {
-                                      var val =
-                                        "_value" in o ? o._value : o.value
-                                      return val
-                                    })
-                                  _vm.category_id = $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                },
-                                function($event) {
-                                  return _vm.maxImagenes()
-                                }
-                              ]
-                            }
-                          },
-                          _vm._l(_vm.categorias, function(cat) {
-                            return _c(
-                              "option",
-                              { key: cat.title, domProps: { value: cat.id } },
-                              [_vm._v(_vm._s(cat.title))]
-                            )
-                          }),
-                          0
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("select-component", {
-                      attrs: { selecionados: _vm.selecionados, max: _vm.max },
-                      on: { selecionadosEmit: _vm.vueltaSelect }
-                    }),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "md-form mt-3" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "active font-weight-bold text-white",
-                          attrs: { for: "ftitle" }
-                        },
-                        [_vm._v("Título")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.title,
-                            expression: "title"
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: { type: "text", id: "idtitle" },
-                        domProps: { value: _vm.title },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.title = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "md-form mt-5" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "active font-weight-bold text-white",
-                          attrs: { for: "fsubtitulo" }
-                        },
-                        [_vm._v("Subtítulo")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.subtitulo,
-                            expression: "subtitulo"
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: { type: "text", id: "idsubtitulo" },
-                        domProps: { value: _vm.subtitulo },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.subtitulo = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "md-form mt-5 mb-5" }, [
-                      _c(
-                        "label",
-                        {
-                          staticClass: "active font-weight-bold text-white",
-                          attrs: { for: "furl_clean" }
-                        },
-                        [_vm._v("Url limpia")]
-                      ),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.url_clean,
-                            expression: "url_clean"
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: { type: "text", id: "idurlclean" },
-                        domProps: { value: _vm.url_clean },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.url_clean = $event.target.value
-                          }
-                        }
-                      })
-                    ]),
-                    _vm._v(" "),
+                  }
+                },
+                [
+                  _c("div", { staticClass: "d-flex justify-content-start " }, [
                     _c(
                       "label",
-                      { staticClass: "font-weight-bold text-white mt-4" },
-                      [_vm._v("Descripción")]
+                      {
+                        staticClass:
+                          "font-weight-bold d-flex align-items-center mr-3 texto-tarjeta"
+                      },
+                      [_vm._v("Categoria")]
                     ),
                     _vm._v(" "),
-                    _c("ckeditor", {
-                      staticClass: "mt-5",
-                      attrs: {
-                        editor: _vm.editor,
-                        config: _vm.editorConfig,
-                        "tag-name": "textarea"
-                      },
-                      model: {
-                        value: _vm.content,
-                        callback: function($$v) {
-                          _vm.content = $$v
-                        },
-                        expression: "content"
-                      }
-                    }),
-                    _vm._v(" "),
                     _c(
-                      "div",
-                      { staticClass: "d-flex justify-content-start mt-3" },
-                      [
-                        _c(
-                          "label",
+                      "select",
+                      {
+                        directives: [
                           {
-                            staticClass:
-                              "font-weight-bold text-white d-flex align-items-center mr-3"
-                          },
-                          [_vm._v("Visible")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.posted,
-                                expression: "posted"
-                              }
-                            ],
-                            staticClass:
-                              "browser-default custom-select w-25 d-flex align-items-center",
-                            attrs: { id: "idposted" },
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.posted = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
-                              }
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.category_id,
+                            expression: "category_id"
+                          }
+                        ],
+                        staticClass:
+                          "browser-default custom-select d-flex align-items-center",
+                        attrs: { id: "idcontent" },
+                        on: {
+                          change: [
+                            function($event) {
+                              var $$selectedVal = Array.prototype.filter
+                                .call($event.target.options, function(o) {
+                                  return o.selected
+                                })
+                                .map(function(o) {
+                                  var val = "_value" in o ? o._value : o.value
+                                  return val
+                                })
+                              _vm.category_id = $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            },
+                            function($event) {
+                              return _vm.maxImagenes()
                             }
-                          },
-                          [
-                            _c("option", { attrs: { value: "not" } }, [
-                              _vm._v(" No ")
-                            ]),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "yes" } }, [
-                              _vm._v(" Si ")
-                            ])
                           ]
+                        }
+                      },
+                      _vm._l(_vm.categorias, function(cat) {
+                        return _c(
+                          "option",
+                          { key: cat.title, domProps: { value: cat.id } },
+                          [_vm._v(_vm._s(cat.title))]
                         )
-                      ]
+                      }),
+                      0
                     )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "d-flex justify-content-end mt-5" },
-                  [
-                    _c("btns-component", {
-                      attrs: { tipo: 18 },
+                  ]),
+                  _vm._v(" "),
+                  _c("select-component", {
+                    attrs: { selecionados: _vm.selecionados, max: _vm.max },
+                    on: { selecionadosEmit: _vm.vueltaSelect }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "md-form mt-3" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "active texto-tarjeta",
+                        attrs: { for: "ftitle" }
+                      },
+                      [_vm._v("Título")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.title,
+                          expression: "title"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "idtitle" },
+                      domProps: { value: _vm.title },
                       on: {
-                        traeEmit: function($event) {
-                          return _vm.enviar()
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.title = $event.target.value
                         }
                       }
                     })
-                  ],
-                  1
-                )
-              ]
-            )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "md-form mt-5" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "active texto-tarjeta",
+                        attrs: { for: "fsubtitulo" }
+                      },
+                      [_vm._v("Subtítulo")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.subtitulo,
+                          expression: "subtitulo"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "idsubtitulo" },
+                      domProps: { value: _vm.subtitulo },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.subtitulo = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "md-form mt-5 mb-5" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "active texto-tarjeta",
+                        attrs: { for: "furl_clean" }
+                      },
+                      [_vm._v("Url limpia")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.url_clean,
+                          expression: "url_clean"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "idurlclean" },
+                      domProps: { value: _vm.url_clean },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.url_clean = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("label", { staticClass: "mt-4 texto-tarjeta" }, [
+                    _vm._v("Descripción")
+                  ]),
+                  _vm._v(" "),
+                  _c("ckeditor", {
+                    staticClass: "mt-5",
+                    attrs: {
+                      editor: _vm.editor,
+                      config: _vm.editorConfig,
+                      "tag-name": "textarea"
+                    },
+                    model: {
+                      value: _vm.content,
+                      callback: function($$v) {
+                        _vm.content = $$v
+                      },
+                      expression: "content"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "d-flex justify-content-start mt-3" },
+                    [
+                      _c(
+                        "label",
+                        {
+                          staticClass:
+                            "d-flex align-items-center mr-3 texto-tarjeta"
+                        },
+                        [_vm._v("Visible")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "select",
+                        {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.posted,
+                              expression: "posted"
+                            }
+                          ],
+                          staticClass:
+                            "browser-default custom-select w-25 d-flex align-items-center",
+                          attrs: { id: "idposted" },
+                          on: {
+                            change: function($event) {
+                              var $$selectedVal = Array.prototype.filter
+                                .call($event.target.options, function(o) {
+                                  return o.selected
+                                })
+                                .map(function(o) {
+                                  var val = "_value" in o ? o._value : o.value
+                                  return val
+                                })
+                              _vm.posted = $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            }
+                          }
+                        },
+                        [
+                          _c("option", { attrs: { value: "not" } }, [
+                            _vm._v(" No ")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "yes" } }, [
+                            _vm._v(" Si ")
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "d-flex justify-content-end mt-5" },
+                [
+                  _c("btns-component", {
+                    attrs: { tipo: 18 },
+                    on: {
+                      traeEmit: function($event) {
+                        return _vm.enviar()
+                      }
+                    }
+                  })
+                ],
+                1
+              )
+            ])
           ])
         ])
       : _c("div", [_c("h1", [_vm._v("El post no existe")])])
@@ -57704,13 +57407,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "card card-body mb-3 mt-5 z-depth-4",
-      style: {
-        backgroundColor: _vm.ds_admin[4].backgroundColor,
-        color: _vm.ds_admin[4].color
-      }
-    },
+    { staticClass: "card card-body mb-3 mt-5 z-depth-4 fondo-card" },
     [
       _c("div", { staticStyle: { position: "relative" } }, [
         _c(
@@ -57734,7 +57431,7 @@ var render = function() {
                   : "color-apagado"
             }),
             _vm._v(" "),
-            _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
+            _c("span", { staticClass: "badge badge-pill mr-2" }, [
               _vm._v(_vm._s(_vm.post.orden))
             ]),
             _vm._v("\n            Grid\n        ")
@@ -57768,17 +57465,13 @@ var render = function() {
               : _vm._e(),
             _vm._v(" "),
             _c("h3", {
-              staticClass: "mt-0 font-weight-bold shadow",
-              style: {
-                color: _vm.ds_admin[4].linea,
-                borderBottom: _vm.ds_admin[4].border
-              },
+              staticClass: "mt-0 titulo-tarjeta",
               domProps: { innerHTML: _vm._s(_vm.post.title) }
             }),
             _vm._v(" "),
             _c("h5", {
               staticClass: "mt-0",
-              style: { color: _vm.ds_admin[4].texto },
+              style: { color: _vm.ds_admin[12].texto },
               domProps: { innerHTML: _vm._s(_vm.post.subtitulo) }
             }),
             _vm._v(" "),
@@ -57840,11 +57533,7 @@ var render = function() {
           _c(
             "router-link",
             {
-              staticClass: "btn btn-outline-primary btn-lg mr-3",
-              style: {
-                border: _vm.ds_admin[9].border,
-                color: _vm.ds_admin[9].color
-              },
+              staticClass: "btn btn-lg myboton myicono",
               attrs: {
                 to: {
                   name: "access.detalle.posts",
@@ -57900,26 +57589,12 @@ var render = function() {
         "div",
         { staticClass: "d-flex justify-content-start" },
         [
-          _c(
-            "div",
-            {
-              staticClass: "ml-3 mb-5",
-              style: {
-                fontSize: _vm.ds_admin[2].size,
-                fontWeight: 700,
-                fontFamily: _vm.ds_admin[2].family,
-                color: _vm.ds_admin[2].color,
-                borderBottom: _vm.ds_admin[2].border,
-                width: _vm.ds_admin[2].width
-              }
-            },
-            [
-              _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                _vm._v("P")
-              ]),
-              _vm._v("osts")
-            ]
-          ),
+          _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+            _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+              _vm._v("P")
+            ]),
+            _vm._v("osts")
+          ]),
           _vm._v(" "),
           _c("spinner-component", { attrs: { spinner: _vm.spinner } })
         ],
@@ -57939,8 +57614,7 @@ var render = function() {
           _c(
             "router-link",
             {
-              staticClass: "btn btn-lg",
-              style: { border: _vm.ds_admin[6].border },
+              staticClass: "btn btn-lg myboton",
               attrs: {
                 to: {
                   name: "access.new.posts",
@@ -57948,12 +57622,7 @@ var render = function() {
                 }
               }
             },
-            [
-              _c("i", {
-                class: _vm.ds_admin[6].icono,
-                style: { color: _vm.ds_admin[6].color }
-              })
-            ]
+            [_c("i", { staticClass: "myicono", class: _vm.ds_admin[6].icono })]
           )
         ],
         1
@@ -58179,22 +57848,12 @@ var render = function() {
           [
             _c(
               "div",
-              {
-                staticClass: "ml-3 mb-5",
-                style: {
-                  fontSize: _vm.ds_admin[2].size,
-                  fontWeight: 700,
-                  fontFamily: _vm.ds_admin[2].family,
-                  color: _vm.ds_admin[2].color,
-                  borderBottom: _vm.ds_admin[2].border,
-                  width: _vm.ds_admin[2].width
-                }
-              },
+              { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" },
               [
                 _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                  _vm._v("N")
+                  _vm._v("P")
                 ]),
-                _vm._v("uevo Post")
+                _vm._v("ost Nuevo")
               ]
             ),
             _vm._v(" "),
@@ -58203,281 +57862,260 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "card-body px-lg-5 pt-5",
-            style: {
-              backgroundColor: _vm.ds_admin[12].backgroundColor,
-              color: _vm.ds_admin[12].color
-            }
-          },
-          [
-            _c(
-              "form",
-              {
-                staticClass: "text-left",
-                staticStyle: { color: "#757575" },
-                on: {
-                  submit: function($event) {
-                    $event.preventDefault()
-                    return _vm.submit($event)
-                  }
+        _c("div", { staticClass: "card-body px-lg-5 pt-5 fondo-card" }, [
+          _c(
+            "form",
+            {
+              staticClass: "text-left text-dark",
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.submit($event)
                 }
-              },
-              [
-                _c("div", { staticClass: "d-flex flex-column mt-5" }, [
-                  _c("label", { staticClass: "text-left" }, [
-                    _vm._v("Categoria")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "select",
-                    {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.category_id,
-                          expression: "category_id"
-                        }
-                      ],
-                      staticClass: "browser-default custom-select mb-4 w-25",
-                      attrs: { id: "idcontent" },
-                      on: {
-                        change: [
-                          function($event) {
-                            var $$selectedVal = Array.prototype.filter
-                              .call($event.target.options, function(o) {
-                                return o.selected
-                              })
-                              .map(function(o) {
-                                var val = "_value" in o ? o._value : o.value
-                                return val
-                              })
-                            _vm.category_id = $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          },
-                          function($event) {
-                            return _vm.maxImagenes()
-                          }
-                        ]
-                      }
-                    },
-                    _vm._l(_vm.categorias, function(cat) {
-                      return _c(
-                        "option",
-                        { key: cat.title, domProps: { value: cat.id } },
-                        [_vm._v(_vm._s(cat.title))]
-                      )
-                    }),
-                    0
-                  )
+              }
+            },
+            [
+              _c("div", { staticClass: "d-flex flex-column mt-5" }, [
+                _c("label", { staticClass: "text-left texto-tarjeta" }, [
+                  _vm._v("Categoria")
                 ]),
                 _vm._v(" "),
-                _c("select-component", {
-                  attrs: { selecionados: _vm.selecionados, max: _vm.max },
-                  on: { selecionadosEmit: _vm.vueltaSelect }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "md-form mt-3" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "active font-weight-bold text-white",
-                      attrs: { for: "ftitle" }
-                    },
-                    [_vm._v("Título")]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
+                _c(
+                  "select",
+                  {
                     directives: [
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.title,
-                        expression: "title"
+                        value: _vm.category_id,
+                        expression: "category_id"
                       }
                     ],
-                    staticClass: "form-control",
-                    attrs: { type: "text", id: "idtitle" },
-                    domProps: { value: _vm.title },
+                    staticClass: "browser-default custom-select mb-4 w-25",
+                    attrs: { id: "idcontent" },
                     on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
+                      change: [
+                        function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.category_id = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        },
+                        function($event) {
+                          return _vm.maxImagenes()
                         }
-                        _vm.title = $event.target.value
-                      }
+                      ]
                     }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "md-form mt-5" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "active font-weight-bold text-white",
-                      attrs: { for: "fsubtitulo" }
-                    },
-                    [_vm._v("Subtítulo")]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.subtitulo,
-                        expression: "subtitulo"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { type: "text", id: "idsubtitulo" },
-                    domProps: { value: _vm.subtitulo },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.subtitulo = $event.target.value
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "md-form mt-5 mb-5" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "active font-weight-bold text-white",
-                      attrs: { for: "furl_clean" }
-                    },
-                    [_vm._v("Url limpia")]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.url_clean,
-                        expression: "url_clean"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { type: "text", id: "idurlclean" },
-                    domProps: { value: _vm.url_clean },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.url_clean = $event.target.value
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
+                  },
+                  _vm._l(_vm.categorias, function(cat) {
+                    return _c(
+                      "option",
+                      { key: cat.title, domProps: { value: cat.id } },
+                      [_vm._v(_vm._s(cat.title))]
+                    )
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c("select-component", {
+                attrs: { selecionados: _vm.selecionados, max: _vm.max },
+                on: { selecionadosEmit: _vm.vueltaSelect }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-3" }, [
                 _c(
                   "label",
-                  { staticClass: "font-weight-bold text-white mt-4" },
-                  [_vm._v("Descripción")]
+                  {
+                    staticClass: "active texto-tarjeta",
+                    attrs: { for: "ftitle" }
+                  },
+                  [_vm._v("Título")]
                 ),
                 _vm._v(" "),
-                _c("ckeditor", {
-                  staticClass: "mt-5",
-                  attrs: {
-                    editor: _vm.editor,
-                    config: _vm.editorConfig,
-                    "tag-name": "textarea"
-                  },
-                  model: {
-                    value: _vm.content,
-                    callback: function($$v) {
-                      _vm.content = $$v
-                    },
-                    expression: "content"
-                  }
-                }),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "d-flex justify-content-start mt-3" },
-                  [
-                    _c(
-                      "label",
-                      {
-                        staticClass:
-                          "font-weight-bold text-white d-flex align-items-center mr-3"
-                      },
-                      [_vm._v("Visible")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "select",
-                      {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.posted,
-                            expression: "posted"
-                          }
-                        ],
-                        staticClass:
-                          "browser-default custom-select w-25 d-flex align-items-center",
-                        attrs: { id: "idposted" },
-                        on: {
-                          change: function($event) {
-                            var $$selectedVal = Array.prototype.filter
-                              .call($event.target.options, function(o) {
-                                return o.selected
-                              })
-                              .map(function(o) {
-                                var val = "_value" in o ? o._value : o.value
-                                return val
-                              })
-                            _vm.posted = $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          }
-                        }
-                      },
-                      [
-                        _c("option", { attrs: { value: "not" } }, [
-                          _vm._v(" No ")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "yes" } }, [
-                          _vm._v(" Si ")
-                        ])
-                      ]
-                    )
-                  ]
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "d-flex justify-content-end mt-5" },
-              [
-                _c("btns-component", {
-                  attrs: { tipo: 18 },
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.title,
+                      expression: "title"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", id: "idtitle" },
+                  domProps: { value: _vm.title },
                   on: {
-                    traeEmit: function($event) {
-                      return _vm.enviar()
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.title = $event.target.value
                     }
                   }
                 })
-              ],
-              1
-            )
-          ]
-        )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-5" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "active texto-tarjeta",
+                    attrs: { for: "fsubtitulo" }
+                  },
+                  [_vm._v("Subtítulo")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.subtitulo,
+                      expression: "subtitulo"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", id: "idsubtitulo" },
+                  domProps: { value: _vm.subtitulo },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.subtitulo = $event.target.value
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-form mt-5 mb-5" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "active texto-tarjeta",
+                    attrs: { for: "furl_clean" }
+                  },
+                  [_vm._v("Url limpia")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.url_clean,
+                      expression: "url_clean"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", id: "idurlclean" },
+                  domProps: { value: _vm.url_clean },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.url_clean = $event.target.value
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "font-weight-bold text-dark mt-4" }, [
+                _vm._v("Descripción")
+              ]),
+              _vm._v(" "),
+              _c("ckeditor", {
+                staticClass: "mt-5",
+                attrs: {
+                  editor: _vm.editor,
+                  config: _vm.editorConfig,
+                  "tag-name": "textarea"
+                },
+                model: {
+                  value: _vm.content,
+                  callback: function($$v) {
+                    _vm.content = $$v
+                  },
+                  expression: "content"
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "d-flex justify-content-start mt-3" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass:
+                      "font-weight-bold text-dark d-flex align-items-center mr-3"
+                  },
+                  [_vm._v("Visible")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.posted,
+                        expression: "posted"
+                      }
+                    ],
+                    staticClass:
+                      "browser-default custom-select w-25 d-flex align-items-center",
+                    attrs: { id: "idposted" },
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.posted = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { value: "not" } }, [_vm._v(" No ")]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "yes" } }, [_vm._v(" Si ")])
+                  ]
+                )
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "d-flex justify-content-end mt-5" },
+            [
+              _c("btns-component", {
+                attrs: { tipo: 18 },
+                on: {
+                  traeEmit: function($event) {
+                    return _vm.enviar()
+                  }
+                }
+              })
+            ],
+            1
+          )
+        ])
       ])
     ])
   ])
@@ -58506,10 +58144,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "card card-body mb-3 mt-5",
-      style: { backgroundColor: _vm.ds_admin[12].backgroundColor }
-    },
+    { staticClass: "card card-body mb-3 mt-5 fondo-card texto-blanco" },
     [
       _c(
         "div",
@@ -58518,15 +58153,9 @@ var render = function() {
           _c(
             "span",
             {
-              staticClass: "badge ancho-categoria z-depth-4 p-3  text-md",
-              style: {
-                position: "absolute",
-                top: "-55px",
-                left: "0",
-                backgroundColor: _vm.ds_admin[13].backgroundColor,
-                border: _vm.ds_admin[13].border,
-                color: _vm.ds_admin[13].texto
-              }
+              staticClass:
+                "badge ancho-categoria z-depth-4 p-3 text-md tipo-post",
+              style: { position: "absolute", top: "-55px", left: "0" }
             },
             [
               _c("i", {
@@ -58537,7 +58166,7 @@ var render = function() {
                     : "color-apagado"
               }),
               _vm._v(" "),
-              _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
+              _c("span", { staticClass: "badge badge-pill mr-2" }, [
                 _vm._v(_vm._s(_vm.post.orden))
               ]),
               _vm._v("\n          Tipo Carousel\n      ")
@@ -58551,8 +58180,8 @@ var render = function() {
         { staticClass: "media-body text-center text-md-left ml-md-3 ml-0" },
         [
           _c("div", {
-            staticClass: "mt-0 d-flex justify-content-end mr-4",
-            style: { color: _vm.ds_admin[12].texto },
+            staticClass:
+              "mt-0 d-flex justify-content-end mr-4 fecha-formateada",
             domProps: {
               innerHTML: _vm._s("Actualizado: " + _vm.post.fecha_formateada)
             }
@@ -58569,11 +58198,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("h3", {
-            staticClass: "mt-0 font-weight-bold shadow",
-            style: {
-              color: _vm.ds_admin[12].linea,
-              borderBottom: _vm.ds_admin[12].border
-            },
+            staticClass: "mt-0 titulo-tarjeta",
             domProps: { innerHTML: _vm._s(_vm.post.title) }
           }),
           _vm._v(" "),
@@ -58583,10 +58208,7 @@ var render = function() {
             domProps: { innerHTML: _vm._s(_vm.post.subtitulo) }
           }),
           _vm._v(" "),
-          _c("p", {
-            style: { color: _vm.ds_admin[12].texto },
-            domProps: { innerHTML: _vm._s(_vm.post.content) }
-          })
+          _c("p", { domProps: { innerHTML: _vm._s(_vm.post.content) } })
         ]
       ),
       _vm._v(" "),
@@ -58676,11 +58298,7 @@ var render = function() {
           _c(
             "router-link",
             {
-              staticClass: "btn btn-outline-primary btn-lg mr-3",
-              style: {
-                border: _vm.ds_admin[9].border,
-                color: _vm.ds_admin[9].color
-              },
+              staticClass: "btn btn-lg myboton myicono mr-3",
               attrs: {
                 to: {
                   name: "access.detalle.posts",
@@ -58787,26 +58405,15 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "card card-body mb-3 mt-5 z-depth-4 bg-puente",
-      style: {
-        backgroundColor: _vm.ds_admin[12].backgroundColor,
-        color: _vm.ds_admin[12].color
-      }
-    },
+    { staticClass: "card card-body mb-3 mt-5 z-depth-4 fondo-card" },
     [
       _c("div", { staticStyle: { position: "relative" } }, [
         _c(
           "span",
           {
-            staticClass: "badge ancho-categoria z-depth-4 p-3  text-md",
-            style: {
-              position: "absolute",
-              top: "-55px",
-              left: "0",
-              backgroundColor: _vm.ds_admin[13].backgroundColor,
-              border: _vm.ds_admin[13].border
-            }
+            staticClass:
+              "badge ancho-categoria z-depth-4 p-3  text-md tipo-post",
+            style: { position: "absolute", top: "-55px", left: "0" }
           },
           [
             _c("i", {
@@ -58817,7 +58424,7 @@ var render = function() {
                   : "color-apagado"
             }),
             _vm._v(" "),
-            _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
+            _c("span", { staticClass: "badge badge-pill mr-2" }, [
               _vm._v(_vm._s(_vm.post.orden))
             ]),
             _vm._v("\n            Tipo Tres Imágenes\n        ")
@@ -58831,8 +58438,8 @@ var render = function() {
           { staticClass: "media-body text-center text-md-left ml-md-3 ml-0" },
           [
             _c("div", {
-              staticClass: "mt-0 d-flex justify-content-end mr-4",
-              style: { color: _vm.ds_admin[12].texto },
+              staticClass:
+                "mt-0 d-flex justify-content-end mr-4 fecha-formateada",
               domProps: {
                 innerHTML: _vm._s("Actualizado: " + _vm.post.fecha_formateada)
               }
@@ -58849,8 +58456,7 @@ var render = function() {
             }),
             _vm._v(" "),
             _c("h3", {
-              staticClass: "mt-0 font-weight-bold shadow",
-              style: { color: _vm.ds_admin[12].linea },
+              staticClass: "mt-0 titulo-tarjeta",
               domProps: { innerHTML: _vm._s(_vm.post.title) }
             }),
             _vm._v(" "),
@@ -58965,11 +58571,7 @@ var render = function() {
           _c(
             "router-link",
             {
-              staticClass: "btn btn-outline-primary btn-lg mr-3",
-              style: {
-                border: _vm.ds_admin[9].border,
-                color: _vm.ds_admin[9].color
-              },
+              staticClass: "btn btn-lg myboton myicono mr-3",
               attrs: {
                 to: {
                   name: "access.detalle.posts",
@@ -59019,24 +58621,18 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "card card-body mb-3 mt-5 z-depth-4 bg-puente",
-      style: {
-        backgroundColor: _vm.ds_admin[12].backgroundColor,
-        color: _vm.ds_admin[12].color
-      }
-    },
+    { staticClass: "card card-body mb-3 mt-5 z-depth-4 fondo-card" },
     [
       _c("div", { staticStyle: { position: "relative" } }, [
         _c(
           "span",
           {
-            staticClass: "badge ancho-categoria z-depth-4 p-3  text-md",
+            staticClass:
+              "badge ancho-categoria z-depth-4 p-3  text-md tipo-post",
             style: {
               position: "absolute",
               top: "-55px",
               left: "0",
-              backgroundColor: _vm.ds_admin[13].backgroundColor,
               border: _vm.ds_admin[13].border
             }
           },
@@ -59049,10 +58645,10 @@ var render = function() {
                   : "color-apagado"
             }),
             _vm._v(" "),
-            _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
+            _c("span", { staticClass: "badge badge-pill mr-2" }, [
               _vm._v(_vm._s(_vm.post.orden))
             ]),
-            _vm._v("\n            Tipo Imagen\n        ")
+            _vm._v("\n            Tipo Una imágen\n        ")
           ]
         )
       ]),
@@ -59063,8 +58659,8 @@ var render = function() {
           { staticClass: "media-body text-center text-md-left ml-md-3 ml-0" },
           [
             _c("div", {
-              staticClass: "mt-0 d-flex justify-content-end mr-4",
-              style: { color: _vm.ds_admin[12].texto },
+              staticClass:
+                "mt-0 d-flex justify-content-end mr-4 fecha-formateada",
               domProps: {
                 innerHTML: _vm._s("Actualizado: " + _vm.post.fecha_formateada)
               }
@@ -59085,11 +58681,7 @@ var render = function() {
                   }),
                   _vm._v(" "),
                   _c("h3", {
-                    staticClass: "mt-0 font-weight-bold shadow",
-                    style: {
-                      color: _vm.ds_admin[4].linea,
-                      borderBottom: _vm.ds_admin[4].border
-                    },
+                    staticClass: "mt-0 titulo-tarjeta",
                     domProps: { innerHTML: _vm._s(_vm.post.title) }
                   }),
                   _vm._v(" "),
@@ -59164,11 +58756,7 @@ var render = function() {
           _c(
             "router-link",
             {
-              staticClass: "btn btn-outline-primary btn-lg mr-3",
-              style: {
-                border: _vm.ds_admin[9].border,
-                color: _vm.ds_admin[9].color
-              },
+              staticClass: "btn btn-lg myboton myicono mr-3",
               attrs: {
                 to: {
                   name: "access.detalle.posts",
@@ -59455,26 +59043,12 @@ var render = function() {
       "div",
       { staticClass: "d-flex justify-content-start" },
       [
-        _c(
-          "div",
-          {
-            staticClass: "ml-3 mb-5",
-            style: {
-              fontSize: _vm.ds_admin[2].size,
-              fontWeight: 700,
-              fontFamily: _vm.ds_admin[2].family,
-              color: _vm.ds_admin[2].color,
-              borderBottom: _vm.ds_admin[2].border,
-              width: _vm.ds_admin[2].width
-            }
-          },
-          [
-            _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-              _vm._v("P")
-            ]),
-            _vm._v("roductos")
-          ]
-        ),
+        _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+          _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+            _vm._v("P")
+          ]),
+          _vm._v("roductos")
+        ]),
         _vm._v(" "),
         _c("spinner-component", { attrs: { spinner: _vm.spinner } })
       ],
@@ -59497,11 +59071,20 @@ var render = function() {
           on: { traeEmit: _vm.saveOrden }
         }),
         _vm._v(" "),
+        _c("btns-component", {
+          staticClass: "mr-3",
+          attrs: { tipo: 21 },
+          on: {
+            traeEmit: function($event) {
+              return _vm.generarPdf()
+            }
+          }
+        }),
+        _vm._v(" "),
         _c(
           "router-link",
           {
-            staticClass: "btn btn-lg mr-3",
-            style: { border: _vm.ds_admin[6].border },
+            staticClass: "btn btn-lg myboton",
             attrs: {
               to: {
                 name: "access.new.products",
@@ -59509,12 +59092,7 @@ var render = function() {
               }
             }
           },
-          [
-            _c("i", {
-              class: _vm.ds_admin[6].icono,
-              style: { color: _vm.ds_admin[6].color }
-            })
-          ]
+          [_c("i", { staticClass: "myicono", class: _vm.ds_admin[6].icono })]
         )
       ],
       1
@@ -59527,7 +59105,7 @@ var render = function() {
           _vm._l(_vm.items, function(item) {
             return _c(
               "li",
-              { key: item.titulo, staticClass: "media shadow-lg mb-5" },
+              { key: item.titulo, staticClass: "media shadow-lg mb-5 mt-5" },
               [
                 _c("product-list-item-component", {
                   attrs: { ultimoOrden: _vm.ultimoOrden, item: item },
@@ -59573,567 +59151,523 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "card card-body",
-      style: {
-        backgroundColor: _vm.ds_admin[14].backgroundColor,
-        color: _vm.ds_admin[14].color
-      }
-    },
-    [
+  return _c("div", { staticClass: "card-body fondo-card" }, [
+    _c("div", { staticClass: "mb-3", staticStyle: { position: "relative" } }, [
       _c(
-        "div",
-        { staticClass: "mb-3", staticStyle: { position: "relative" } },
+        "span",
+        {
+          staticClass: "badge ancho-categoria p-3 text-md tipo-post",
+          style: { position: "absolute", top: "-55px", left: "0" }
+        },
         [
-          _c(
-            "span",
-            {
-              staticClass: "badge ancho-categoria p-3  text-md",
-              style: {
-                position: "absolute",
-                top: "-55px",
-                left: "0",
-                backgroundColor: _vm.ds_admin[14].backgroundColor,
-                border: _vm.ds_admin[14].border
-              }
-            },
-            [
-              _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
-                _vm._v(_vm._s(_vm.item.orden))
-              ]),
-              _vm._v("\n              " + _vm._s(_vm.item.id) + "\n           ")
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", {
-            staticClass: "mt-0 d-flex justify-content-end mr-4",
-            style: { color: _vm.ds_admin[4].texto },
-            domProps: { innerHTML: _vm._s(_vm.item.fecha_formateada) }
-          })
+          _c("span", { staticClass: "badge badge-pill bg-primario mr-2" }, [
+            _vm._v(_vm._s(_vm.item.orden))
+          ]),
+          _vm._v("\n              " + _vm._s(_vm.item.id) + "\n           ")
         ]
       ),
       _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm.prod_producto.length
-        ? _c("div", { staticClass: "row mb-3" }, [
-            _c("div", { staticClass: "col-12 text-center" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "carousel slide",
-                  attrs: {
-                    id:
-                      "carouselExampleIndicators" + _vm.prod_producto[0]["id"],
-                    "data-ride": "carousel"
-                  }
-                },
-                [
-                  _c(
-                    "ol",
-                    { staticClass: "carousel-indicators" },
-                    _vm._l(_vm.prod_producto, function(p, index) {
-                      return _c("li", {
+      _c("div", {
+        staticClass: "mt-0 d-flex justify-content-end mr-4 fecha-formateada",
+        style: { color: _vm.ds_admin[4].texto },
+        domProps: { innerHTML: _vm._s(_vm.item.fecha_formateada) }
+      })
+    ]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm.prod_producto.length
+      ? _c("div", { staticClass: "row mb-3" }, [
+          _c("div", { staticClass: "col-12 text-center" }, [
+            _c(
+              "div",
+              {
+                staticClass: "carousel slide",
+                attrs: {
+                  id: "carouselExampleIndicators" + _vm.prod_producto[0]["id"],
+                  "data-ride": "carousel"
+                }
+              },
+              [
+                _c(
+                  "ol",
+                  { staticClass: "carousel-indicators" },
+                  _vm._l(_vm.prod_producto, function(p, index) {
+                    return _c("li", {
+                      key: p.id,
+                      class: index == 0 ? "active" : "",
+                      attrs: {
+                        "data-target":
+                          "#carouselExampleIndicators" +
+                          _vm.prod_producto[0]["id"],
+                        "data-slide-to": index
+                      }
+                    })
+                  }),
+                  0
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "carousel-inner" },
+                  _vm._l(_vm.prod_producto, function(p, index) {
+                    return _c(
+                      "div",
+                      {
                         key: p.id,
-                        class: index == 0 ? "active" : "",
-                        attrs: {
-                          "data-target":
-                            "#carouselExampleIndicators" +
-                            _vm.prod_producto[0]["id"],
-                          "data-slide-to": index
-                        }
-                      })
-                    }),
-                    0
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "carousel-inner" },
-                    _vm._l(_vm.prod_producto, function(p, index) {
-                      return _c(
-                        "div",
-                        {
-                          key: p.id,
-                          staticClass: "carousel-item",
-                          class: index == 0 ? "active" : ""
-                        },
-                        [
-                          p["visible"] == 1
-                            ? _c("img", {
-                                staticClass: "d-block w-100 img-fluid",
-                                attrs: {
-                                  src: "/storage/imagenes/" + p.image,
-                                  alt: ""
-                                }
-                              })
-                            : _vm._e(),
-                          _vm._v(" "),
-                          p["visible"] == 0
-                            ? _c("img", {
-                                staticClass: "d-block w-100 img-fluid",
-                                attrs: {
-                                  src: "/storage/imagenes/producto.jpg",
-                                  alt: ""
-                                }
-                              })
-                            : _vm._e()
-                        ]
-                      )
-                    }),
-                    0
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "carousel-control-prev",
-                      attrs: {
-                        href:
-                          "#carouselExampleIndicators" +
-                          _vm.prod_producto[0]["id"],
-                        role: "button",
-                        "data-slide": "prev"
-                      }
-                    },
-                    [
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "sr-only" }, [
-                        _vm._v("Previous")
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "carousel-control-next",
-                      attrs: {
-                        href:
-                          "#carouselExampleIndicators" +
-                          _vm.prod_producto[0]["id"],
-                        role: "button",
-                        "data-slide": "next"
-                      }
-                    },
-                    [
-                      _vm._m(2),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
-                    ]
-                  )
-                ]
-              )
-            ])
+                        staticClass: "carousel-item",
+                        class: index == 0 ? "active" : ""
+                      },
+                      [
+                        p["visible"] == 1
+                          ? _c("img", {
+                              staticClass: "d-block w-100 img-fluid",
+                              attrs: {
+                                src: "/storage/imagenes/" + p.image,
+                                alt: ""
+                              }
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        p["visible"] == 0
+                          ? _c("img", {
+                              staticClass: "d-block w-100 img-fluid",
+                              attrs: {
+                                src: "/storage/imagenes/producto.jpg",
+                                alt: ""
+                              }
+                            })
+                          : _vm._e()
+                      ]
+                    )
+                  }),
+                  0
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "carousel-control-prev",
+                    attrs: {
+                      href:
+                        "#carouselExampleIndicators" +
+                        _vm.prod_producto[0]["id"],
+                      role: "button",
+                      "data-slide": "prev"
+                    }
+                  },
+                  [
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "carousel-control-next",
+                    attrs: {
+                      href:
+                        "#carouselExampleIndicators" +
+                        _vm.prod_producto[0]["id"],
+                      role: "button",
+                      "data-slide": "next"
+                    }
+                  },
+                  [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+                  ]
+                )
+              ]
+            )
           ])
-        : _vm._e(),
-      _vm._v(" "),
-      _c("div", { staticClass: "row mt-3" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("p", {
-            style: {
-              backgroundColor: _vm.ds_admin[14].backgroundColor,
-              color: _vm.ds_admin[14].linea,
-              fontSize: _vm.ds_admin[14].size,
-              fontFamily: _vm.ds_admin[14].family
-            },
-            domProps: { innerHTML: _vm._s(_vm.item.titulo) }
-          })
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("p", {
-            staticClass: "text-muted text-sm",
-            domProps: { innerHTML: _vm._s(_vm.item.resena) }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("h2", {
-            staticClass: "lead",
-            domProps: { innerHTML: _vm._s(_vm.item.subtitulo) }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("p", {
-            staticClass: "text-muted text-sm",
-            domProps: { innerHTML: _vm._s(_vm.item.contenido) }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card card-primary" }, [
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-12 text-dark" }, [
-              _c(
-                "div",
-                { staticClass: "mb-3", staticStyle: { position: "relative" } },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticClass:
-                        "badge ancho-categoria z-depth-4 p-3  text-md",
-                      style: {
-                        position: "absolute",
-                        top: "-10px",
-                        left: "0",
-                        backgroundColor: _vm.ds_admin[14].backgroundColor,
-                        border: _vm.ds_admin[14].border,
-                        color: _vm.ds_admin[14].color
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                                       Iconos\n                                   "
-                      )
-                    ]
-                  )
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row", style: { border: _vm.ds_admin[15].border } },
-            _vm._l(_vm.prod_icono, function(ico) {
-              return _c(
-                "div",
-                { key: ico.id, staticClass: "col-sm-2 text-center pt-4" },
-                [
-                  ico["visible"] == 0
-                    ? _c("img", {
-                        staticClass: "img-fluid mb-2",
-                        attrs: { src: "/storage/imagenes/icono.png", alt: "" },
-                        on: {
-                          click: function($event) {
-                            return _vm.toast(ico["alt"])
-                          }
-                        }
-                      })
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "text-dark" }, [
-                    _vm._v(_vm._s(ico["image"]))
-                  ]),
-                  _vm._v(" "),
-                  ico["visible"] == 1
-                    ? _c("img", {
-                        staticClass: "img-fluid mb-2",
-                        attrs: {
-                          src: "/storage/imagenes/" + ico.image,
-                          alt: ""
-                        },
-                        on: {
-                          click: function($event) {
-                            return _vm.toast(ico["alt"])
-                          }
-                        }
-                      })
-                    : _vm._e()
-                ]
-              )
-            }),
-            0
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-12 mt-3" }, [
-              _c(
-                "div",
-                { staticClass: "mb-3", staticStyle: { position: "relative" } },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticClass: "badge ancho-categoria p-3 text-md",
-                      style: {
-                        position: "absolute",
-                        top: "10px",
-                        left: "0",
-                        backgroundColor: _vm.ds_admin[14].backgroundColor,
-                        border: _vm.ds_admin[14].border,
-                        color: _vm.ds_admin[14].color
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                                       Colores\n                                   "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", {
-                    staticClass: "mt-0 d-flex justify-content-end mr-4",
-                    style: { color: _vm.ds_admin[4].texto },
-                    domProps: { innerHTML: _vm._s(_vm.item.fecha_formateada) }
-                  })
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row", style: { border: _vm.ds_admin[15].border } },
-            _vm._l(_vm.prod_lacado, function(lacado) {
-              return _c(
-                "div",
-                { key: lacado.id, staticClass: "col-sm-2 text-center pt-4" },
-                [
-                  lacado["visible"] == 0
-                    ? _c("img", {
-                        staticClass: "img-fluid mb-2",
-                        attrs: { src: "/storage/imagenes/color.png", alt: "" },
-                        on: {
-                          click: function($event) {
-                            return _vm.toast(lacado["alt"])
-                          }
-                        }
-                      })
-                    : _vm._e(),
-                  _vm._v(" "),
-                  lacado["visible"] == 1
-                    ? _c("img", {
-                        staticClass: "img-fluid mb-2",
-                        attrs: {
-                          src: "/storage/imagenes/" + lacado.image,
-                          alt: ""
-                        },
-                        on: {
-                          click: function($event) {
-                            return _vm.toast(lacado["alt"])
-                          }
-                        }
-                      })
-                    : _vm._e()
-                ]
-              )
-            }),
-            0
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-sm-12 mt-3" }, [
-              _c(
-                "div",
-                { staticClass: "mb-3", staticStyle: { position: "relative" } },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticClass: "badge ancho-categoria p-3 text-md",
-                      style: {
-                        position: "absolute",
-                        top: "10px",
-                        left: "0",
-                        backgroundColor: _vm.ds_admin[14].backgroundColor,
-                        border: _vm.ds_admin[14].border,
-                        color: _vm.ds_admin[14].color
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                                       Tarifa\n                                   "
-                      )
-                    ]
-                  )
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row", style: { border: _vm.ds_admin[15].border } },
-            [
-              _c("div", { staticClass: "col-sm-12 pt-4 text-center" }, [
-                _vm.prod_tarifa.visible == 0
+      : _vm._e(),
+    _vm._v(" "),
+    _c("div", { staticClass: "row mt-3" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("p", {
+          staticClass: "titulo-tarjeta subrayar",
+          domProps: { innerHTML: _vm._s(_vm.item.titulo) }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("p", {
+          staticClass: "text-md texto-tarjeta",
+          domProps: { innerHTML: _vm._s(_vm.item.resena) }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("h2", {
+          staticClass: "lead subrayar",
+          domProps: { innerHTML: _vm._s(_vm.item.subtitulo) }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("p", {
+          staticClass: "texto-tarjeta",
+          domProps: { innerHTML: _vm._s(_vm.item.contenido) }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-primary" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 text-dark" }, [
+            _c(
+              "div",
+              { staticClass: "mb-3", staticStyle: { position: "relative" } },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass: "badge ancho-categoria z-depth-4 p-3 text-md",
+                    style: {
+                      position: "absolute",
+                      top: "-10px",
+                      left: "0",
+                      backgroundColor: _vm.ds_admin[14].backgroundColor,
+                      border: _vm.ds_admin[14].border,
+                      color: _vm.ds_admin[14].color
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                       Iconos\n                                   "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "row pb-3",
+            style: { border: _vm.ds_admin[15].border }
+          },
+          _vm._l(_vm.prod_icono, function(ico) {
+            return _c(
+              "div",
+              { key: ico.id, staticClass: "col-sm-2 text-center pt-4" },
+              [
+                ico["visible"] == 0
                   ? _c("img", {
                       staticClass: "img-fluid mb-2",
-                      attrs: {
-                        src: "/storage/imagenes/color.png",
-                        alt: _vm.prod_tarifa.alt
-                      },
+                      attrs: { src: "/storage/imagenes/icono.png", alt: "" },
                       on: {
                         click: function($event) {
-                          return _vm.toast(_vm.prod_tarifa.image)
+                          return _vm.toast(ico["alt"])
                         }
                       }
                     })
                   : _vm._e(),
                 _vm._v(" "),
-                _vm.prod_tarifa.visible == 1
+                _c("p", [_vm._v(_vm._s(ico["image"]))]),
+                _vm._v(" "),
+                ico["visible"] == 1
                   ? _c("img", {
                       staticClass: "img-fluid mb-2",
-                      attrs: {
-                        src: "/storage/imagenes/" + _vm.prod_tarifa.image,
-                        alt: _vm.prod_tarifa.alt
-                      },
+                      attrs: { src: "/storage/imagenes/" + ico.image, alt: "" },
                       on: {
                         click: function($event) {
-                          return _vm.toast(_vm.prod_tarifa.image)
+                          return _vm.toast(ico["alt"])
                         }
                       }
                     })
                   : _vm._e()
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "row mt-1" }, [
-            _c("div", { staticClass: "col-sm-12" }, [
-              _c(
-                "div",
-                { staticClass: "mb-3", staticStyle: { position: "relative" } },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticClass: "badge ancho-categoria p-3 text-md",
-                      style: {
-                        position: "absolute",
-                        top: "20px",
-                        left: "0",
-                        backgroundColor: _vm.ds_admin[14].backgroundColor,
-                        border: _vm.ds_admin[14].border,
-                        color: _vm.ds_admin[14].color
+              ]
+            )
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 mt-3" }, [
+            _c(
+              "div",
+              { staticClass: "mb-3", staticStyle: { position: "relative" } },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass: "badge ancho-categoria p-3 text-md",
+                    style: {
+                      position: "absolute",
+                      top: "10px",
+                      left: "0",
+                      backgroundColor: _vm.ds_admin[14].backgroundColor,
+                      border: _vm.ds_admin[14].border,
+                      color: _vm.ds_admin[14].color
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                       Colores\n                                   "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "row pb-3",
+            style: { border: _vm.ds_admin[15].border }
+          },
+          _vm._l(_vm.prod_lacado, function(lacado) {
+            return _c(
+              "div",
+              { key: lacado.id, staticClass: "col-sm-2 text-center pt-5 pb-3" },
+              [
+                lacado["visible"] == 0
+                  ? _c("img", {
+                      staticClass: "img-fluid mb-2",
+                      attrs: { src: "/storage/imagenes/color.png", alt: "" },
+                      on: {
+                        click: function($event) {
+                          return _vm.toast(lacado["alt"])
+                        }
                       }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                lacado["visible"] == 1
+                  ? _c("img", {
+                      staticClass: "img-fluid mb-2",
+                      attrs: {
+                        src: "/storage/imagenes/" + lacado.image,
+                        alt: ""
+                      },
+                      on: {
+                        click: function($event) {
+                          return _vm.toast(lacado["alt"])
+                        }
+                      }
+                    })
+                  : _vm._e()
+              ]
+            )
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12 mt-3" }, [
+            _c(
+              "div",
+              { staticClass: "mb-3", staticStyle: { position: "relative" } },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass: "badge ancho-categoria p-3 text-md",
+                    style: {
+                      position: "absolute",
+                      top: "10px",
+                      left: "0",
+                      backgroundColor: _vm.ds_admin[14].backgroundColor,
+                      border: _vm.ds_admin[14].border,
+                      color: _vm.ds_admin[14].color
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                       Tarifa\n                                   "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "row pb-3",
+            style: { border: _vm.ds_admin[15].border }
+          },
+          [
+            _c("div", { staticClass: "col-sm-12 text-center mt-5 mb-3" }, [
+              _vm.prod_tarifa.visible == 0
+                ? _c("img", {
+                    staticClass: "img-fluid mb-2",
+                    attrs: {
+                      src: "/storage/imagenes/color.png",
+                      alt: _vm.prod_tarifa.alt
                     },
-                    [
-                      _vm._v(
-                        "\n                                       Sellos\n                                   "
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", {
-                    staticClass: "mt-0 d-flex justify-content-end mr-4",
-                    style: { color: _vm.ds_admin[4].texto },
-                    domProps: { innerHTML: _vm._s(_vm.item.fecha_formateada) }
+                    on: {
+                      click: function($event) {
+                        return _vm.toast(_vm.prod_tarifa.image)
+                      }
+                    }
                   })
-                ]
-              )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.prod_tarifa.visible == 1
+                ? _c("img", {
+                    staticClass: "img-fluid mb-2",
+                    attrs: {
+                      src: "/storage/imagenes/" + _vm.prod_tarifa.image,
+                      alt: _vm.prod_tarifa.alt
+                    },
+                    on: {
+                      click: function($event) {
+                        return _vm.toast(_vm.prod_tarifa.image)
+                      }
+                    }
+                  })
+                : _vm._e()
             ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "row mb-5",
-              style: { border: _vm.ds_admin[15].border }
-            },
-            _vm._l(_vm.prod_sello, function(sello) {
-              return _c(
-                "div",
-                { key: sello.id, staticClass: "col-sm-2 mt-5" },
-                [
-                  sello["visible"] == 0
-                    ? _c("img", {
-                        staticClass: "img-fluid mb-2",
-                        attrs: { src: "/storage/imagenes/sello.jpg", alt: "" },
-                        on: {
-                          click: function($event) {
-                            return _vm.toast(sello["alt"])
-                          }
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm-12" }, [
+            _c(
+              "div",
+              { staticClass: "mb-3", staticStyle: { position: "relative" } },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass: "badge ancho-categoria p-3 text-md",
+                    style: {
+                      position: "absolute",
+                      top: "20px",
+                      left: "0",
+                      backgroundColor: _vm.ds_admin[14].backgroundColor,
+                      border: _vm.ds_admin[14].border,
+                      color: _vm.ds_admin[14].color
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                                       Sellos\n                                   "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "row mb-5",
+            style: { border: _vm.ds_admin[15].border }
+          },
+          _vm._l(_vm.prod_sello, function(sello) {
+            return _c(
+              "div",
+              { key: sello.id, staticClass: "col-sm-2 mt-5 mb-4 ml-3" },
+              [
+                sello["visible"] == 0
+                  ? _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "/storage/imagenes/sello.jpg", alt: "" },
+                      on: {
+                        click: function($event) {
+                          return _vm.toast(sello["alt"])
                         }
-                      })
-                    : _vm._e(),
-                  _vm._v(" "),
-                  sello["visible"] == 1
-                    ? _c("img", {
-                        staticClass: "img-fluid mb-2",
-                        attrs: {
-                          src: "/storage/imagenes/" + sello.image,
-                          alt: ""
-                        },
-                        on: {
-                          click: function($event) {
-                            return _vm.toast(sello["alt"])
-                          }
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                sello["visible"] == 1
+                  ? _c("img", {
+                      staticClass: "img-fluid mb-2",
+                      attrs: {
+                        src: "/storage/imagenes/" + sello.image,
+                        alt: ""
+                      },
+                      on: {
+                        click: function($event) {
+                          return _vm.toast(sello["alt"])
                         }
-                      })
-                    : _vm._e()
-                ]
-              )
-            }),
-            0
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "d-flex justify-content-end mt-4" },
-        [
-          _vm.item.orden != 0
-            ? _c("btns-component", {
-                staticClass: "mr-3",
-                attrs: { tipo: 7 },
-                on: {
-                  traeEmit: function($event) {
-                    return _vm.subir(_vm.item)
-                  }
-                }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.item.orden != _vm.ultimoOrden
-            ? _c("btns-component", {
-                staticClass: "mr-3",
-                attrs: { tipo: 8 },
-                on: {
-                  traeEmit: function($event) {
-                    return _vm.bajar(_vm.item)
-                  }
-                }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _c(
-            "router-link",
-            {
-              staticClass: "btn btn-outline-primary btn-lg mr-3",
-              style: {
-                border: _vm.ds_admin[9].border,
-                color: _vm.ds_admin[9].color
-              },
-              attrs: {
-                to: {
-                  name: "access.edit.products",
-                  params: { id: _vm.item.id }
+                      }
+                    })
+                  : _vm._e()
+              ]
+            )
+          }),
+          0
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "d-flex justify-content-end mt-4" },
+      [
+        _vm.item.orden != 0
+          ? _c("btns-component", {
+              staticClass: "mr-3",
+              attrs: { tipo: 7 },
+              on: {
+                traeEmit: function($event) {
+                  return _vm.subir(_vm.item)
                 }
               }
-            },
-            [_c("i", { class: _vm.ds_admin[9].icono })]
-          ),
-          _vm._v(" "),
-          _c("btns-component", {
-            staticClass: "mr-3",
-            attrs: { tipo: 10 },
-            on: {
-              traeEmit: function($event) {
-                return _vm.eliminar(_vm.item)
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.item.orden != _vm.ultimoOrden
+          ? _c("btns-component", {
+              staticClass: "mr-3",
+              attrs: { tipo: 8 },
+              on: {
+                traeEmit: function($event) {
+                  return _vm.bajar(_vm.item)
+                }
               }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _c(
+          "router-link",
+          {
+            staticClass: "btn btn-lg myboton mr-3",
+            attrs: {
+              to: { name: "access.edit.products", params: { id: _vm.item.id } }
             }
-          })
-        ],
-        1
-      )
-    ]
-  )
+          },
+          [_c("i", { staticClass: "myicono", class: _vm.ds_admin[9].icono })]
+        ),
+        _vm._v(" "),
+        _c("btns-component", {
+          staticClass: "mr-3",
+          attrs: { tipo: 10 },
+          on: {
+            traeEmit: function($event) {
+              return _vm.eliminar(_vm.item)
+            }
+          }
+        })
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -60198,26 +59732,12 @@ var render = function() {
         "div",
         { staticClass: "d-flex justify-content-start" },
         [
-          _c(
-            "div",
-            {
-              staticClass: "ml-3 mb-5",
-              style: {
-                fontSize: _vm.ds_admin[2].size,
-                fontWeight: 700,
-                fontFamily: _vm.ds_admin[2].family,
-                color: _vm.ds_admin[2].color,
-                borderBottom: _vm.ds_admin[2].border,
-                width: _vm.ds_admin[2].width
-              }
-            },
-            [
-              _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                _vm._v("E")
-              ]),
-              _vm._v("ditar Producto")
-            ]
-          ),
+          _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+            _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+              _vm._v("P")
+            ]),
+            _vm._v("roductos Edición")
+          ]),
           _vm._v(" "),
           _c("spinner-component", { attrs: { spinner: _vm.spinner } })
         ],
@@ -60243,12 +59763,7 @@ var render = function() {
           _c(
             "form",
             {
-              staticClass: "text-left p-3",
-              staticStyle: { color: "#757575" },
-              style: {
-                color: _vm.ds_admin[14].color,
-                backgroundColor: _vm.ds_admin[14].backgroundColor
-              },
+              staticClass: "text-left p-3 fondo-principal text-white",
               on: {
                 submit: function($event) {
                   $event.preventDefault()
@@ -60462,10 +59977,11 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "d-flex justify-content-start flex-wrap align-content-center"
+                      "d-flex justify-content-start flex-wrap align-items-center"
                   },
                   [
                     _c("btns-component", {
+                      staticClass: "mr-3",
                       attrs: { tipo: 10 },
                       on: {
                         traeEmit: function($event) {
@@ -60554,26 +60070,12 @@ var render = function() {
         "div",
         { staticClass: "d-flex justify-content-start" },
         [
-          _c(
-            "div",
-            {
-              staticClass: "ml-3 mb-5",
-              style: {
-                fontSize: _vm.ds_admin[2].size,
-                fontWeight: 700,
-                fontFamily: _vm.ds_admin[2].family,
-                color: _vm.ds_admin[2].color,
-                borderBottom: _vm.ds_admin[2].border,
-                width: _vm.ds_admin[2].width
-              }
-            },
-            [
-              _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
-                _vm._v("N")
-              ]),
-              _vm._v("uevo Producto")
-            ]
-          ),
+          _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+            _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+              _vm._v("P")
+            ]),
+            _vm._v("roducto Nuevo")
+          ]),
           _vm._v(" "),
           _c("spinner-component", { attrs: { spinner: _vm.spinner } })
         ],
@@ -60599,11 +60101,7 @@ var render = function() {
           _c(
             "form",
             {
-              staticClass: "text-left mt-5 p-5",
-              style: {
-                color: _vm.ds_admin[14].color,
-                backgroundColor: _vm.ds_admin[14].backgroundColor
-              },
+              staticClass: "text-left mt-5 p-5 fondo-principal text-white",
               on: {
                 submit: function($event) {
                   $event.preventDefault()
@@ -60910,689 +60408,639 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "container",
-      style: { backgroundColor: _vm.ds_admin[14].backgroundColor }
-    },
-    [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [_vm._v("Añade imágenes al carousel")]
-            ),
-            _vm._v(" "),
-            _c(
-              "form",
-              {
-                staticClass:
-                  "form-inline d-flex justify-content-center md-form form-sm active-purple-2 p-2"
-              },
-              [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.consulta,
-                      expression: "consulta"
-                    }
-                  ],
-                  staticClass: "form-control form-control-sm mr-3 mt-1 w-75",
-                  attrs: {
-                    type: "text",
-                    placeholder: "Buscar por nombre de imagen",
-                    "aria-label": "Buscar"
-                  },
-                  domProps: { value: _vm.consulta },
-                  on: {
-                    keyup: _vm.buscar,
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.consulta = $event.target.value
-                    }
+  return _c("div", { staticClass: "container fondo-principal" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [_vm._v("Añade imágenes al carousel")]
+          ),
+          _vm._v(" "),
+          _c(
+            "form",
+            {
+              staticClass:
+                "form-inline d-flex justify-content-center md-form form-sm active-purple-2 p-2"
+            },
+            [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.consulta,
+                    expression: "consulta"
                   }
+                ],
+                staticClass: "form-control form-control-sm mr-3 mt-1 w-75",
+                attrs: {
+                  type: "text",
+                  placeholder: "Buscar por nombre de imagen",
+                  "aria-label": "Buscar"
+                },
+                domProps: { value: _vm.consulta },
+                on: {
+                  keyup: _vm.buscar,
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.consulta = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _vm._m(0)
+            ]
+          ),
+          _vm._v(" "),
+          _vm.imagenes.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-2" },
+                _vm._l(_vm.imagenes, function(img) {
+                  return _c(
+                    "li",
+                    {
+                      key: img.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 16 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.addProducto(img)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 rounded img-fluid m-l-2",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + img.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(img.image) +
+                          "\n                    "
+                      )
+                    ],
+                    1
+                  )
                 }),
-                _vm._v(" "),
-                _vm._m(0)
-              ]
-            ),
-            _vm._v(" "),
-            _vm.imagenes.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-2" },
-                  _vm._l(_vm.imagenes, function(img) {
-                    return _c(
-                      "li",
-                      {
-                        key: img.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "d-flex" },
-                          [
-                            _c("btns-component", {
-                              attrs: { tipo: 16 },
-                              on: {
-                                traeEmit: function($event) {
-                                  return _vm.addProducto(img)
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("img", {
-                              staticClass: "mb-3 rounded img-fluid m-l-2",
-                              attrs: {
-                                id: "foto1",
-                                src: "/storage/imagenes/" + img.image,
-                                alt: "Generic placeholder image",
-                                width: "50px"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(img.image) +
-                            "\n                    "
-                        )
-                      ]
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [
-                _vm._v(
-                  "\n                    Imagenes agregadas\n                "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm.listaProductos.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-3" },
-                  _vm._l(_vm.listaProductos, function(producto, index) {
-                    return _c(
-                      "li",
-                      {
-                        key: producto.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c("btns-component", {
-                          attrs: { tipo: 17 },
-                          on: {
-                            traeEmit: function($event) {
-                              return _vm.delProducto(index)
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("img", {
-                          staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
-                          attrs: {
-                            id: "foto1",
-                            src: "/storage/imagenes/" + producto.image,
-                            alt: "Generic placeholder image",
-                            width: "50px"
-                          }
-                        }),
-                        _vm._v(
-                          _vm._s(producto.image) + "\n                    "
-                        )
-                      ],
-                      1
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
+                0
+              )
+            : _vm._e()
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [_vm._v("Añade iconos")]
-            ),
-            _vm._v(" "),
-            _vm.imagenesIconos.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-2" },
-                  _vm._l(_vm.imagenesIconos, function(imgI) {
-                    return _c(
-                      "li",
-                      {
-                        key: imgI.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "d-flex" },
-                          [
-                            _c("btns-component", {
-                              attrs: { tipo: 16 },
-                              on: {
-                                traeEmit: function($event) {
-                                  return _vm.addIcono(imgI)
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("img", {
-                              staticClass:
-                                "mb-3 mr-3 rounded img-fluid z-depth-3",
-                              attrs: {
-                                id: "foto1",
-                                src: "/storage/imagenes/" + imgI.image,
-                                alt: "Generic placeholder image",
-                                width: "50px"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(imgI.image) +
-                            "\n                    "
-                        )
-                      ]
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [
-                _vm._v(
-                  "\n                    Imagenes agregadas\n                "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm.listaIconos.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-3" },
-                  _vm._l(_vm.listaIconos, function(icono, index) {
-                    return _c(
-                      "li",
-                      {
-                        key: icono.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c("btns-component", {
-                          attrs: { tipo: 17 },
-                          on: {
-                            traeEmit: function($event) {
-                              return _vm.delIcono(index)
-                            }
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [
+              _vm._v(
+                "\n                    Imagenes agregadas\n                "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm.listaProductos.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-3" },
+                _vm._l(_vm.listaProductos, function(producto, index) {
+                  return _c(
+                    "li",
+                    {
+                      key: producto.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 17 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.delProducto(index)
                           }
-                        }),
-                        _vm._v(" "),
-                        _c("img", {
-                          staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
-                          attrs: {
-                            id: "foto1",
-                            src: "/storage/imagenes/" + icono.image,
-                            alt: "Generic placeholder image",
-                            width: "50px"
-                          }
-                        }),
-                        _vm._v(_vm._s(icono.image) + "\n                    ")
-                      ],
-                      1
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [_vm._v("Añade colores")]
-            ),
-            _vm._v(" "),
-            _vm.imagenesColores.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-2" },
-                  _vm._l(_vm.imagenesColores, function(imgC) {
-                    return _c(
-                      "li",
-                      {
-                        key: imgC.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "d-flex" },
-                          [
-                            _c("btns-component", {
-                              attrs: { tipo: 16 },
-                              on: {
-                                traeEmit: function($event) {
-                                  return _vm.addColor(imgC)
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("img", {
-                              staticClass:
-                                "mb-3 mr-3 rounded img-fluid z-depth-3",
-                              attrs: {
-                                id: "foto1",
-                                src: "/storage/imagenes/" + imgC.image,
-                                alt: "Generic placeholder image",
-                                width: "50px"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(imgC.image) +
-                            "\n                    "
-                        )
-                      ]
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [
-                _vm._v(
-                  "\n                    Imagenes agregadas\n                "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm.listaColores.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-3" },
-                  _vm._l(_vm.listaColores, function(color, index) {
-                    return _c(
-                      "li",
-                      {
-                        key: color.image,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "d-flex" },
-                          [
-                            _c("btns-component", {
-                              attrs: { tipo: 17 },
-                              on: {
-                                traeEmit: function($event) {
-                                  return _vm.delColor(index)
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("img", {
-                              staticClass:
-                                "mb-3 mr-3 rounded img-fluid z-depth-3",
-                              attrs: {
-                                id: "foto1",
-                                src: "/storage/imagenes/" + color.image,
-                                alt: "Generic placeholder image",
-                                width: "50px"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(color.image) +
-                            "\n                    "
-                        )
-                      ]
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [_vm._v("Añade Sellos")]
-            ),
-            _vm._v(" "),
-            _vm.imagenesSellos.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-2" },
-                  _vm._l(_vm.imagenesSellos, function(imgS) {
-                    return _c(
-                      "li",
-                      {
-                        key: imgS.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "d-flex" },
-                          [
-                            _c("btns-component", {
-                              attrs: { tipo: 16 },
-                              on: {
-                                traeEmit: function($event) {
-                                  return _vm.addSello(imgS)
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("img", {
-                              staticClass:
-                                "mb-3 mr-3 rounded img-fluid z-depth-3",
-                              attrs: {
-                                id: "foto1",
-                                src: "/storage/imagenes/" + imgS.image,
-                                alt: "Generic placeholder image",
-                                width: "50px"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(
-                          "  \n                        " +
-                            _vm._s(imgS.image) +
-                            "\n                    "
-                        )
-                      ]
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [
-                _vm._v(
-                  "\n                    Imagenes agregadas\n                "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm.listaSellos.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-3" },
-                  _vm._l(_vm.listaSellos, function(sello, index) {
-                    return _c(
-                      "li",
-                      {
-                        key: sello.image,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c("btns-component", {
-                          attrs: { tipo: 17 },
-                          on: {
-                            traeEmit: function($event) {
-                              return _vm.delSello(index)
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("img", {
-                          staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
-                          attrs: {
-                            id: "foto1",
-                            src: "/storage/imagenes/" + sello.image,
-                            alt: "Generic placeholder image",
-                            width: "50px"
-                          }
-                        }),
-                        _vm._v(_vm._s(sello.image) + "\n                    ")
-                      ],
-                      1
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [_vm._v("Añade Tarifas")]
-            ),
-            _vm._v(" "),
-            _vm.imagenesTarifas.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-2" },
-                  _vm._l(_vm.imagenesTarifas, function(imgT) {
-                    return _c(
-                      "li",
-                      {
-                        key: imgT.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "d-flex" },
-                          [
-                            _c("btns-component", {
-                              attrs: { tipo: 16 },
-                              on: {
-                                traeEmit: function($event) {
-                                  return _vm.addTarifa(imgT)
-                                }
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("img", {
-                              staticClass:
-                                "mb-3 mr-3 rounded img-fluid z-depth-3",
-                              attrs: {
-                                id: "foto1",
-                                src: "/storage/imagenes/" + imgT.image,
-                                alt: "Generic placeholder image",
-                                width: "50px"
-                              }
-                            })
-                          ],
-                          1
-                        ),
-                        _vm._v(
-                          "  \n                        " +
-                            _vm._s(imgT.image) +
-                            "\n                    "
-                        )
-                      ]
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", { staticClass: "card example-1 mt-5" }, [
-            _c(
-              "div",
-              {
-                staticClass: "p-2 ml-3",
-                style: { borderBottom: _vm.ds_admin[16].border },
-                attrs: { id: "section1" }
-              },
-              [
-                _vm._v(
-                  "\n                    Imagenes agregadas\n                "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _vm.listaTarifas.length
-              ? _c(
-                  "ul",
-                  { staticClass: "list-group mt-3" },
-                  _vm._l(_vm.listaTarifas, function(tarifa, e) {
-                    return _c(
-                      "li",
-                      {
-                        key: tarifa.id,
-                        staticClass:
-                          "list-group-item d-flex justify-content-between"
-                      },
-                      [
-                        _c("btns-component", {
-                          attrs: { tipo: 17 },
-                          on: {
-                            traeEmit: function($event) {
-                              return _vm.delTarifa(e)
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("img", {
-                          staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
-                          attrs: {
-                            id: "foto1",
-                            src: "/storage/imagenes/" + tarifa.image,
-                            alt: "Generic placeholder image",
-                            width: "50px"
-                          }
-                        }),
-                        _vm._v(_vm._s(tarifa.image) + "\n                    ")
-                      ],
-                      1
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + producto.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(_vm._s(producto.image) + "\n                    ")
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
         ])
       ])
-    ]
-  )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [_vm._v("Añade iconos")]
+          ),
+          _vm._v(" "),
+          _vm.imagenesIconos.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-2" },
+                _vm._l(_vm.imagenesIconos, function(imgI) {
+                  return _c(
+                    "li",
+                    {
+                      key: imgI.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 16 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.addIcono(imgI)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + imgI.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(imgI.image) +
+                          "\n                    "
+                      )
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [
+              _vm._v(
+                "\n                    Imagenes agregadas\n                "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm.listaIconos.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-3" },
+                _vm._l(_vm.listaIconos, function(icono, index) {
+                  return _c(
+                    "li",
+                    {
+                      key: icono.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 17 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.delIcono(index)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + icono.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(_vm._s(icono.image) + "\n                    ")
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [_vm._v("Añade colores")]
+          ),
+          _vm._v(" "),
+          _vm.imagenesColores.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-2" },
+                _vm._l(_vm.imagenesColores, function(imgC) {
+                  return _c(
+                    "li",
+                    {
+                      key: imgC.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 16 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.addColor(imgC)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + imgC.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(imgC.image) +
+                          "\n                    "
+                      )
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [
+              _vm._v(
+                "\n                    Imagenes agregadas\n                "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm.listaColores.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-3" },
+                _vm._l(_vm.listaColores, function(color, index) {
+                  return _c(
+                    "li",
+                    {
+                      key: color.image,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 17 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.delColor(index)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + color.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(color.image) +
+                          "\n                    "
+                      )
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [_vm._v("Añade Sellos")]
+          ),
+          _vm._v(" "),
+          _vm.imagenesSellos.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-2" },
+                _vm._l(_vm.imagenesSellos, function(imgS) {
+                  return _c(
+                    "li",
+                    {
+                      key: imgS.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 16 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.addSello(imgS)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + imgS.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(imgS.image) +
+                          "\n                    "
+                      )
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [
+              _vm._v(
+                "\n                    Imagenes agregadas\n                "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm.listaSellos.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-3" },
+                _vm._l(_vm.listaSellos, function(sello, index) {
+                  return _c(
+                    "li",
+                    {
+                      key: sello.image,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 17 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.delSello(index)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + sello.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(_vm._s(sello.image) + "\n                    ")
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [_vm._v("Añade Tarifas")]
+          ),
+          _vm._v(" "),
+          _vm.imagenesTarifas.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-2" },
+                _vm._l(_vm.imagenesTarifas, function(imgT) {
+                  return _c(
+                    "li",
+                    {
+                      key: imgT.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 16 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.addTarifa(imgT)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + imgT.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(imgT.image) +
+                          "\n                    "
+                      )
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6" }, [
+        _c("div", { staticClass: "card example-1 mt-5" }, [
+          _c(
+            "div",
+            {
+              staticClass: "p-2 ml-3",
+              style: { borderBottom: _vm.ds_admin[16].border },
+              attrs: { id: "section1" }
+            },
+            [
+              _vm._v(
+                "\n                    Imagenes agregadas\n                "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _vm.listaTarifas.length
+            ? _c(
+                "ul",
+                { staticClass: "list-group mt-3" },
+                _vm._l(_vm.listaTarifas, function(tarifa, e) {
+                  return _c(
+                    "li",
+                    {
+                      key: tarifa.id,
+                      staticClass:
+                        "list-group-item d-flex justify-content-between"
+                    },
+                    [
+                      _c("btns-component", {
+                        attrs: { tipo: 17 },
+                        on: {
+                          traeEmit: function($event) {
+                            return _vm.delTarifa(e)
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "mb-3 mr-3 rounded img-fluid z-depth-3",
+                        attrs: {
+                          id: "foto1",
+                          src: "/storage/imagenes/" + tarifa.image,
+                          alt: "Generic placeholder image",
+                          width: "50px"
+                        }
+                      }),
+                      _vm._v(_vm._s(tarifa.image) + "\n                    ")
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            : _vm._e()
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -61664,25 +61112,20 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container mt-5" }, [
-    _c("h2", { staticClass: "altura-linea" }),
-    _vm._v(" "),
     _c(
       "div",
-      {
-        staticClass: "ml-3",
-        style: {
-          fontSize: _vm.ds_admin[2].size,
-          fontWeight: 700,
-          fontFamily: _vm.ds_admin[2].family,
-          color: _vm.ds_admin[2].color,
-          borderBottom: _vm.ds_admin[2].border,
-          width: _vm.ds_admin[2].width
-        }
-      },
+      { staticClass: "d-flex justify-content-start" },
       [
-        _c("span", { style: { color: _vm.ds_admin[2].linea } }, [_vm._v("R")]),
-        _vm._v("oles")
-      ]
+        _c("div", { staticClass: "ml-3 mb-5 titulo-listas subrayar-verde" }, [
+          _c("span", { style: { color: _vm.ds_admin[2].linea } }, [
+            _vm._v("R")
+          ]),
+          _vm._v("oles")
+        ]),
+        _vm._v(" "),
+        _c("spinner-component", { attrs: { spinner: _vm.spinner } })
+      ],
+      1
     ),
     _vm._v(" "),
     _c(
@@ -61721,7 +61164,7 @@ var render = function() {
                     "card-header border-bottom-0 d-flex justify-content-end"
                 },
                 [
-                  _c("span", { staticClass: "color-texto" }, [
+                  _c("span", { staticClass: "fecha-formateada" }, [
                     _vm._v(
                       "Última modificación: " +
                         _vm._s(card_rol.fecha_formateada)
@@ -61730,29 +61173,24 @@ var render = function() {
                 ]
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "card-body pt-0 color-texto" }, [
+              _c("div", { staticClass: "card-body pt-0 texto-blanco" }, [
                 _c("div", { staticClass: "row" }, [
                   _c("div", { staticClass: "col-12" }, [
-                    _c("h2", { staticClass: "lead linea-debajo-texto" }, [
-                      _c("b", { staticClass: "color-texto-expecial" }, [
-                        _vm._v(
-                          _vm._s(card_rol.orden) + ".- " + _vm._s(card_rol.name)
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-md" }, [
-                      _vm._v("Rol: " + _vm._s(card_rol.slug))
+                    _c("h2", { staticClass: "lead titulo-tarjeta subrayar" }, [
+                      _vm._v(
+                        _vm._s(card_rol.orden) +
+                          ".- Rol: " +
+                          _vm._s(card_rol.name)
+                      )
                     ]),
                     _vm._v(" "),
                     _c("ul", { staticClass: "ml-4 mb-0 fa-ul" }, [
-                      _c("li", { staticClass: "text-md" }, [
-                        _vm._m(0, true),
+                      _c("li", { staticClass: "texto-tarjeta" }, [
                         _vm._v(" Descripción: " + _vm._s(card_rol.description))
                       ]),
                       _vm._v(" "),
-                      _c("li", { staticClass: "text-md mt-2" }, [
-                        _vm._m(1, true),
+                      _c("li", { staticClass: "texto-tarjeta mt-2" }, [
+                        _c("span", { staticClass: "fa-li" }),
                         _vm._v("Acceso total: " + _vm._s(card_rol.full_access))
                       ])
                     ])
@@ -61798,24 +61236,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "fa-li" }, [
-      _c("i", { staticClass: "fas fa-user-tag" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "fa-li" }, [
-      _c("i", { staticClass: "far fa-clock" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -63888,7 +63309,7 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12 d-flex justify-content-end" }, [
-              _c("h6", { staticClass: "widget-user-desc-m color-texto" }, [
+              _c("h6", { staticClass: "widget-user-desc-m texto-blanco" }, [
                 _vm._v(
                   "Última modificación: " + _vm._s(_vm.video.fecha_formateada)
                 )
@@ -63913,7 +63334,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-12 col-md-12 color-texto" }, [
+            _c("div", { staticClass: "col-12 col-md-12 texto-blanco" }, [
               _c("h5", { staticClass: "widget-user-desc mr-2 my-3" }, [
                 _vm._v("id: " + _vm._s(_vm.video.id))
               ]),
@@ -63922,7 +63343,7 @@ var render = function() {
                 "h4",
                 {
                   staticClass:
-                    "widget-user-desc color-texto-expecial linea-debajo-texto"
+                    "widget-user-desc titulo-listas linea-debajo-texto"
                 },
                 [
                   _vm._v(
@@ -63936,7 +63357,7 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "card-footer p-0" }, [
           _c("ul", { staticClass: "nav flex-column" }, [
-            _c("li", { staticClass: "nav-item mt-5 text-lg color-texto" }, [
+            _c("li", { staticClass: "nav-item mt-5 text-lg texto-blanco" }, [
               _vm._v(
                 "\n\n                - Descripción: " +
                   _vm._s(_vm.video.descripcion) +
@@ -63958,7 +63379,7 @@ var render = function() {
                 : _vm._e()
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "nav-item mt-2 text-lg color-texto" }, [
+            _c("li", { staticClass: "nav-item mt-2 text-lg texto-blanco" }, [
               _vm._v(
                 "\n\n               - Url-limpia: " +
                   _vm._s(_vm.video.miniatura) +
@@ -63980,7 +63401,7 @@ var render = function() {
                 : _vm._e()
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "nav-item mt-2 text-lg color-texto" }, [
+            _c("li", { staticClass: "nav-item mt-2 text-lg texto-blanco" }, [
               _vm._v(
                 "\n\n                - Link: " +
                   _vm._s(_vm.video.link) +
@@ -64002,7 +63423,7 @@ var render = function() {
                 : _vm._e()
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "nav-item mt-2 text-lg color-texto" }, [
+            _c("li", { staticClass: "nav-item mt-2 text-lg texto-blanco" }, [
               _vm._v(
                 "\n\n                - Size: " +
                   _vm._s(_vm.video.size) +
@@ -64178,7 +63599,7 @@ var render = function() {
         ? _c(
             "div",
             {
-              staticClass: "spinner-border text-info mr-2",
+              staticClass: "spinner-border color-spinner mr-2",
               attrs: { role: "status", "aria-hidden": "true" }
             },
             [
@@ -64301,7 +63722,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "nav",
-      { staticClass: "main-header navbar navbar-expand navbar-fondo" },
+      { staticClass: "main-header navbar navbar-expand fondo-navbar" },
       [
         _c("ul", { staticClass: "navbar-nav" }, [
           _c("li", { staticClass: "nav-item" }, [
@@ -64612,567 +64033,560 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _vm.listPermisos.includes("access.sidebar")
-    ? _c("aside", { staticClass: "main-sidebar sidebar-fondo elevation-4" }, [
-        _c("div", { staticClass: "sidebar" }, [
-          _c("div", { staticClass: "user-panel mt-3 pb-3 mb-3 d-flex" }, [
-            _vm._m(0),
+    ? _c(
+        "aside",
+        { staticClass: "main-sidebar sidebar-fondo elevation-4 text-dark" },
+        [
+          _c("div", { staticClass: "sidebar" }, [
+            _c("div", { staticClass: "user-panel mt-3 pb-3 mb-3 d-flex" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "info" }, [
+                _vm._v("\n        " + _vm._s(_vm.usuario["name"]) + "\n      ")
+              ])
+            ]),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "info" },
+              { staticClass: "user-panel mt-3 pb-3 mb-3 d-flex cerrar-sesion" },
               [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "d-block text-white",
-                    attrs: { to: { name: "access.users" } }
-                  },
-                  [_vm._v(_vm._s(_vm.usuario["name"]))]
-                )
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "user-panel mt-3 pb-3 mb-3 d-flex cerrar-sesion" },
-            [
-              _c("div", { staticClass: "info" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "d-block text-white",
-                    attrs: { href: "#" },
-                    on: {
-                      click: function($event) {
-                        $event.preventDefault()
-                        return _vm.logout($event)
+                _c("div", { staticClass: "info" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "d-block text-dark",
+                      attrs: { href: "#" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.logout($event)
+                        }
                       }
-                    }
-                  },
-                  [
-                    _c("i", { staticClass: "fas fa-sign-out-alt text-white" }),
-                    _vm._v(" Cerrar Sesión\n        ")
-                  ]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("nav", { staticClass: "mt-2" }, [
-            _c(
-              "ul",
-              {
-                staticClass: "nav nav-pills nav-sidebar flex-column",
-                attrs: {
-                  "data-widget": "treeview",
-                  role: "menu",
-                  "data-accordion": "false"
-                }
-              },
-              [
-                _c(
-                  "li",
-                  { staticClass: "nav-header sidebar-titulos" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "nav-link active",
-                        style: { backgroundColor: "transparent" },
-                        attrs: { to: "/administracion/" }
-                      },
-                      [_vm._v("\n              ADMINISTRACIÓN\n          ")]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-header" }),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _vm.listPermisos.includes("access.users")
-                      ? [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "nav-link",
-                              attrs: { to: "/administracion/usuarios" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass:
-                                  "nav-icon far fa-id-card color-icono-sidebar"
-                              }),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "sidebar-subtitulos" }, [
-                                _vm._v(
-                                  "\n                Clientes\n                "
-                                ),
-                                _c(
-                                  "span",
-                                  { staticClass: "badge badge-info right" },
-                                  [
-                                    _vm._v(
-                                      "\n                            " +
-                                        _vm._s(_vm.numeros.clientes) +
-                                        "\n                "
-                                    )
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]
-                      : _vm._e()
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _vm.listPermisos.includes("access.roles")
-                      ? [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "nav-link",
-                              attrs: { to: "/administracion/roles" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass:
-                                  "nav-icon fas fa-user-tag color-icono-sidebar"
-                              }),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "sidebar-subtitulos" }, [
-                                _vm._v(
-                                  "\n                    Roles\n                    "
-                                ),
-                                _c(
-                                  "span",
-                                  { staticClass: "badge badge-info right" },
-                                  [
-                                    _vm._v(
-                                      "\n                            " +
-                                        _vm._s(_vm.numeros.roles)
-                                    )
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]
-                      : _vm._e()
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _vm.listPermisos.includes("access.permissions")
-                      ? [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "nav-link",
-                              attrs: { to: "/administracion/permisos" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass:
-                                  "nav-icon fas fa-lock color-icono-sidebar"
-                              }),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "sidebar-subtitulos" }, [
-                                _vm._v(
-                                  "\n                  Permisos\n                  "
-                                ),
-                                _c(
-                                  "span",
-                                  { staticClass: "badge badge-info right" },
-                                  [
-                                    _vm._v(
-                                      "\n                            " +
-                                        _vm._s(_vm.numeros.permisos)
-                                    )
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]
-                      : _vm._e()
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _vm.listPermisos.includes("access.images")
-                      ? [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "nav-link",
-                              attrs: { to: "/administracion/images" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass:
-                                  "fas fa-camera ml-1 mr-2 color-icono-sidebar"
-                              }),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "sidebar-subtitulos" }, [
-                                _vm._v(
-                                  "\n                  Imágenes\n                  "
-                                ),
-                                _c(
-                                  "span",
-                                  { staticClass: "badge badge-info right" },
-                                  [
-                                    _vm._v(
-                                      "\n                            " +
-                                        _vm._s(_vm.numeros.imagenes)
-                                    )
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]
-                      : _vm._e()
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _vm.listPermisos.includes("access.posts")
-                      ? [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "nav-link",
-                              attrs: { to: "/administracion/post" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass:
-                                  "fas fa-portrait ml-2 mr-2 color-icono-sidebar"
-                              }),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "sidebar-subtitulos" }, [
-                                _vm._v(
-                                  "\n                  Posts\n                  "
-                                ),
-                                _c(
-                                  "span",
-                                  { staticClass: "badge badge-info right" },
-                                  [
-                                    _vm._v(
-                                      "\n                            " +
-                                        _vm._s(_vm.numeros.posts)
-                                    )
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]
-                      : _vm._e()
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _vm.listPermisos.includes("access.products")
-                      ? [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "nav-link",
-                              attrs: { to: "/administracion/productos" }
-                            },
-                            [
-                              _c("i", {
-                                staticClass:
-                                  "fas fa-shopping-bag ml-2 mr-2 color-icono-sidebar"
-                              }),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "sidebar-subtitulos" }, [
-                                _vm._v(
-                                  "\n                  Productos\n                  "
-                                ),
-                                _c(
-                                  "span",
-                                  { staticClass: "badge badge-info right" },
-                                  [
-                                    _vm._v(
-                                      "\n                            " +
-                                        _vm._s(_vm.numeros.productos)
-                                    )
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]
-                      : _vm._e()
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-header sidebar-titulos" }, [
-                  _vm._v("CONFIGURACIONES")
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-item" }, [
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "nav nav-treeview" }, [
-                    _c(
-                      "li",
-                      { staticClass: "nav-item" },
-                      [
-                        _vm.listPermisos.includes("access.paginas")
-                          ? [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { to: "/administracion/paginas" }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass:
-                                      "far fa-circle nav-icon color-icono-sidebar"
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "sidebar-subtitulos" },
-                                    [
-                                      _vm._v(
-                                        "\n                    Mis páginas\n                  "
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          : _vm._e()
-                      ],
-                      2
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "nav-item" },
-                      [
-                        _vm.listPermisos.includes("access.menu.sup")
-                          ? [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { to: "/administracion/menu-superior" }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass:
-                                      "far fa-circle nav-icon color-icono-sidebar"
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "sidebar-subtitulos" },
-                                    [
-                                      _vm._v(
-                                        "\n                    Menú superior\n                  "
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          : _vm._e()
-                      ],
-                      2
-                    ),
-                    _c(
-                      "li",
-                      { staticClass: "nav-item" },
-                      [
-                        _vm.listPermisos.includes("access.videos")
-                          ? [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { to: "/administracion/videos" }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass:
-                                      "far fa-circle nav-icon color-icono-sidebar"
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "sidebar-subtitulos" },
-                                    [
-                                      _vm._v(
-                                        "\n                    Videos\n                  "
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          : _vm._e()
-                      ],
-                      2
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "nav-item" },
-                      [
-                        _vm.listPermisos.includes("access.portada")
-                          ? [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { to: "/administracion/portada" }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass:
-                                      "far fa-circle nav-icon color-icono-sidebar"
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "sidebar-subtitulos" },
-                                    [
-                                      _vm._v(
-                                        "\n                    Imágen Portada\n                  "
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          : _vm._e()
-                      ],
-                      2
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "nav-item" },
-                      [
-                        _vm.listPermisos.includes("access.products")
-                          ? [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { to: "/administracion/pie" }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass:
-                                      "far fa-circle nav-icon color-icono-sidebar"
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "sidebar-subtitulos" },
-                                    [
-                                      _vm._v(
-                                        "\n                      Pie de página\n                    "
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          : _vm._e()
-                      ],
-                      2
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "nav-item" },
-                      [
-                        _vm.listPermisos.includes("access.seo")
-                          ? [
-                              _c(
-                                "router-link",
-                                {
-                                  staticClass: "nav-link",
-                                  attrs: { to: "/administracion/seo" }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass:
-                                      "far fa-circle nav-icon color-icono-sidebar"
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    { staticClass: "sidebar-subtitulos" },
-                                    [
-                                      _vm._v(
-                                        "\n                      Seo web\n                    "
-                                      )
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          : _vm._e()
-                      ],
-                      2
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _vm._m(2),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-header sidebar-titulos" }, [
-                  _vm._v("\n          GRÁFICAS\n        ")
-                ]),
-                _vm._v(" "),
-                _vm._m(3),
-                _vm._v(" "),
-                _vm._m(4),
-                _vm._v(" "),
-                _vm._m(5)
+                    },
+                    [
+                      _c("i", { staticClass: "fas fa-sign-out-alt" }),
+                      _vm._v(" Cerrar Sesión\n        ")
+                    ]
+                  )
+                ])
               ]
-            )
+            ),
+            _vm._v(" "),
+            _c("nav", { staticClass: "mt-2" }, [
+              _c(
+                "ul",
+                {
+                  staticClass: "nav nav-pills nav-sidebar flex-column",
+                  attrs: {
+                    "data-widget": "treeview",
+                    role: "menu",
+                    "data-accordion": "false"
+                  }
+                },
+                [
+                  _c(
+                    "li",
+                    { staticClass: "nav-header sidebar-titulos" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "nav-link active",
+                          attrs: { to: "/administracion/" }
+                        },
+                        [_vm._v("\n              ADMINISTRACIÓN\n          ")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-header" }),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _vm.listPermisos.includes("access.users")
+                        ? [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { to: "/administracion/usuarios" }
+                              },
+                              [
+                                _c("i", {
+                                  staticClass:
+                                    "nav-icon far fa-id-card color-icono-sidebar"
+                                }),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "sidebar-subtitulos" }, [
+                                  _vm._v(
+                                    "\n                Clientes\n                "
+                                  ),
+                                  _c(
+                                    "span",
+                                    { staticClass: "badge badge-info right" },
+                                    [
+                                      _vm._v(
+                                        "\n                            " +
+                                          _vm._s(_vm.numeros.clientes) +
+                                          "\n                "
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _vm.listPermisos.includes("access.roles")
+                        ? [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { to: "/administracion/roles" }
+                              },
+                              [
+                                _c("i", {
+                                  staticClass:
+                                    "nav-icon fas fa-user-tag color-icono-sidebar"
+                                }),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "sidebar-subtitulos" }, [
+                                  _vm._v(
+                                    "\n                    Roles\n                    "
+                                  ),
+                                  _c(
+                                    "span",
+                                    { staticClass: "badge badge-info right" },
+                                    [
+                                      _vm._v(
+                                        "\n                            " +
+                                          _vm._s(_vm.numeros.roles)
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _vm.listPermisos.includes("access.permissions")
+                        ? [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { to: "/administracion/permisos" }
+                              },
+                              [
+                                _c("i", {
+                                  staticClass:
+                                    "nav-icon fas fa-lock color-icono-sidebar"
+                                }),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "sidebar-subtitulos" }, [
+                                  _vm._v(
+                                    "\n                  Permisos\n                  "
+                                  ),
+                                  _c(
+                                    "span",
+                                    { staticClass: "badge badge-info right" },
+                                    [
+                                      _vm._v(
+                                        "\n                            " +
+                                          _vm._s(_vm.numeros.permisos)
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _vm.listPermisos.includes("access.images")
+                        ? [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { to: "/administracion/images" }
+                              },
+                              [
+                                _c("i", {
+                                  staticClass:
+                                    "fas fa-camera ml-1 mr-2 color-icono-sidebar"
+                                }),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "sidebar-subtitulos" }, [
+                                  _vm._v(
+                                    "\n                  Imágenes\n                  "
+                                  ),
+                                  _c(
+                                    "span",
+                                    { staticClass: "badge badge-info right" },
+                                    [
+                                      _vm._v(
+                                        "\n                            " +
+                                          _vm._s(_vm.numeros.imagenes)
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _vm.listPermisos.includes("access.posts")
+                        ? [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { to: "/administracion/post" }
+                              },
+                              [
+                                _c("i", {
+                                  staticClass:
+                                    "fas fa-portrait ml-2 mr-2 color-icono-sidebar"
+                                }),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "sidebar-subtitulos" }, [
+                                  _vm._v(
+                                    "\n                  Posts\n                  "
+                                  ),
+                                  _c(
+                                    "span",
+                                    { staticClass: "badge badge-info right" },
+                                    [
+                                      _vm._v(
+                                        "\n                            " +
+                                          _vm._s(_vm.numeros.posts)
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _vm.listPermisos.includes("access.products")
+                        ? [
+                            _c(
+                              "router-link",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { to: "/administracion/productos" }
+                              },
+                              [
+                                _c("i", {
+                                  staticClass:
+                                    "fas fa-shopping-bag ml-2 mr-2 color-icono-sidebar"
+                                }),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "sidebar-subtitulos" }, [
+                                  _vm._v(
+                                    "\n                  Productos\n                  "
+                                  ),
+                                  _c(
+                                    "span",
+                                    { staticClass: "badge badge-info right" },
+                                    [
+                                      _vm._v(
+                                        "\n                            " +
+                                          _vm._s(_vm.numeros.productos)
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-header sidebar-titulos" }, [
+                    _vm._v("CONFIGURACIONES")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c("ul", { staticClass: "nav nav-treeview" }, [
+                      _c(
+                        "li",
+                        { staticClass: "nav-item" },
+                        [
+                          _vm.listPermisos.includes("access.paginas")
+                            ? [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: { to: "/administracion/paginas" }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "far fa-circle nav-icon color-icono-sidebar"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      { staticClass: "sidebar-subtitulos" },
+                                      [
+                                        _vm._v(
+                                          "\n                    Mis páginas\n                  "
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "nav-item" },
+                        [
+                          _vm.listPermisos.includes("access.menu.sup")
+                            ? [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: {
+                                      to: "/administracion/menu-superior"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "far fa-circle nav-icon color-icono-sidebar"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      { staticClass: "sidebar-subtitulos" },
+                                      [
+                                        _vm._v(
+                                          "\n                    Menú superior\n                  "
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      ),
+                      _c(
+                        "li",
+                        { staticClass: "nav-item" },
+                        [
+                          _vm.listPermisos.includes("access.videos")
+                            ? [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: { to: "/administracion/videos" }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "far fa-circle nav-icon color-icono-sidebar"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      { staticClass: "sidebar-subtitulos" },
+                                      [
+                                        _vm._v(
+                                          "\n                    Videos\n                  "
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "nav-item" },
+                        [
+                          _vm.listPermisos.includes("access.portada")
+                            ? [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: { to: "/administracion/portada" }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "far fa-circle nav-icon color-icono-sidebar"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      { staticClass: "sidebar-subtitulos" },
+                                      [
+                                        _vm._v(
+                                          "\n                    Imágen Portada\n                  "
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "nav-item" },
+                        [
+                          _vm.listPermisos.includes("access.products")
+                            ? [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: { to: "/administracion/pie" }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "far fa-circle nav-icon color-icono-sidebar"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      { staticClass: "sidebar-subtitulos" },
+                                      [
+                                        _vm._v(
+                                          "\n                      Pie de página\n                    "
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        { staticClass: "nav-item" },
+                        [
+                          _vm.listPermisos.includes("access.seo")
+                            ? [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: { to: "/administracion/seo" }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "far fa-circle nav-icon color-icono-sidebar"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      { staticClass: "sidebar-subtitulos" },
+                                      [
+                                        _vm._v(
+                                          "\n                      Seo web\n                    "
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(2),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-header sidebar-titulos" }, [
+                    _vm._v("\n          GRÁFICAS\n        ")
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(3),
+                  _vm._v(" "),
+                  _vm._m(4),
+                  _vm._v(" "),
+                  _vm._m(5)
+                ]
+              )
+            ])
           ])
-        ])
-      ])
+        ]
+      )
     : _vm._e()
 }
 var staticRenderFns = [
@@ -65209,7 +64623,7 @@ var staticRenderFns = [
         _c("i", { staticClass: "fas fa-book-open mr-2 color-icono-sidebar" }),
         _vm._v(" "),
         _c("p", { staticClass: "sidebar-subtitulos" }, [
-          _vm._v("\n              Administración\n              "),
+          _vm._v("\n              Redes sociales\n              "),
           _c("i", { staticClass: "fas fa-angle-left right" })
         ])
       ]),
@@ -65219,16 +64633,8 @@ var staticRenderFns = [
           _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
             _c("i", { staticClass: "far fa-circle nav-icon" }),
             _vm._v(" "),
-            _c("p", { staticClass: "sidebar-subtitulos" }, [_vm._v("Logo")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "nav-item" }, [
-          _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-            _c("i", { staticClass: "far fa-circle nav-icon" }),
-            _vm._v(" "),
             _c("p", { staticClass: "sidebar-subtitulos" }, [
-              _vm._v("Datos generales")
+              _vm._v("Configuración redes")
             ])
           ])
         ]),
@@ -65238,8 +64644,16 @@ var staticRenderFns = [
             _c("i", { staticClass: "far fa-circle nav-icon" }),
             _vm._v(" "),
             _c("p", { staticClass: "sidebar-subtitulos" }, [
-              _vm._v("Clases en video")
+              _vm._v("Community manager")
             ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "nav-item" }, [
+          _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+            _c("i", { staticClass: "far fa-circle nav-icon" }),
+            _vm._v(" "),
+            _c("p", { staticClass: "sidebar-subtitulos" }, [_vm._v("gráficas")])
           ])
         ])
       ])
@@ -87521,6 +86935,36 @@ __webpack_require__.r(__webpack_exports__);
       backgroundColor: 'transparent !important',
       texto: '',
       icono: 'far fa-paper-plane',
+      icono2: '',
+      size: '33px'
+    }, {
+      //21
+      nombre: 'bt_generar_pdf',
+      color: '#ffeb3b',
+      border: 'dotted 1px #ffeb3b',
+      backgroundColor: 'transparent !important',
+      texto: '',
+      icono: 'far fa-file-alt',
+      icono2: '',
+      size: '33px'
+    }, {
+      //22
+      nombre: 'bt_email_usuario',
+      color: '#ffeb3b',
+      border: 'dotted 1px #ffeb3b',
+      backgroundColor: 'transparent !important',
+      texto: '',
+      icono: 'fas fa-at',
+      icono2: '',
+      size: '33px'
+    }, {
+      //23
+      nombre: 'bt_email_muchos_usuarios',
+      color: '#ffeb3b',
+      border: 'dotted 1px #ffeb3b',
+      backgroundColor: 'transparent !important',
+      texto: '',
+      icono: 'far fa-envelope',
       icono2: '',
       size: '33px'
     }]

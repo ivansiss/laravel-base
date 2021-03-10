@@ -3,7 +3,7 @@
 
    <button  type="submit" :id="id" class="btn btn-outline-secondary myboton" @click.prevent="enviar(id)">
 
-        <div class="spinner-border text-info mr-2" v-if="cargando == true && btn_id == id" role="status" aria-hidden="true">
+        <div class="spinner-border color-spinner mr-2" v-if="cargando == true && btn_id == id" role="status" aria-hidden="true">
             <span class="sr-only ml-2">Cargando...&nbsp;&nbsp;</span>
         </div>
         {{ ds_admin[tipo].texto }}
@@ -52,13 +52,13 @@ export default {
       margin-right: 2rem;
   }
   .myboton{
-      color:#9ccc65;
+      color:#bdbdbd;
       background-color: transparent !important;
-      border: dotted 1px #9ccc65;
+      border: dotted 1px #bdbdbd;
   }
 
   .myicono{
-      color:#9ccc65;
+      color:#bdbdbd;
   }
   
 </style>  

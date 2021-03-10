@@ -231,6 +231,40 @@ export default{
                         icono2: '',
                         size: '33px',
                     },
+                    {   
+                        //21
+                        nombre: 'bt_generar_pdf',
+                        color: '#ffeb3b',
+                        border: 'dotted 1px #ffeb3b',
+                        backgroundColor: 'transparent !important',
+                        texto: '',
+                        icono: 'far fa-file-alt',
+                        icono2: '',
+                        size: '33px',
+                    },
+                    {   
+                        //22
+                        nombre: 'bt_email_usuario',
+                        color: '#ffeb3b',
+                        border: 'dotted 1px #ffeb3b',
+                        backgroundColor: 'transparent !important',
+                        texto: '',
+                        icono: 'fas fa-at',
+                        icono2: '',
+                        size: '33px',
+                    },
+                    {   
+                        //23
+                        nombre: 'bt_email_muchos_usuarios',
+                        color: '#ffeb3b',
+                        border: 'dotted 1px #ffeb3b',
+                        backgroundColor: 'transparent !important',
+                        texto: '',
+                        icono: 'far fa-envelope',
+                        icono2: '',
+                        size: '33px',
+                    },
+
 
 
 
